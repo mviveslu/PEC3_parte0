@@ -1,4 +1,4 @@
-import data from '../../data-intesting-players.json'
+import data from '../json/data-intesting-players.json'
 
 console.log("holaaa");
 const valores = window.location.search;
