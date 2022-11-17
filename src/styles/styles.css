@@ -38,7 +38,7 @@ header .container .search-input {
 }
 header .container .search-input input {
   padding: 8px 8px 8px 25px;
-  border-radius: 6px;
+  border-radius: 5px;
   border-width: 1px;
   border-color: lightgray;
 }
@@ -75,7 +75,7 @@ header .container .search-input img {
 .handball-court {
   position: relative;
   border: 1px solid red;
-  background-image: url("../../img/pista_handball.png");
+  background-image: url("../img/pista_handball.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 800px;

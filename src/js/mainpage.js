@@ -1,5 +1,5 @@
-import data from './data-competitions.json'
-import interestingPlayers from './data-intesting-players.json'
+import data from '../json/data-competitions.json'
+import interestingPlayers from '../json/data-intesting-players.json'
 /*Swiper */
 import Swiper,{ Navigation, Pagination, Mousewheel, Autoplay } from 'swiper/swiper-bundle.esm.js';
 // import styles bundle
@@ -7,9 +7,9 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import 'swiper/swiper-bundle.css'
 /*Importacion de imágenes*/
-import image1 from "./img/handball_banner1.jpg"
-import image2 from "./img/handball_banner2.jpg"
-import image3 from "./img/handball_banner3.jpg"
+import image1 from "../img/handball_banner1.jpg"
+import image2 from "../img/handball_banner2.jpg"
+import image3 from "../img/handball_banner3.jpg"
 
 
 
@@ -34,13 +34,13 @@ function createanElement(typeElement, classNameElement){
 /*Pasar el ID de la competicion para mostrar*/
 function competitionDetailsID(event){
     const idLink = event.currentTarget.idLink;
-    window.location.href = "http://localhost:1234/detalles.html?id="+idLink;
+    window.location.href = "./detalles.html?id="+idLink;
 }
 /*Pasar el ID de la JUGADORA para mostrar*/
 function playerDetailsID(event){
     console.log(event.currentTarget.idLink);
     const idLink = event.currentTarget.idLink;
-    window.location.href = "http://localhost:1234/detallesJugadora.html?id="+idLink;
+    window.location.href = "./detallesJugadora.html?id="+idLink;
 }
 
 /*SWIPER*/  
@@ -100,7 +100,7 @@ function setInterestingPlayers(){
 
         playerCardbio.innerHTML = element.biography.substring(0,300)+"...";
         const buttonplayer = document.createElement("button");
-        //buttonplayer.addEventListener("click",playerDetailsID);
+        buttonplayer.addEventListener("click",playerDetailsID);
         buttonplayer.idLink = element.id;
         buttonplayer.innerHTML = "Read more";
 

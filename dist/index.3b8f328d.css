@@ -42,7 +42,7 @@ header .container .search-input {
 header .container .search-input input {
   border-width: 1px;
   border-color: #d3d3d3;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: 8px 8px 8px 25px;
 }
 
@@ -80,7 +80,7 @@ header .container .search-input img {
 .handball-court {
   width: 800px;
   height: 900px;
-  background-image: url("pista_handball.1f5be41e.png");
+  background-image: url("pista_handball.4b6e6d7a.png");
   background-repeat: no-repeat;
   background-size: contain;
   border: 1px solid red;

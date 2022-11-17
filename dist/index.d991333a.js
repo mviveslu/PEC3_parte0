@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"f3LV0":[function(require,module,exports) {
+})({"YMi7P":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "893432af7bd11e8f";
+module.bundle.HMR_BUNDLE_ID = "84e18575d991333a";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,11 +531,11 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"2U7Ko":[function(require,module,exports) {
+},{}],"cuI1x":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _dataCompetitionsJson = require("./data-competitions.json");
+var _dataCompetitionsJson = require("../json/data-competitions.json");
 var _dataCompetitionsJsonDefault = parcelHelpers.interopDefault(_dataCompetitionsJson);
-var _dataIntestingPlayersJson = require("./data-intesting-players.json");
+var _dataIntestingPlayersJson = require("../json/data-intesting-players.json");
 var _dataIntestingPlayersJsonDefault = parcelHelpers.interopDefault(_dataIntestingPlayersJson);
 /*Swiper */ var _swiperBundleEsmJs = require("swiper/swiper-bundle.esm.js");
 var _swiperBundleEsmJsDefault = parcelHelpers.interopDefault(_swiperBundleEsmJs);
@@ -543,11 +543,11 @@ var _swiperBundleEsmJsDefault = parcelHelpers.interopDefault(_swiperBundleEsmJs)
 var _swiperBundleMinCss = require("swiper/swiper-bundle.min.css");
 var _swiperMinCss = require("swiper/swiper.min.css");
 var _swiperBundleCss = require("swiper/swiper-bundle.css");
-/*Importacion de imágenes*/ var _handballBanner1Jpg = require("./img/handball_banner1.jpg");
+/*Importacion de imágenes*/ var _handballBanner1Jpg = require("../img/handball_banner1.jpg");
 var _handballBanner1JpgDefault = parcelHelpers.interopDefault(_handballBanner1Jpg);
-var _handballBanner2Jpg = require("./img/handball_banner2.jpg");
+var _handballBanner2Jpg = require("../img/handball_banner2.jpg");
 var _handballBanner2JpgDefault = parcelHelpers.interopDefault(_handballBanner2Jpg);
-var _handballBanner3Jpg = require("./img/handball_banner3.jpg");
+var _handballBanner3Jpg = require("../img/handball_banner3.jpg");
 var _handballBanner3JpgDefault = parcelHelpers.interopDefault(_handballBanner3Jpg);
 const imagesBanner = [
     (0, _handballBanner1JpgDefault.default),
@@ -566,12 +566,12 @@ function orderBydateData() {
 }
 /*Pasar el ID de la competicion para mostrar*/ function competitionDetailsID(event) {
     const idLink = event.currentTarget.idLink;
-    window.location.href = "http://localhost:1234/detalles.html?id=" + idLink;
+    window.location.href = "./detalles.html?id=" + idLink;
 }
 /*Pasar el ID de la JUGADORA para mostrar*/ function playerDetailsID(event) {
     console.log(event.currentTarget.idLink);
     const idLink = event.currentTarget.idLink;
-    window.location.href = "http://localhost:1234/detallesJugadora.html?id=" + idLink;
+    window.location.href = "./detallesJugadora.html?id=" + idLink;
 }
 /*SWIPER*/ const orderedData = orderBydateData().slice(0, 3);
 const banner = document.querySelector("#banner-container");
@@ -624,7 +624,7 @@ const swiper2 = new (0, _swiperBundleEsmJsDefault.default)(".swiper", {
         const playerCardbio = document.createElement("p");
         playerCardbio.innerHTML = element.biography.substring(0, 300) + "...";
         const buttonplayer = document.createElement("button");
-        //buttonplayer.addEventListener("click",playerDetailsID);
+        buttonplayer.addEventListener("click", playerDetailsID);
         buttonplayer.idLink = element.id;
         buttonplayer.innerHTML = "Read more";
         /*Apending*/ playerCardInformation.append(playerCardtitle, playerCardbio, buttonplayer);
@@ -650,10 +650,10 @@ function rightScroll() {
 }
 setInterestingPlayers();
 
-},{"./data-competitions.json":"50Vd0","./data-intesting-players.json":"e0gnu","swiper/swiper-bundle.esm.js":"110z5","swiper/swiper-bundle.min.css":"girFM","swiper/swiper.min.css":"eFTGe","swiper/swiper-bundle.css":"aErfw","./img/handball_banner1.jpg":"bX43M","./img/handball_banner2.jpg":"7FQHl","./img/handball_banner3.jpg":"dBXJe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"50Vd0":[function(require,module,exports) {
+},{"../json/data-competitions.json":"39Ovm","../json/data-intesting-players.json":"jIR5q","swiper/swiper-bundle.esm.js":"110z5","swiper/swiper-bundle.min.css":"girFM","swiper/swiper.min.css":"eFTGe","swiper/swiper-bundle.css":"aErfw","../img/handball_banner1.jpg":"eA2Eo","../img/handball_banner2.jpg":"lX0rG","../img/handball_banner3.jpg":"b0DCf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39Ovm":[function(require,module,exports) {
 module.exports = JSON.parse('[{"competition":"IHF World Women\'s Handball Championship 2021","title":"Best Woman players of IHF World Women\'s Handball Championship 2021","imageUrl":"/img/logo_web_cut.png","startDate":"2021-12-01","date":"2021-12-19","location":"Spain","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idLink":"1"},{"competition":"IHF World Women\'s Handball Championship 2017","title":"Best Woman players of IHF World Women\'s Handball Championship 2017","imageUrl":"../img/pista_handball.png","startDate":"2017-12-01","endingDate":"2017-12-17","location":"Germany","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idLink":"2"},{"competition":"IHF World Women\'s Handball Championship 2019","title":"Best Woman players of IHF World Women\'s Handball Championship 2019","imageUrl":"../img/pista_handball.png","startDate":"2019-11-30","endingDate":"2019-12-15","location":"Japan","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idLink":"3"}]');
 
-},{}],"e0gnu":[function(require,module,exports) {
+},{}],"jIR5q":[function(require,module,exports) {
 module.exports = JSON.parse('[{"id":"001","instagramLink":"https://www.instagram.com/lauraglauser/","idPhoto":"Laura_Glauser_wikipediaCommons","name":"Laura Glausser","country":"France","biography":"Laura Glauser (nacida el 20 de agosto de 1993) es una jugadora de balonmano francesa del CSM București y de la selecci\xf3n francesa","position":"Goalkeeper","current team":"Bucuresti","medals":[{"medal":"Silver","year":2016,"event":"Olympic Games","location":"Brazil"},{"medal":"Silver","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Gold","year":2018,"event":"European Championship","location":"France"},{"medal":"Silver","year":2020,"event":"European Championship","location":"Denmark"},{"medal":"Bronze","year":2016,"event":"European Championship","location":"Sweden"}],"born":"20/09/1993","individual awards":["Best goalkeeper of the IHF Junior World Championship: 2012","Best Young Goalkeeper at the 2015 World Championships[2]","French Championship Best Goalkeeper: 2016","All-Star Goalkeeper of the EHF Champions League: 2022"]},{"id":"002","instagramLink":"https://www.instagram.com/noramrk_9/","idPhoto":"Nora_Mork_wikipediaCommons","name":"Nora Mork","country":"Norway","biography":"Nora M\xf8rk (born 5 April 1991) is a Norwegian handball player for Team Esbjerg and the Norwegian national team.","position":"Right back","current team":"Team Esbjerg","medals":[{"medal":"Bronze","year":2016,"event":"Olympic Games","location":"Brazil"},{"medal":"Bronze","year":2020,"event":"Olympic Games","location":"Tokyo"},{"medal":"Gold","year":2015,"event":"World Championship","location":"Denmark"},{"medal":"Gold","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Gold","year":2020,"event":"European Championship","location":"Denmark"},{"medal":"Gold","year":2016,"event":"European Championship","location":"Sweden"},{"medal":"Gold","year":2014,"event":"European Championship","location":"Croatia/Hungary"},{"medal":"Gold","year":2010,"event":"European Championship","location":"Denamrk/Norway"},{"medal":"Gold","year":2010,"event":"Junior World Championship","location":"South Korea"},{"medal":"Gold","year":2010,"event":"Junior European Championship","location":"Hungary"}],"born":"20/09/1993","individual awards":["Most Valuable Player of the Junior European Championship: 2009","Most Valuable Player of Postenligaen: 2013/2014","Most Valuable Player of Grundigligaen: 2014/2015, 2015/2016","Topscorer of the Summer Olympics: 2016 (62 goals), 2020 (52 goals)","Topscorer of the European Championship: 2016 (53 goals), 2020 (52 goals)","Topscorer of the World Championship: 2017 (66 goals)","All-Star Right Back of the European Youth Championship: 2007","All-Star Right Back of the European Open Championship: 2008","All-Star Right Back of Eliteserien: 2008/2009","All-Star Right Back of the Junior European Championship: 2009","All-Star Right Wing of Eliteserien: 2009/2010","All-Star Right Wing of Postenligaen: 2010/2011","All-Star Right Back of Postenligaen: 2013/2014","All-Star Right Back of the European Championship: 2014, 2016, 2020","All-Star Right Back of Grundigligaen: 2014/2015, 2015/2016","All-Star Right Back of the World Championship: 2015, 2017, 2021","All-Star Right Back of the EHF Champions League: 2015, 2016, 2017, 2021,[7] 2022[8]","All-Star Right Back of M\xf8belringen Cup: 2015, 2017","NISO Best Young Player of the Year: 2008","Best Rookie of Eliteserien: 2008/2009","Foreign Handballer of the Year in Hungary: 2017[9]","Handball-Planet.com All-Star Right Back: 2015, 2016,[10] 2020, 2021","Handball-Planet.com Player of the Year: 2017,[11] 2021[12]"]},{"id":"003","idPhoto":"Stine_Oftedal_wikipediaCommons","instagramLink":"https://www.instagram.com/stine.bredaloftedal/","name":"Stine Oftedal","country":"Norway","biography":"Stine Bredal Oftedal (born 25 September 1991) is a Norwegian handball player for Győri Audi ETO KC and the Norwegian national team, where she is the team captain.","position":"Centre back","current team":"Győri Audi ETO KC","medals":[{"medal":"Bronze","year":2016,"event":"Olympic Games","location":"Brazil"},{"medal":"Bronze","year":2020,"event":"Olympic Games","location":"Tokyo"},{"medal":"Gold","year":2011,"event":"World Championship","location":"Brazil"},{"medal":"Gold","year":2015,"event":"World Championship","location":"Denmark"},{"medal":"Gold","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Silver","year":2017,"event":"World Championship","location":"Germany"},{"medal":"Gold","year":2020,"event":"European Championship","location":"Denmark"},{"medal":"Gold","year":2016,"event":"European Championship","location":"Sweden"},{"medal":"Gold","year":2014,"event":"European Championship","location":"Croatia/Hungary"},{"medal":"Gold","year":2010,"event":"European Championship","location":"Denamrk/Norway"},{"medal":"Silver","year":2012,"event":"European Championship","location":"Serbia"},{"medal":"Gold","year":2010,"event":"Junior World Championship","location":"South Korea"},{"medal":"Gold","year":2010,"event":"Junior European Championship","location":"Hungary"}],"born":"25/09/1991","individual awards":["IHF World Player of the Year: 2019","All-Star Left Wing of the U18 European Open: 2008","All-Star Centre Back of the Junior World Championship: 2010","All-Star Centre Back of Postenligaen: 2010/2011","French Championship MVP: 2014","All-Star Centre Back of the World Championship: 2015","French Championship Best Playmaker: 2014, 2016","Most Valuable Player of the World Championship: 2017","All-Star Centre Back of the European Championship: 2018,2020","All-Star Centre Back of the EHF Champions League: 2019, 2020, 2021, 2022","Handball-Planet.com All-Star Centre Back of the Year: 2019","Foreign Handballer of the Year in Hungary: 2019"]},{"id":"004","instagramLink":"https://www.instagram.com/carmen_martin4/","idPhoto":"Carmen_Martin_wikipediaCommons","name":"Carmen Mart\xedn","country":"Spain","biography":"Carmen Dolores Mart\xedn Berenguer (born 29 May 1988) is a Spanish handballer who plays as a right wing for IK S\xe4vehof and the Spanish national team.","position":"Right wing","current team":" IK S\xe4vehof","medals":[{"medal":"Bronze","year":2012,"event":"Olympic Games","location":"London"},{"medal":"Bronze","year":2011,"event":"World Championship","location":"Brazil"},{"medal":"Silver","year":2008,"event":"European Championship","location":"Macedonia"},{"medal":"Silver","year":2014,"event":"European Championship","location":"Croatia/Hungary"}],"born":"29/05/1988","individual awards":["All-Star Right Wing of the World Championship: 2011","All-Star Right Wing of the European Championship: 2014, 2016, 2018","Handball-Planet.com Best Right Wing: 2016","All-Star Right Wing of the EHF Champions League: 2017","Prosport All-Star Right Wing of the Romanian Liga Națională: 2017"]},{"id":"005","instagramLink":"https://www.instagram.com/hagman/","idPhoto":"Nathalie_Hagman_wikipediaCommons","name":"Nathalie Hagman","country":"Swedeen","biography":"Nathalie Mari Hagman (born 19 July 1991) is a Swedish handball player for Neptunes de Nantes and the Swedish national handball team.","position":"Right wing","current team":"Neptunes de Nantes","medals":[{"medal":"Silver","year":2010,"event":"European Championship","location":"Denamrk/Norway"},{"medal":"Bronze","year":2014,"event":"European Championship","location":"Croatia/Hungary"}],"born":"29/05/1988","individual awards":["Junior World Championship Top Scorer: 2010","Swedish Elitserien Young Player of the Season: 2009","Swedish Elitserien Top Scorer: 2011, 2012, 2014","EHF Cup Top Scorer: 2015","EHF Cup Winners\' Cup Top Scorer: 2016","IHF World Women\'s Handball Championship Top scorer: 2021","Danish League Player of the Season: 2016","Danish League Best Right Wing: 2016","Danish League Best Right Back: 2017","Swedish Female Handballer of the Year: 2016","All Star Right Wing of the Summer Olympics: 2016","All Star Right Wing of the World Championship: 2017"]},{"id":"006","instagramLink":"https://www.instagram.com/sandratoft89/","idPhoto":"Sandra_Toft_wikipediaCommons","name":"Sandra Toft","country":"Denmark","biography":"Sandra Toft Galsgaard (born 18 October 1989) is a Danish handball goalkeeper for Győri Audi ETO KC and the Danish national team.","position":"Goalkeeper","current team":"Győri Audi ETO KC","medals":[{"medal":"Bronze","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Silver","year":2008,"event":"Junior World Championship","location":"Macedonia"},{"medal":"Golden","year":2006,"event":"Youth World Championship","location":"Canada"},{"medal":"Bronze","year":2007,"event":"European Junior Championship","location":"Turkey"}],"born":"18/09/1989","individual awards":["IHF World Player of the Year - Women: 2021","All-Star Goalkeeper of the World Championship: 2021","All-Star Goalkeeper of the European Championship: 2016, 2020","All-Star Team Best Goalkeeper of the EHF Champions League: 2015","Handball-Planet.com All-Star Goalkeeper of the Year: 2019"]}]');
 
 },{}],"110z5":[function(require,module,exports) {
@@ -9257,8 +9257,8 @@ function EffectCards({ swiper , extendParams , on  }) {
 }
 exports.default = EffectCards;
 
-},{"../../shared/create-shadow.js":"9JYAP","../../shared/effect-init.js":"5DnvG","../../shared/effect-target.js":"eKqS8","../../shared/effect-virtual-transition-end.js":"VhYFx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"girFM":[function() {},{}],"eFTGe":[function() {},{}],"aErfw":[function() {},{}],"bX43M":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bMkEy") + "handball_banner1.4f8c755a.jpg" + "?" + Date.now();
+},{"../../shared/create-shadow.js":"9JYAP","../../shared/effect-init.js":"5DnvG","../../shared/effect-target.js":"eKqS8","../../shared/effect-virtual-transition-end.js":"VhYFx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"girFM":[function() {},{}],"eFTGe":[function() {},{}],"aErfw":[function() {},{}],"eA2Eo":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bpjYi") + "handball_banner1.f4a7b324.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
@@ -9294,12 +9294,12 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"7FQHl":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bMkEy") + "handball_banner2.28c9b3a8.jpg" + "?" + Date.now();
+},{}],"lX0rG":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bpjYi") + "handball_banner2.2e008f51.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"dBXJe":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bMkEy") + "handball_banner3.9426a479.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"b0DCf":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bpjYi") + "handball_banner3.12dbf9f9.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}]},["f3LV0","2U7Ko"], "2U7Ko", "parcelRequire14aa")
+},{"./helpers/bundle-url":"lgJ39"}]},["YMi7P","cuI1x"], "cuI1x", "parcelRequire14aa")
 
-//# sourceMappingURL=index.7bd11e8f.js.map
+//# sourceMappingURL=index.d991333a.js.map

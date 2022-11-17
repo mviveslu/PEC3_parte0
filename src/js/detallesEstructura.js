@@ -1,5 +1,5 @@
-import data from '../data-competitions.json'
-import {createanElement} from '../utiles.js';
+import data from '../json/data-competitions.json'
+import {createanElement} from '../../utiles.js';
 const valores = window.location.search;
 const idCompetition = valores.split("=")[1];
 const resultado = data.filter(element => element.idLink == idCompetition);
