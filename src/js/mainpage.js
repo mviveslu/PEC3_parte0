@@ -12,13 +12,19 @@ import image2 from "../img/handball_banner2.jpg"
 import image3 from "../img/handball_banner3.jpg"
 
 
+import image4 from "../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg"
+import image5 from "../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg"
+import image6 from "../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg"
+import image7 from "../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg"
+import image8 from "../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg"
+import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg" 
+
+const images = [image4,image5,image6,image7,image8,image9];
+
 
 const imagesBanner = [image1,image2,image3];
 
-
-
-
-
+/*Ordenar las competiciones */
 function orderBydateData(){
     return data.sort((a,b) => {
         return new Date(b.startDate) - new Date(a.startDate);
@@ -34,13 +40,15 @@ function createanElement(typeElement, classNameElement){
 /*Pasar el ID de la competicion para mostrar*/
 function competitionDetailsID(event){
     const idLink = event.currentTarget.idLink;
-    window.location.href = "./detalles.html?id="+idLink;
+    //window.location.href = "./detalles.html?id="+idLink;
+    window.location.replace("./detalles.html?id="+idLink);
 }
 /*Pasar el ID de la JUGADORA para mostrar*/
 function playerDetailsID(event){
     console.log(event.currentTarget.idLink);
     const idLink = event.currentTarget.idLink;
     window.location.href = "./detallesJugadora.html?id="+idLink;
+    //location.href ="http://stackoverflow.com";
 }
 
 /*SWIPER*/  
@@ -58,6 +66,7 @@ orderedData.map((element,index) => {
     texto.innerHTML = element.title;
     const buttonReadMore = createanElement("button","button-read-more")
     buttonReadMore.innerHTML ="Read More";
+    buttonReadMore.setAttribute("type", "button");
     buttonReadMore.addEventListener("click",competitionDetailsID);
     buttonReadMore.idLink = element.idLink;
     const divContent = createanElement("div","div-content-image");
@@ -85,28 +94,29 @@ const swiper2 = new Swiper('.swiper', {
 /* */
 /*Interesting players*/
 function setInterestingPlayers(){
+    const titulo = createanElement("h2","interesting-players-cards-title");
+    titulo.innerHTML = "Recommended players";
     const divCover = createanElement("div", "cover");
     const leftbutton = createanElement("button", "left");
     
     const cards = createanElement("ul", "cards");
-    interestingPlayers.map(element => {
+    interestingPlayers.map((element,index) => {
         const card = createanElement("li", "card");
         const playerCard = createanElement("div", "player-card");
         const imgPhoto = createanElement("img");
         const playerCardInformation = createanElement("div", "player-card-information");
         const playerCardtitle = document.createElement("h1");
         playerCardtitle.innerHTML = element.name;
+        const imagenPlayer = document.createElement("img","player-card-image");
+        imagenPlayer.src = images[element.idPhoto];
         const playerCardbio = document.createElement("p");
-
-        playerCardbio.innerHTML = element.biography.substring(0,300)+"...";
+        playerCardbio.innerHTML = element.biography[0];
         const buttonplayer = document.createElement("button");
         buttonplayer.addEventListener("click",playerDetailsID);
         buttonplayer.idLink = element.id;
         buttonplayer.innerHTML = "Read more";
-
-         
         /*Apending*/
-        playerCardInformation.append(playerCardtitle,playerCardbio,buttonplayer);
+        playerCardInformation.append(playerCardtitle,imagenPlayer,playerCardbio,buttonplayer);
         playerCard.append(imgPhoto,playerCardInformation);
         card.append(playerCard);
         cards.append(card);
@@ -118,7 +128,7 @@ function setInterestingPlayers(){
     divCover.append(leftbutton,cards,rightbutton);
     
     const divContainer = createanElement("div", "container");
-    divContainer.append(divCover);
+    divContainer.append(titulo,divCover);
 
     document.body.append(divContainer);
     leftbutton.addEventListener("click", leftScroll);

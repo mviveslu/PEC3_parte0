@@ -3,30 +3,38 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "source": "src/index.html",
+  "source": [
+    "src/index.html",
+    "src/detalles.html",
+    "src/detallesJugadora.html",
+    "src/enlaces.html",
+    "src/portada.html"
+
+  ],
   "scripts": {
     "parcel:dev": "parcel",
     "parcel:build": "parcel build --public-url ./",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build",
-    "build-html": "html-build -c config.js ./src/detallesJugadora.html samples/"
+    "build": "npm-run-all clean parcel:build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "assert": "^2.0.0",
+    "console-browserify": "^1.2.0",
     "html-build": "^1.0.1",
     "npm-run-all": "^4.1.5",
-    "parcel": "^2.7.0",
-    "rimraf": "^3.0.2"
+    "parcel": "^2.8.0",
+    "process": "^0.11.10",
+    "rimraf": "^3.0.2",
+    "util": "^0.12.5"
   },
   "dependencies": {
+    "bulma-responsive-tables": "^1.2.5",
+    "country-flag-icons": "^1.5.5",
+    "slick-carousel": "^1.8.1",
     "swiper": "^8.4.4"
-  },
-  "plugins": {
-    "posthtml-include": {
-      "root": "./src/detallesJugadora.html"
-    }
   }
 }

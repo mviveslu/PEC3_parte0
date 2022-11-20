@@ -59,7 +59,11 @@ header .container .search-input img {
   line-height: 0px;
 }
 
-.player {
+ul {
+  display: flex;
+}
+
+.image-player-court {
   width: 60px;
   height: auto;
   border: 1px solid black;
@@ -74,12 +78,16 @@ header .container .search-input img {
 
 .handball-court {
   position: relative;
-  border: 1px solid red;
+  border: 1px solid black;
   background-image: url("../img/pista_handball.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 800px;
-  height: 900px;
+  background-size: cover;
+  height: 1000px;
+}
+
+.article-competition-flag-country {
+  width: 20px;
+  height: auto;
 }
 
 /*Swiper*/
@@ -127,6 +135,7 @@ header .container .search-input img {
 
 .player-card {
   width: 300px;
+  height: 500px;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.639);
   border-radius: 0.5rem;
@@ -188,18 +197,27 @@ header .container .search-input img {
   -webkit-appearance: none;
 }
 
-.left {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .right {
   position: absolute;
+  transform: rotate(-45deg);
+  border: solid black;
+  border-width: 3px 0 0 3px;
+  display: inline-block;
+  padding: 3px;
+  left: 0;
+  top: 50%;
+}
+
+.left {
+  position: absolute;
+  transform: rotate(135deg);
+  border: solid black;
+  border-width: 3px 0 0 3px;
+  display: inline-block;
+  padding: 3px;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 /*.cards{
@@ -241,5 +259,77 @@ body .container {
   margin: 0 auto;
   max-width: 80%;
 }
+
+/*Jugadoras*/
+.article-player-flag-country {
+  width: 40px;
+  height: auto;
+}
+
+.links-information {
+  flex-direction: column;
+}
+
+/*Competition players*/
+.player-element-court:first-child {
+  position: absolute;
+  left: 47%;
+  top: 22%;
+}
+
+.player-element-court:nth-child(2) {
+  position: absolute;
+  left: 47%;
+  top: 45%;
+}
+
+.player-element-court:nth-child(3) {
+  position: absolute;
+  left: 17%;
+  top: 45%;
+}
+
+.player-element-court:nth-child(4) {
+  position: absolute;
+  right: 17%;
+  top: 45%;
+}
+
+.player-element-court:nth-child(5) {
+  position: absolute;
+  left: 32%;
+  top: 60%;
+}
+
+.player-element-court:nth-child(6) {
+  position: absolute;
+  right: 32%;
+  top: 60%;
+}
+
+.player-element-court:nth-child(7) {
+  position: absolute;
+  left: 47%;
+  top: 70%;
+}
+
+/*Postada*/
+.welcome-container {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 700px;
+  border: 3px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+}
+.welcome-container img {
+  width: 350px;
+  height: auto;
+}
+
+/*detalles.html*/
 
 /*# sourceMappingURL=styles.css.map */

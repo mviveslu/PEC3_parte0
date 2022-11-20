@@ -5,9 +5,10 @@
         "imageUrl": "/img/logo_web_cut.png",
         "startDate": "2021-12-01",
         "date": "2021-12-19",
-        "location": "Spain",
-        "informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.",
-        "idLink":"1"
+        "location": "ES",
+        "informationtoShow":"",
+        "idCompetition":"1",
+        "players":["001","002","004","003","005","006","001"]
       },
     {
         "competition": "IHF World Women's Handball Championship 2017",
@@ -15,9 +16,10 @@
         "imageUrl": "../img/pista_handball.png",
         "startDate": "2017-12-01",
         "endingDate": "2017-12-17",
-        "location": "Germany",
+        "location": "DE",
         "informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.",
-        "idLink":"2"
+        "idCompetition":"2",
+        "players":["001","002","003","004","005","006"]
       },
       {
         "competition": "IHF World Women's Handball Championship 2019",
@@ -25,9 +27,10 @@
         "imageUrl": "../img/pista_handball.png",
         "startDate": "2019-11-30",
         "endingDate": "2019-12-15",
-        "location": "Japan",
+        "location": "JP",
         "informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.",
-        "idLink":"3"
+        "idCompetition":"3",
+        "players":["001","002","003","004","005","006"]
       }
     
 ]

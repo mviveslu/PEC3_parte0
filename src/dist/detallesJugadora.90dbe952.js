@@ -535,15 +535,15 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _dataIntestingPlayersJson = require("../json/data-intesting-players.json");
 var _dataIntestingPlayersJsonDefault = parcelHelpers.interopDefault(_dataIntestingPlayersJson);
-console.log("holaaa");
 const valores = window.location.search;
 const idCompetition = valores.split("=")[1];
-const resultado = (0, _dataIntestingPlayersJsonDefault.default).filter((element)=>element.idLink == idCompetition);
-console.log("idCompetition");
+const resultado = (0, _dataIntestingPlayersJsonDefault.default).filter((element)=>element.idLink === idCompetition);
+console.log(idCompetition);
+console.log(resultado.length);
 if (resultado.length != 1) ;
 else {
+    console.log("nos vamos");
     const titlePage = createanElement("h1", "title-page");
-    console.log(titlePage);
 }
 
 },{"../json/data-intesting-players.json":"jIR5q","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jIR5q":[function(require,module,exports) {
