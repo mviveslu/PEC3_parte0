@@ -19,6 +19,9 @@ import image8 from "../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.j
 import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg" 
 const images = [image4,image5,image6,image7,image8,image9];
 
+
+
+
 function createanElement(typeElement, classNameElement){
     const element = document.createElement(typeElement);
     element.setAttribute("class",classNameElement);
@@ -41,7 +44,7 @@ if(resultado.length == 0){
 }
 else{
     console.log(resultado.medals);
-    articleHeader(resultado.name,resultado.position,resultado.born, resultado.country, resultado.instagramLink, resultado.facebookLink);
+    articleHeader(resultado.name,resultado.position,resultado.born, resultado.country, resultado.instagramLink, resultado.facebookLink, resultado.idPhoto);
     biography(resultado.biography);
     relatedPlayers(resultado.relatedPlayers);
     individualAwards(resultado.individualAwards);
@@ -51,32 +54,38 @@ else{
     
 }
 /*Article header */
-function articleHeader(namePlayerComplete, positionPlayer, bornPlayer, nameFlag, instagramLink,facebookLink){
-    const headerArticle =createanElement("header","article-player-header");
-    const divHeaderInformation=createanElement("div","div-introduction-player-info")
-    const namePlayer = createanElement("h1","article-player-name");
-    namePlayer.innerHTML = namePlayerComplete;
-    const introductoryP = createanElement("p","article-player-biography-introduction");
-    introductoryP.innerHTML = `${positionPlayer},${bornPlayer}`;
-    const countryFlag = createanElement("img","article-player-flag-country");
-    countryFlag.setAttribute("src", getCountryFlag(nameFlag));
-    /*Social media */
-    const socialMediaHeader = createanElement("div","social-media-player");
-    const linkInstagram = createanElement("a","link-to-player-instagram");
-    linkInstagram.setAttribute("href",instagramLink);
-    const logoInstagram = createanElement("img","logo-instagram");
-    logoInstagram.setAttribute("src",instagram);
-
-    const linkFacebook = createanElement("a","link-to-player-facebook");
-    linkFacebook.setAttribute("href",facebookLink);
-    const logoFacebook = createanElement("img","logo-facebook");
-    logoFacebook.setAttribute("src",facebook);
-    linkFacebook.append(logoFacebook);
-    linkInstagram.append(logoInstagram);
-    socialMediaHeader.append(linkInstagram,linkFacebook);
-    divHeaderInformation.append(namePlayer,introductoryP,countryFlag,socialMediaHeader)
-    /**/
-    headerArticle.append(divHeaderInformation);
+function articleHeader(namePlayerComplete, positionPlayer, bornPlayer, nameFlag, instagramLink,facebookLink, positionPhoto){
+    
+    const headerArticle = document.getElementsByClassName('article-player-header')[0]
+    headerArticle.innerHTML= `
+        <div class="div-player-image">
+            <div class="image-player">
+                <img src=${images[positionPhoto]} class="article-player-photo">
+            </div>
+        </div>
+        <div class="div-introduction-player-info">
+            <h1 class="article-player-name">
+                ${namePlayerComplete}
+            </h1>
+            <div class="p-with-flag">
+                <p class="article-player-biography-introduction">
+                    ${positionPlayer}, ${bornPlayer}
+                </p>
+                <div>
+                    <img src = "${getCountryFlag(nameFlag)}" class="article-player-flag-country">
+                </div>
+            </div>
+            
+            <div class="social-media-player">
+                <a href="${instagramLink}">
+                    <i class="fa-brands fa-instagram"></i> 
+                </a>
+                <a href="${facebookLink}">  
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    `
     prinArticle.append(headerArticle);
 
 }
@@ -190,6 +199,7 @@ function individualAwards(array){
 }
 /*Seccion de biografía*/
 function biography(array){
+
     const section = createanElement("section","section-biography");
     const titleSection = document.createElement("h2");
     titleSection.innerHTML = "Biografía";
@@ -210,18 +220,39 @@ function relatedPlayers(array){
     section.append(titleSection);
     const listRelatedPlayers = createanElement("ul","related-player-list");
     array.map(element => {
-         const jugadora = data.find(jugadora =>jugadora.id == element);
+        const jugadora = data.find(jugadora =>jugadora.id == element);
         const liRelatedPlayer = createanElement("li","related-player");
-        const namePlayer = createanElement("h3","player")
-        namePlayer.innerHTML = jugadora.name;
-        const linkImagen = createanElement("a","link-to-related-player");
-        linkImagen.href = "./detallesJugadora.html?id="+jugadora.id;
-        const imagen = createanElement("img","image-related-player");
-        imagen.src = images[jugadora.idPhoto];
-        linkImagen.append(imagen);
-        liRelatedPlayer.append(namePlayer,linkImagen);
+        liRelatedPlayer.innerHTML=`
+        <a href="${"./detallesJugadora.html?id="+jugadora.id}"class="link-to-related-player">
+         <img class="image-related-player" src="${images[jugadora.idPhoto]}">
+         <div>
+         <span class="player-related-name">
+                ${jugadora.name}
+            </span>
+            <span class="player-related-position">
+                ${jugadora.position}
+            </span>
+         </div>
+        </a>
+        `
         listRelatedPlayers.append(liRelatedPlayer); 
     });
     section.append(listRelatedPlayers);
     prinArticle.append(section);
 }
+
+/*Header*/
+const toggleButton = document.getElementById('button-menu')
+const navWrapper = document.getElementById('nav')
+
+toggleButton.addEventListener('click',() => {
+  toggleButton.classList.toggle('close')
+  navWrapper.classList.toggle('show')
+})
+
+navWrapper.addEventListener('click',e => {
+  if(e.target.id === 'nav'){
+    navWrapper.classList.remove('show')
+    toggleButton.classList.remove('close')
+  }
+})

@@ -9,9 +9,14 @@ import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg
 import JP from '../../node_modules/country-flag-icons/1x1/JP.svg'
 import ES from '../../node_modules/country-flag-icons/1x1/ES.svg'
 import DE from '../../node_modules/country-flag-icons/1x1/DE.svg'
+import handballCourt from '../img/handball_court.png'
 
 
-
+function createanElement(typeElement, classNameElement){
+    const element = document.createElement(typeElement);
+    element.setAttribute("class",classNameElement);
+    return element;
+}
 
 const images = [image4,image5,image6,image7,image8,image9];
 
@@ -36,33 +41,123 @@ else{
 }
 function buildFiel(resultado){
     const headerArticle =createanElement("header","article-competition-header");
-    const divHeaderInformation=createanElement("div","div-introduction-competition-info")
+    const divHeaderInformation=createanElement("div","div-introduction-competition-info");
+    const divHeaderFlagP=createanElement("div","div-p-flag");
     const nameCompetition = createanElement("h1","article-competition-name");
     nameCompetition.innerHTML = resultado.competition;
     const introductoryP = createanElement("p","article-competition-introduction");
     introductoryP.innerHTML = resultado.title;
     const countryFlag = createanElement("img","article-competition-flag-country");
     countryFlag.setAttribute("src", getCountryFlag(resultado.location));
-    divHeaderInformation.append(nameCompetition,introductoryP,countryFlag)
+    divHeaderFlagP.append(introductoryP,countryFlag);
+    divHeaderInformation.append(nameCompetition,divHeaderFlagP)
     headerArticle.append(divHeaderInformation);
     prinArticle.append(headerArticle);
     const sectionField = createanElement("section","handball-court");
+
+
+    const prueba = () => {
+
+        const data = []
+
+        for (let i = 0; i < 3; i++) {
+            const indice = resultado.players[i];
+            const datosPlayer = dataPlayers.find(player => player.id == indice)
+            data.push(dataPlayers)
+
+        }
+
+        console.log(data);
+    }
+
+    prueba()
     
-    const playerList = createanElement("ul","players-court");
-    /*Build players*/
-    resultado.players.map((element,index) =>{
-        const playerIl = createanElement("li","player-element-court")
-        const datosPlayer = dataPlayers.find(player => player.id ==element);
-        const playerLink = createanElement("a","player-link");
-        playerLink.href = "./detallesJugadora.html?id="+datosPlayer.id;
-        const imagenPlayer = createanElement("img","image-player-court");
-        imagenPlayer.src = images[datosPlayer.idPhoto];
-        playerLink.append(imagenPlayer);
-        playerIl.append(playerLink);
-        playerList.append(playerIl);
-    })
-    sectionField.append(playerList);
+    
+    //[001,002,002,005,006,007,009]
+    sectionField.innerHTML = `
+        <div class="image-player-court-contain">
+            <div class="row line-one" ></div>
+            <div class="row line-two" ></div>
+            <div class="row line-three" ></div>
+            <div class="row line-four" ></div>
+            <img src="${handballCourt}">
+        </div>
+    `
     prinArticle.append(sectionField);
+    const rowLineOne = document.getElementsByClassName("row line-one")[0];
+    const rowLineTwo = document.getElementsByClassName("row line-two")[0];
+    const rowLineThree = document.getElementsByClassName("row line-three")[0];
+    const rowLineFour = document.getElementsByClassName("row line-four")[0];
+
+    resultado.players.map((element,index) =>{
+        const datosPlayer = dataPlayers.find(player => player.id == element);
+        let divPlayer ="";
+        /*Primera Linea */
+        if(index < 3){
+            if(index == 0){
+                divPlayer = "player extreme-left";
+            } 
+            else if(index == 1){
+                divPlayer = "player goalkeeper";
+            }
+            else{
+                divPlayer = "player extreme-right";
+            }
+            const divPlayer2 = createanElement("div",divPlayer);
+            divPlayer2.innerHTML = `
+                <a href=./detallesJugadora.html?id=${datosPlayer.id}>
+                    <img src= ${images[datosPlayer.idPhoto]}>
+                </a>`
+        rowLineOne.append(divPlayer2);
+        }
+    else if(index ==3 ){
+        const divPlayer2 = createanElement("div","player pivot");
+        divPlayer2.innerHTML = `
+                <a href=./detallesJugadora.html?id=${datosPlayer.id}>
+                    <img src= ${images[datosPlayer.idPhoto]}>
+                </a>`
+        rowLineTwo.append(divPlayer2);
+    }
+    else if(index < 6){
+        if(index == 4){
+            divPlayer = "player left-court";
+        }
+        else{
+            divPlayer = "player right-backcourt";
+        }
+        
+        const divPlayer2 = createanElement("div",divPlayer);
+        divPlayer2.innerHTML = `
+                <a href=./detallesJugadora.html?id=${datosPlayer.id}>
+                    <img src= ${images[datosPlayer.idPhoto]}>
+                </a>`
+        rowLineThree.append(divPlayer2);
+    }
+    else{
+        //buildPlayer("player pivot", datosPlayer.idPhoto, datosPlayer.id, divRow4);
+        const divPlayer2 = createanElement("div","player pivot2");
+        divPlayer2.innerHTML = `
+                <a href=./detallesJugadora.html?id=${datosPlayer.id}>
+                    <img src= ${images[datosPlayer.idPhoto]}>
+                </a>`
+        rowLineFour.append(divPlayer2);
+        
+    }
+});
+
+    prinArticle.append(sectionField);
+}
+/*Build the circle player link */
+function buildPlayer(classPlayer, idPhoto, idJugadora, divRow){
+    divPlayer = createanElement("div",classPlayer);
+    const playerLink = createanElement("a","player-link");
+    const imagenPlayer = createanElement("img","image-player-court");
+    imagenPlayer.src = images[idPhoto];
+    playerLink.href = "./detallesJugadora.html?id="+idJugadora;
+    playerLink.append(imagenPlayer);
+    divPlayer.append(playerLink);
+    divRow.append(divPlayer);
+
 }
 /*Devuelve las imágenes de cada país */
 function getCountryFlag(country){

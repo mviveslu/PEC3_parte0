@@ -7,9 +7,8 @@
     "src/index.html",
     "src/detalles.html",
     "src/detallesJugadora.html",
-    "src/enlaces.html",
-    "src/portada.html"
-
+    "src/enlaces.html"
+    
   ],
   "scripts": {
     "parcel:dev": "parcel",
@@ -22,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
     "assert": "^2.0.0",
     "console-browserify": "^1.2.0",
     "html-build": "^1.0.1",

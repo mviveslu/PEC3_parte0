@@ -51,50 +51,8 @@ function playerDetailsID(event){
     //location.href ="http://stackoverflow.com";
 }
 
-/*SWIPER*/  
-const orderedData = orderBydateData().slice(0,3);
-const banner = document.querySelector("#banner-container");
-const divSlider = createanElement("div", "slider-container")
-const swiper = createanElement("div", "swiper");
-const swipperWrapper = createanElement("div","swiper-wrapper")
-orderedData.map((element,index) => {
-    var swiperSlide = createanElement("div","swiper-slide")
-    swiperSlide.style.backgroundImage = `url(${imagesBanner[index]})`;   
-    var h2 = document.createElement("h2");
-    h2.innerHTML = element.competition;
-    var texto = document.createElement("p");
-    texto.innerHTML = element.title;
-    const buttonReadMore = createanElement("button","button-read-more")
-    buttonReadMore.innerHTML ="Read More";
-    buttonReadMore.setAttribute("type", "button");
-    buttonReadMore.addEventListener("click",competitionDetailsID);
-    buttonReadMore.idLink = element.idLink;
-    const divContent = createanElement("div","div-content-image");
-    divContent.append(h2,texto,buttonReadMore);
-    swiperSlide.append(divContent);
-    swipperWrapper.appendChild(swiperSlide);       
-} );
-swiper.appendChild(swipperWrapper);
-const swiperNavigation = createanElement("div", "swiper-pagination")
-const swiperbuttonPrev = createanElement("div","swiper-button-prev")
-const swiperbuttonNext = createanElement("div", "swiper-button-next")
-swiper.append(swiperNavigation,swiperbuttonPrev,swiperbuttonNext);
-divSlider.append(swiper);
-banner.appendChild(divSlider);
-const swiper2 = new Swiper('.swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      autoplay: {
-        delay: 5000,
-      }
-  });
-
-/* */
-/*Interesting players*/
 function setInterestingPlayers(){
-    const titulo = createanElement("h2","interesting-players-cards-title");
+    const titulo = createanElement("h1","interesting-players-cards-title");
     titulo.innerHTML = "Recommended players";
     const divCover = createanElement("div", "cover");
     const leftbutton = createanElement("button", "left");
@@ -103,21 +61,20 @@ function setInterestingPlayers(){
     interestingPlayers.map((element,index) => {
         const card = createanElement("li", "card");
         const playerCard = createanElement("div", "player-card");
-        const imgPhoto = createanElement("img");
         const playerCardInformation = createanElement("div", "player-card-information");
-        const playerCardtitle = document.createElement("h1");
+        const playerCardtitle = document.createElement("h2");
         playerCardtitle.innerHTML = element.name;
         const imagenPlayer = document.createElement("img","player-card-image");
         imagenPlayer.src = images[element.idPhoto];
         const playerCardbio = document.createElement("p");
-        playerCardbio.innerHTML = element.biography[0];
+        playerCardbio.innerHTML = `${element.biography[0].substring(0,70)}...`;
         const buttonplayer = document.createElement("button");
         buttonplayer.addEventListener("click",playerDetailsID);
         buttonplayer.idLink = element.id;
         buttonplayer.innerHTML = "Read more";
         /*Apending*/
         playerCardInformation.append(playerCardtitle,imagenPlayer,playerCardbio,buttonplayer);
-        playerCard.append(imgPhoto,playerCardInformation);
+        playerCard.append(playerCardInformation);
         card.append(playerCard);
         cards.append(card);
       
@@ -142,6 +99,61 @@ function leftScroll() {
     const right = document.querySelector(".cards");
     right.scrollBy(-200, 0);
   }
-  setInterestingPlayers();
+
+/*SWIPER*/  
+const orderedData = orderBydateData().slice(0,3);
+const banner = document.querySelector("#banner-container");
+const divSlider = createanElement("div", "slider-container")
+const swiper = createanElement("div", "swiper");
+const swipperWrapper = createanElement("div","swiper-wrapper")
+orderedData.map((element,index) => {
+    var swiperSlide = createanElement("div","swiper-slide")
+    swiperSlide.style.backgroundImage = `url(${imagesBanner[index]})`;   
+    var h2 = document.createElement("h2");
+    h2.innerHTML = element.competition;
+    var texto = document.createElement("p");
+    texto.innerHTML = element.title;
+    const buttonReadMore = createanElement("button","button-read-more")
+    buttonReadMore.innerHTML ="Read More";
+    buttonReadMore.setAttribute("type", "button");
+    buttonReadMore.addEventListener("click",competitionDetailsID);
+    buttonReadMore.idLink = element.idCompetition;
+    const divContent = createanElement("div","div-content-image");
+    divContent.append(h2,texto,buttonReadMore);
+    swiperSlide.append(divContent);
+    swipperWrapper.appendChild(swiperSlide);       
+} );
+swiper.appendChild(swipperWrapper);
+const swiperNavigation = createanElement("div", "swiper-pagination")
+const swiperbuttonPrev = createanElement("div","swiper-button-prev")
+const swiperbuttonNext = createanElement("div", "swiper-button-next")
+swiper.append(swiperNavigation,swiperbuttonPrev,swiperbuttonNext);
+divSlider.append(swiper);
+banner.appendChild(divSlider);
+const swiper2 = new Swiper('.swiper', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+      }
+  });
+setInterestingPlayers();
+/*add footer*/
+const footer = createanElement("footer","footer-div");
+footer.innerHTML= `
+<div class="footer-container">
+      <p>2022 &copy; Marta Vives Luis</p>
+      <ul>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Cookie Policy</a></li>
+          <li><a href="">Terms and conditions</a></li>
+      </ul>
+  </div>
+`;
+document.getElementsByClassName("cover-page")[0].append(footer);
+
+
   
 
