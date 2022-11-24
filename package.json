@@ -6,11 +6,7 @@
   "source": [
     "src/index.html"    
   ],
-  "browserslist": [
-    "last 2 versions",
-    "> 0.3%",
-    "not dead"
-  ],
+  "browserslist": "> 0.3%, last 1 version, not dead",
   "scripts": {
     "parcel:dev": "parcel",
     "parcel:build": "parcel build --public-url ./",
