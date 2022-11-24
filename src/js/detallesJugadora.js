@@ -17,7 +17,8 @@ import image6 from "../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg
 import image7 from "../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg"
 import image8 from "../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg"
 import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg" 
-const images = [image4,image5,image6,image7,image8,image9];
+import image10 from "../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg" 
+const images = [image4,image5,image6,image7,image8,image9,image10];
 
 
 

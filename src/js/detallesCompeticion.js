@@ -6,6 +6,7 @@ import image6 from "../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg
 import image7 from "../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg"
 import image8 from "../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg"
 import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg"
+import image10 from "../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg"
 import JP from '../../node_modules/country-flag-icons/1x1/JP.svg'
 import ES from '../../node_modules/country-flag-icons/1x1/ES.svg'
 import DE from '../../node_modules/country-flag-icons/1x1/DE.svg'
@@ -18,7 +19,7 @@ function createanElement(typeElement, classNameElement){
     return element;
 }
 
-const images = [image4,image5,image6,image7,image8,image9];
+const images = [image4,image5,image6,image7,image8,image9,image10];
 const valores = window.location.search;
 const params = new URLSearchParams(valores);
 const idCompeticion = params.get("id");

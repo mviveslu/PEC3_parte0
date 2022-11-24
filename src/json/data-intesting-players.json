@@ -382,5 +382,39 @@
             {"year":"2015","competition":"All-Star Team Best Goalkeeper of the EHF Champions League"},
             {"year":"2019","competition":"Handball-Planet.com All-Star Goalkeeper of the Year"}
     ]
+    },
+    {
+        "id":"007",
+        "instagramLink":"https://www.instagram.com/lassourcecoralie/?hl=es",
+        "facebookLink": "https://es-es.facebook.com/people/Coralie-Lassource-Officiel/100063608319405/?comment_id=Y29tbWVudDozMzg0OTEzNTUxNzMyOTI1XzMzODUwNDAwNjUwNTM2MDc%3D",
+        "idPhoto":6,
+        "name":"Coralie Lassource",
+        "country": "FR",
+        "biography":["SCoralie Gladys Lassource (born 1 September 1992) is a French handball player for Brest Bretagne HB and the French national team.",
+        "She competed at the 2015 World Women's Handball Championship in Denmark.",
+        "She has won different team awards with her national team such as Gold medal in Olympic Games in 2020 in Tokyo(more details in medals)."],
+        "position":"Left Wing",
+        "current team":"Brest Bretagne HB",
+        "relatedPlayers":["001","003"],
+        "medals":[{
+            "medal": "Silver",
+            "year": 2021,
+            "event": "World Championship",
+            "location": "Spain"
+            },
+            {
+            "medal": "Gold",
+            "year": 2020,
+            "event": "Olympic Games",
+            "location": "Tokyo"
+            },
+            {
+            "medal": "Silver",
+            "year": 2020,
+            "event": "European Championship",
+            "location": "Denmark"
+            }],
+        "born":"01/09/1992, France",
+        "individualAwards":[]
     }
 ]
