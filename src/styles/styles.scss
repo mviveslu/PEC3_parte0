@@ -316,7 +316,7 @@ h2 {
   .article-competition-header
   .div-introduction-competition-info {
   width: 100%;
-  padding-top: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -326,6 +326,8 @@ h2 {
   }
   p {
     font-size: 1.2rem;
+    max-width:85%;
+    text-align:center;
   }
   a{
     font-size: 1rem;;
@@ -344,7 +346,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  padding-top: 2vw;
   position: relative;
   margin: 20px 0px;
   display: flex;
@@ -355,7 +356,7 @@ h2 {
   //rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
   .image-player-court-contain {
-    width: 600px;
+    width: 570px;
     position: relative;
 
     .row {
@@ -628,8 +629,44 @@ h2 {
     align-items: center;
   }
 }
+
+/**/
+@media (max-width: 410px) {
+
+  #article-competition{
+    .handball-court .image-player-court-contain .row.line-two .pivot {
+      left: 140px;
+    }
+    .handball-court .image-player-court-contain .row.line-four .pivot2 {
+    left: 140px;
+    }
+    .handball-court .image-player-court-contain .row.line-one .player.goalkeeper {
+    left: 140px;
+  }
+}
+}
+
+
+
+
 /*mobile*/
 @media (max-width: 600px) {
+  #links {
+    .links-resources ul li{
+      a {
+        font-size: 0.8rem;
+      }
+      span {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+
+
+
+
+
   .welcome-container .welcome-contents h1 {
     font-size: 4rem;
   }
@@ -713,6 +750,12 @@ h2 {
         font-size: 0.9rem;
       }
     }
+
+
+
+
+
+    
   }
 
   .container {
@@ -761,24 +804,28 @@ h2 {
   }
 
   .handball-court .image-player-court-contain {
-    width: 340px;
+    width: 474px;
+    padding: 20px;
 
-    .row.line-three .right-backcourt {
-      top: 125px;
+    .row.line-three .player.right-backcourt {
+      top: 140px;
       width: 60px;
       height: 60px;
+      right:54px;
     }
 
-    .row.line-three .left-court {
-      top: 125px;
+    .row.line-three .player.left-court {
+      top: 140px;
       width: 60px;
       height: 60px;
+      left:8px;
     }
 
     .row.line-four .pivot2 {
-      top: 195px;
+      top: 190x;
       width: 60px;
       height: 60px;
+      left:187px;
     }
   }
 
@@ -786,6 +833,7 @@ h2 {
     top: 95px;
     width: 60px;
     height: 60px;
+    left:187px;
   }
 
   .handball-court .image-player-court-contain .row.line-one {
@@ -793,18 +841,21 @@ h2 {
       top: 10px;
       width: 60px;
       height: 60px;
+      left:8px;
     }
 
     .player.goalkeeper {
       top: 10px;
       width: 60px;
       height: 60px;
+      left:187px;
     }
 
     .player.extreme-right {
       top: 10px;
       width: 60px;
       height: 60px;
+      right: 54px;
     }
   }
 }
@@ -1014,7 +1065,7 @@ h2 {
       margin-top: 20px;
     }
     a {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
     span {
       padding-left: 20px;
@@ -1025,8 +1076,15 @@ h2 {
 body {
   height: 100vh;
 }
+
+#details-competition{
+  footer {
+    bottom: 0;
+    position: absolute;
+    margin-top: 20px;
+  }
+}
 footer {
-  bottom: 0;
   width: 100%;
   height: 5.5rem;
   background-color: #265290;
@@ -1037,6 +1095,7 @@ footer {
     color: white;
     border: none;
     font-size: 0.7rem;
+    text-decoration:none;
   }
   a:hover {
     border: none;
