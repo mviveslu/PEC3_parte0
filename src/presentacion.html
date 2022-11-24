@@ -1,26 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.scss">
+    <title>Presentacion</title>
 </head>
-<body>
-    <p>
-        Nombre completo estudiante: Marta Vives Luis
-    </p>
-    <p>
-        Está práctica forma parte de la asignatura de Herramientas HTML y CSS del primer cuatrimestre.
-    </p>
-    <p>
-        En la página de portada incluimos una bienvenida a la web desarrollada 
-        enfocada al deporte femenino de balonmano. 
-        En una primera página encontramos un banner con las tres competiciones más destacadas y haciendo click en ellas podemos acceder a la alineación asociada a dicha competición. 
-        En esta página también encontramos un listado de jugadoras, conforman un slider. 
-        En cada jugadora podemos acceder en otra página donde encontramos los detalles de cada una, sus premios, logros individuales, etc. 
-        En el caso de la competición también podemos hacer click en la imagen de las jugadora y acceder a sus detalles.
-    </p>
+
+<body id="body-presentacion">
+    <header class="main-header">
+        <a class="header-loogo-link" href="index.html">
+            <img src="./img/logo_web_cut.png" class="header-logo" alt="hanball IHF logo">
+        </a>
+        <nav id="nav" class="main-nav">
+            <div class="nav-links">
+                <a class="link-item" href="./categoria.html">Categoría</a>
+                <a class="link-item" href="./index.html">Portada</a>
+                <a class="link-item" href="./enlaces.html">Enlaces</a>
+                <div class="search-input">
+                    <input type="search" placeholder="SEARCH...">
+                    <img src="./img/lupa_icon.png">
+                </div>
+            </div>
+        </nav>
+        <div class="new-icons-functions">
+            <div class="search-menu-mobile">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <button id="button-menu" class="button-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <h1>Presentacion</h1>
+    <div class="cards-page">
+        <div class="card-page">
+            <div class="image-page">
+                <img src="./img/pages/portada.png" alt="">
+            </div>
+            <div class="info-card-page">
+                <h2>
+                    Página de portada
+                </h2>
+                <p>
+                    Página principal del proyecto. Desde esta página podemos acceder a todas
+                    las del proyecto. Mediante un menú de navegación superior que conduce a todas ellas.
+                    El footer se ha puesto en la parte inferior de la página vista, ya que en este caso,
+                    se buscaba que predominara el contenido.
+                </p>
+            </div>
+        </div>
+        <div class="card-page">
+            <div class="image-page">
+                <img src="./img/pages/categoria.png" alt="">
+            </div>
+            <div class="info-card-page">
+                <h2>
+                    Categoría
+                </h2>
+                <p>
+                    Página de categorías. En esta página encontramos un swiper, en este caso se ha limitado a tres
+                    competiciones, y si hacemos click en el botón de cada uno nos redirige a las mejores jugadoras de
+                    dicho campeonato. Por otro lado, en la parte inferior tenemos un slider, que contiene tarjetas con
+                    todas las jugadoras que actualmente forman nuestra base de datos(json object).
+                </p>
+            </div>
+        </div>
+        <div class="card-page">
+            <div class="image-page">
+                <img src="./img/pages/jugadora.png" alt="">
+            </div>
+            <div class="info-card-page">
+                <h2>
+                    Página de detalle de la jugadora
+                </h2>
+                <p>
+                    Página de detalle jugadora. En este caso, encontramos la biografía de la jugadora, con una pequeña
+                    biografía, ya que la información sobre ellas en internet es limitada, los premios individuales,
+                    los premios con su selección y también links de enlace a sus redes sociales.
+                </p>
+            </div>
+        </div>
+        <div class="card-page">
+            <div class="image-page">
+                <img src="./img/pages/competicion.png" alt="">
+            </div>
+            <div class="info-card-page">
+                <h2>
+                    Página de detalle de competición
+                </h2>
+                <p>
+                    Página de detalle de competición. Aquí se reunen las jugadoras, que conforman la mejor alineación de
+                    dicha competición. Se ha simulado el campo con las posiciones respectivas de cada jugadora. Sobre
+                    una
+                    imagen que representa el campo de juego.
+                </p>
+            </div>
+        </div>
+        <div class="card-page">
+            <div class="image-page">
+                <img src="./img/portada.jpg" alt="">
+            </div>
+            <div class="info-card-page">
+                <h2>
+                    Página de enlaces
+                </h2>
+                <p>
+                    Página de enlaces. En esta página encontramos el listado de recursos que se han utilziado para la
+                    web.
+                    Centrandonos en la información y los recursos gráficos, como imágenes.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>2022 &copy; Marta Vives Luis</p>
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+                <li><a href="">Terms and conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        /*Header*/
+    const toggleButton = document.getElementById('button-menu')
+    const navWrapper = document.getElementById('nav')
+    
+    toggleButton.addEventListener('click',() => {
+      toggleButton.classList.toggle('close')
+      navWrapper.classList.toggle('show')
+    })
+    
+    navWrapper.addEventListener('click',e => {
+      if(e.target.id === 'nav'){
+        navWrapper.classList.remove('show')
+        toggleButton.classList.remove('close')
+      }
+    })
+    
+    
+    
+      </script>
 </body>
+
 </html>

@@ -4,11 +4,12 @@
   "description": "",
   "type": "module",
   "source": [
-    "src/index.html",
-    "src/detalles.html",
-    "src/detallesJugadora.html",
-    "src/enlaces.html"
-    
+    "src/index.html"    
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "> 0.3%",
+    "not dead"
   ],
   "scripts": {
     "parcel:dev": "parcel",

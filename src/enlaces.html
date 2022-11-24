@@ -8,7 +8,7 @@
     <meta name="description" content="This is a bibliography page with the best handballs woman players in the world">
     <link rel="stylesheet" href="./styles/styles.scss">
     <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
-    <title>Woman's best handball world players page</title>
+    <title>Enlaces de recursos</title>
 </head>
 
 <body id="links">
@@ -18,10 +18,10 @@
         </a>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
-                <a class="link-item" href="#">About</a>
-                <a class="link-item" href="#">Homepage</a>
-                <a class="link-item" href="./enlaces.html">Links resources</a>
-                <div class="search-input">
+                <a class="link-item" href="./categoria.html">Categoría</a>
+                <a class="link-item" href="./index.html">Portada</a>
+                <a class="link-item" href="./presentacion.html" >Presentacion</a>
+            <div class="search-input">
                     <input type="search" placeholder="SEARCH...">
                     <img src="./img/lupa_icon.png">
                 </div>
@@ -164,7 +164,24 @@
         </div>
     </footer>
 
+<script>
+     /*Header*/
+const toggleButton = document.getElementById('button-menu')
+const navWrapper = document.getElementById('nav')
 
+toggleButton.addEventListener('click',() => {
+  toggleButton.classList.toggle('close')
+  navWrapper.classList.toggle('show')
+})
+
+navWrapper.addEventListener('click',e => {
+  if(e.target.id === 'nav'){
+    navWrapper.classList.remove('show')
+    toggleButton.classList.remove('close')
+  }
+})
+
+</script>
 </body>
 
 </html>

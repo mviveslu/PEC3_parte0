@@ -21,6 +21,7 @@ function createanElement(typeElement, classNameElement){
 const images = [image4,image5,image6,image7,image8,image9];
 
 import {createanElement} from '../../utiles.js';
+import { spawn } from 'child_process'
 const valores = window.location.search;
 const params = new URLSearchParams(valores);
 const idCompeticion = params.get("id");
@@ -28,13 +29,12 @@ console.log(idCompeticion);
 const prinArticle = document.querySelector("#article-competition");
 /*Parámetro mal escrito o nulo */
 if(!idCompeticion){
-    
+    window.location.href = "./detallesCompeticion.html?id=1";
 }
 const resultado = data.find(element => element.idCompetition === idCompeticion);
 /*No lo encuentra */
-if(resultado.length == 0){
-    console.log("array nulo");
-    
+if(!resultado){
+    window.location.href = "./detallesCompeticion.html?id=1";
 }
 else{ 
     buildFiel(resultado);    
@@ -50,7 +50,9 @@ function buildFiel(resultado){
     const countryFlag = createanElement("img","article-competition-flag-country");
     countryFlag.setAttribute("src", getCountryFlag(resultado.location));
     divHeaderFlagP.append(introductoryP,countryFlag);
-    divHeaderInformation.append(nameCompetition,divHeaderFlagP)
+    const duration = document.createElement("span");
+    duration.innerHTML = `Started: ${resultado.startDate} - Finished: ${resultado.endingDate}`;
+    divHeaderInformation.append(nameCompetition,divHeaderFlagP,duration)
     headerArticle.append(divHeaderInformation);
     prinArticle.append(headerArticle);
     const sectionField = createanElement("section","handball-court");
@@ -170,3 +172,18 @@ function getCountryFlag(country){
     else if(country =="JP")
         return JP;
 }
+ /*Header*/
+ const toggleButton = document.getElementById('button-menu')
+ const navWrapper = document.getElementById('nav')
+ 
+ toggleButton.addEventListener('click',() => {
+   toggleButton.classList.toggle('close')
+   navWrapper.classList.toggle('show')
+ })
+ 
+ navWrapper.addEventListener('click',e => {
+   if(e.target.id === 'nav'){
+     navWrapper.classList.remove('show')
+     toggleButton.classList.remove('close')
+   }
+ })

@@ -34,12 +34,12 @@ const idJugadora = params.get("id");
 const prinArticle = document.querySelector("#article-player");
 /*Parámetro mal escrito o nulo */
 if(!idJugadora){
-    
+    window.location.href = "./detallesJugadora.html?id=001";
 }
 const resultado = data.find(element => element.id === idJugadora);
 /*No lo encuentra */
-if(resultado.length == 0){
-    console.log("array nulo");
+if(!resultado){
+    window.location.href = "./detallesJugadora.html?id=001";
     
 }
 else{

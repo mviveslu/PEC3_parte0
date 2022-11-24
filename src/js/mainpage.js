@@ -41,7 +41,7 @@ function createanElement(typeElement, classNameElement){
 function competitionDetailsID(event){
     const idLink = event.currentTarget.idLink;
     //window.location.href = "./detalles.html?id="+idLink;
-    window.location.replace("./detalles.html?id="+idLink);
+    window.location.replace("./detallesCompeticion.html?id="+idLink);
 }
 /*Pasar el ID de la JUGADORA para mostrar*/
 function playerDetailsID(event){
@@ -153,7 +153,21 @@ footer.innerHTML= `
   </div>
 `;
 document.getElementsByClassName("cover-page")[0].append(footer);
-
+ /*Header*/
+ const toggleButton = document.getElementById('button-menu')
+ const navWrapper = document.getElementById('nav')
+ 
+ toggleButton.addEventListener('click',() => {
+   toggleButton.classList.toggle('close')
+   navWrapper.classList.toggle('show')
+ })
+ 
+ navWrapper.addEventListener('click',e => {
+   if(e.target.id === 'nav'){
+     navWrapper.classList.remove('show')
+     toggleButton.classList.remove('close')
+   }
+ })
 
   
 
