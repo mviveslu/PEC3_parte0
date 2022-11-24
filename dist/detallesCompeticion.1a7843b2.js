@@ -557,8 +557,6 @@ var _deSvg = require("../../node_modules/country-flag-icons/1x1/DE.svg");
 var _deSvgDefault = parcelHelpers.interopDefault(_deSvg);
 var _handballCourtPng = require("../img/handball_court.png");
 var _handballCourtPngDefault = parcelHelpers.interopDefault(_handballCourtPng);
-var _utilesJs = require("../../utiles.js");
-var _childProcess = require("child_process");
 function createanElement(typeElement, classNameElement) {
     const element = document.createElement(typeElement);
     element.setAttribute("class", classNameElement);
@@ -582,14 +580,14 @@ const resultado = (0, _dataCompetitionsJsonDefault.default).find((element)=>elem
 /*No lo encuentra */ if (!resultado) window.location.href = "./detallesCompeticion.html?id=1";
 else buildFiel(resultado);
 function buildFiel(resultado) {
-    const headerArticle = (0, _utilesJs.createanElement)("header", "article-competition-header");
-    const divHeaderInformation = (0, _utilesJs.createanElement)("div", "div-introduction-competition-info");
-    const divHeaderFlagP = (0, _utilesJs.createanElement)("div", "div-p-flag");
-    const nameCompetition = (0, _utilesJs.createanElement)("h1", "article-competition-name");
+    const headerArticle = createanElement("header", "article-competition-header");
+    const divHeaderInformation = createanElement("div", "div-introduction-competition-info");
+    const divHeaderFlagP = createanElement("div", "div-p-flag");
+    const nameCompetition = createanElement("h1", "article-competition-name");
     nameCompetition.innerHTML = resultado.competition;
-    const introductoryP = (0, _utilesJs.createanElement)("p", "article-competition-introduction");
+    const introductoryP = createanElement("p", "article-competition-introduction");
     introductoryP.innerHTML = resultado.title;
-    const countryFlag = (0, _utilesJs.createanElement)("img", "article-competition-flag-country");
+    const countryFlag = createanElement("img", "article-competition-flag-country");
     countryFlag.setAttribute("src", getCountryFlag(resultado.location));
     divHeaderFlagP.append(introductoryP, countryFlag);
     const duration = document.createElement("span");
@@ -597,18 +595,7 @@ function buildFiel(resultado) {
     divHeaderInformation.append(nameCompetition, divHeaderFlagP, duration);
     headerArticle.append(divHeaderInformation);
     prinArticle.append(headerArticle);
-    const sectionField = (0, _utilesJs.createanElement)("section", "handball-court");
-    const prueba = ()=>{
-        const data = [];
-        for(let i = 0; i < 3; i++){
-            const indice = resultado.players[i];
-            const datosPlayer = (0, _dataIntestingPlayersJsonDefault.default).find((player)=>player.id == indice);
-            data.push((0, _dataIntestingPlayersJsonDefault.default));
-        }
-        console.log(data);
-    };
-    prueba();
-    //[001,002,002,005,006,007,009]
+    const sectionField = createanElement("section", "handball-court");
     sectionField.innerHTML = `
         <div class="image-player-court-contain">
             <div class="row line-one" ></div>
@@ -630,14 +617,14 @@ function buildFiel(resultado) {
             if (index == 0) divPlayer1 = "player extreme-left";
             else if (index == 1) divPlayer1 = "player goalkeeper";
             else divPlayer1 = "player extreme-right";
-            const divPlayer2 = (0, _utilesJs.createanElement)("div", divPlayer1);
+            const divPlayer2 = createanElement("div", divPlayer1);
             divPlayer2.innerHTML = `
                 <a href=./detallesJugadora.html?id=${datosPlayer.id}>
                     <img src= ${images[datosPlayer.idPhoto]}>
                 </a>`;
             rowLineOne.append(divPlayer2);
         } else if (index == 3) {
-            const divPlayer21 = (0, _utilesJs.createanElement)("div", "player pivot");
+            const divPlayer21 = createanElement("div", "player pivot");
             divPlayer21.innerHTML = `
                 <a href=./detallesJugadora.html?id=${datosPlayer.id}>
                     <img src= ${images[datosPlayer.idPhoto]}>
@@ -646,7 +633,7 @@ function buildFiel(resultado) {
         } else if (index < 6) {
             if (index == 4) divPlayer1 = "player left-court";
             else divPlayer1 = "player right-backcourt";
-            const divPlayer22 = (0, _utilesJs.createanElement)("div", divPlayer1);
+            const divPlayer22 = createanElement("div", divPlayer1);
             divPlayer22.innerHTML = `
                 <a href=./detallesJugadora.html?id=${datosPlayer.id}>
                     <img src= ${images[datosPlayer.idPhoto]}>
@@ -654,7 +641,7 @@ function buildFiel(resultado) {
             rowLineThree.append(divPlayer22);
         } else {
             //buildPlayer("player pivot", datosPlayer.idPhoto, datosPlayer.id, divRow4);
-            const divPlayer23 = (0, _utilesJs.createanElement)("div", "player pivot2");
+            const divPlayer23 = createanElement("div", "player pivot2");
             divPlayer23.innerHTML = `
                 <a href=./detallesJugadora.html?id=${datosPlayer.id}>
                     <img src= ${images[datosPlayer.idPhoto]}>
@@ -665,9 +652,9 @@ function buildFiel(resultado) {
     prinArticle.append(sectionField);
 }
 /*Build the circle player link */ function buildPlayer(classPlayer, idPhoto, idJugadora, divRow) {
-    divPlayer = (0, _utilesJs.createanElement)("div", classPlayer);
-    const playerLink = (0, _utilesJs.createanElement)("a", "player-link");
-    const imagenPlayer = (0, _utilesJs.createanElement)("img", "image-player-court");
+    divPlayer = createanElement("div", classPlayer);
+    const playerLink = createanElement("a", "player-link");
+    const imagenPlayer = createanElement("img", "image-player-court");
     imagenPlayer.src = images[idPhoto];
     playerLink.href = "./detallesJugadora.html?id=" + idJugadora;
     playerLink.append(imagenPlayer);
@@ -693,7 +680,7 @@ navWrapper.addEventListener("click", (e)=>{
     }
 });
 
-},{"../json/data-competitions.json":"39Ovm","../json/data-intesting-players.json":"jIR5q","../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg":"81avA","../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg":"40WJO","../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg":"9NAyE","../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg":"dhmD1","../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg":"eJZCc","../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg":"2p4lN","../../node_modules/country-flag-icons/1x1/JP.svg":"kFZyk","../../node_modules/country-flag-icons/1x1/ES.svg":"eewNR","../../node_modules/country-flag-icons/1x1/DE.svg":"fOlVd","../img/handball_court.png":"chKed","../../utiles.js":"2A5oS","child_process":"jhUEF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39Ovm":[function(require,module,exports) {
+},{"../json/data-competitions.json":"39Ovm","../json/data-intesting-players.json":"jIR5q","../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg":"81avA","../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg":"40WJO","../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg":"9NAyE","../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg":"dhmD1","../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg":"eJZCc","../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg":"2p4lN","../../node_modules/country-flag-icons/1x1/JP.svg":"kFZyk","../../node_modules/country-flag-icons/1x1/ES.svg":"eewNR","../../node_modules/country-flag-icons/1x1/DE.svg":"fOlVd","../img/handball_court.png":"chKed","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39Ovm":[function(require,module,exports) {
 module.exports = JSON.parse('[{"competition":"IHF World Women\'s Handball Championship 2021","title":"Best Woman players of IHF World Women\'s Handball Championship 2021","imageUrl":"/img/logo_web_cut.png","startDate":"2021-12-01","endingDate":"2021-12-19","location":"ES","informationtoShow":"","idCompetition":"1","players":["001","002","004","003","005","006","001"]},{"competition":"IHF World Women\'s Handball Championship 2017","title":"Best Woman players of IHF World Women\'s Handball Championship 2017","imageUrl":"../img/pista_handball.png","startDate":"2017-12-01","endingDate":"2017-12-17","location":"DE","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idCompetition":"2","players":["001","002","003","004","005","006","004"]},{"competition":"IHF World Women\'s Handball Championship 2019","title":"Best Woman players of IHF World Women\'s Handball Championship 2019","imageUrl":"../img/pista_handball.png","startDate":"2019-11-30","endingDate":"2019-12-15","location":"JP","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idCompetition":"3","players":["001","002","003","004","005","006","005"]}]');
 
 },{}],"jIR5q":[function(require,module,exports) {
@@ -763,17 +750,7 @@ module.exports = require("./helpers/bundle-url").getBundleURL("er7V5") + "DE.f5a
 },{"./helpers/bundle-url":"lgJ39"}],"chKed":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("er7V5") + "handball_court.cec2b703.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"2A5oS":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "createanElement", ()=>createanElement);
-function createanElement(typeElement, classNameElement) {
-    const element = document.createElement(typeElement);
-    element.setAttribute("class", classNameElement);
-    return element;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -802,9 +779,6 @@ exports.export = function(dest, destName, get) {
         get: get
     });
 };
-
-},{}],"jhUEF":[function(require,module,exports) {
-"use strict";
 
 },{}]},["aGj5p","6imdw"], "6imdw", "parcelRequire14aa")
 

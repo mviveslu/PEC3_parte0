@@ -19,9 +19,6 @@ function createanElement(typeElement, classNameElement){
 }
 
 const images = [image4,image5,image6,image7,image8,image9];
-
-import {createanElement} from '../../utiles.js';
-import { spawn } from 'child_process'
 const valores = window.location.search;
 const params = new URLSearchParams(valores);
 const idCompeticion = params.get("id");
@@ -58,24 +55,7 @@ function buildFiel(resultado){
     const sectionField = createanElement("section","handball-court");
 
 
-    const prueba = () => {
-
-        const data = []
-
-        for (let i = 0; i < 3; i++) {
-            const indice = resultado.players[i];
-            const datosPlayer = dataPlayers.find(player => player.id == indice)
-            data.push(dataPlayers)
-
-        }
-
-        console.log(data);
-    }
-
-    prueba()
     
-    
-    //[001,002,002,005,006,007,009]
     sectionField.innerHTML = `
         <div class="image-player-court-contain">
             <div class="row line-one" ></div>
