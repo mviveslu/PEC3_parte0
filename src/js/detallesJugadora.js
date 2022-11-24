@@ -203,7 +203,7 @@ function biography(array){
 
     const section = createanElement("section","section-biography");
     const titleSection = document.createElement("h2");
-    titleSection.innerHTML = "Biografía";
+    titleSection.innerHTML = "Biography";
     section.append(titleSection);
     array.map(element => {
         const biographyP = createanElement("p","biography-player-p");
