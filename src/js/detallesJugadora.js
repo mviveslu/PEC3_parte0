@@ -226,7 +226,7 @@ function relatedPlayers(array){
         const liRelatedPlayer = createanElement("li","related-player");
         liRelatedPlayer.innerHTML=`
         <a href="${"./detallesJugadora.html?id="+jugadora.id}"class="link-to-related-player">
-         <img class="image-related-player" src="${images[jugadora.idPhoto]} alt="related"">
+         <img class="image-related-player" src="${images[jugadora.idPhoto]}" alt="related">
          <div>
          <span class="player-related-name">
                 ${jugadora.name}
