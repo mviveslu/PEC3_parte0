@@ -1,7 +1,7 @@
 import data from '../json/data-competitions.json'
 import interestingPlayers from '../json/data-intesting-players.json'
 /*Swiper */
-import Swiper,{ Navigation, Pagination, Mousewheel, Autoplay } from 'swiper/swiper-bundle.esm.js';
+import Swiper from 'swiper/swiper-bundle.esm.js';
 // import styles bundle
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
@@ -67,6 +67,7 @@ function setInterestingPlayers(){
         playerCardtitle.innerHTML = element.name;
         const imagenPlayer = document.createElement("img","player-card-image");
         imagenPlayer.src = images[element.idPhoto];
+        imagenPlayer.setAttribute("alt","player photo");
         const playerCardbio = document.createElement("p");
         playerCardbio.innerHTML = `${element.biography[0].substring(0,70)}...`;
         const buttonplayer = document.createElement("button");

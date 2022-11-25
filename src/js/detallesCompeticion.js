@@ -47,6 +47,7 @@ function buildFiel(resultado){
     introductoryP.innerHTML = resultado.title;
     const countryFlag = createanElement("img","article-competition-flag-country");
     countryFlag.setAttribute("src", getCountryFlag(resultado.location));
+    countryFlag.setAttribute("alt", "country flag");
     divHeaderFlagP.append(introductoryP,countryFlag);
     const duration = document.createElement("span");
     duration.innerHTML = `Started: ${resultado.startDate} - Finished: ${resultado.endingDate}`;
@@ -63,7 +64,7 @@ function buildFiel(resultado){
             <div class="row line-two" ></div>
             <div class="row line-three" ></div>
             <div class="row line-four" ></div>
-            <img src="${handballCourt}">
+            <img src="${handballCourt}" alt="handball court">
         </div>
     `
     prinArticle.append(sectionField);
@@ -89,7 +90,7 @@ function buildFiel(resultado){
             const divPlayer2 = createanElement("div",divPlayer);
             divPlayer2.innerHTML = `
                 <a href=./detallesJugadora.html?id=${datosPlayer.id}>
-                    <img src= ${images[datosPlayer.idPhoto]}>
+                    <img src= ${images[datosPlayer.idPhoto]} alt="player's photo">
                 </a>`
         rowLineOne.append(divPlayer2);
         }
@@ -97,7 +98,7 @@ function buildFiel(resultado){
         const divPlayer2 = createanElement("div","player pivot");
         divPlayer2.innerHTML = `
                 <a href=./detallesJugadora.html?id=${datosPlayer.id}>
-                    <img src= ${images[datosPlayer.idPhoto]}>
+                    <img src= ${images[datosPlayer.idPhoto]} alt="player's photo">
                 </a>`
         rowLineTwo.append(divPlayer2);
     }
@@ -112,7 +113,7 @@ function buildFiel(resultado){
         const divPlayer2 = createanElement("div",divPlayer);
         divPlayer2.innerHTML = `
                 <a href=./detallesJugadora.html?id=${datosPlayer.id}>
-                    <img src= ${images[datosPlayer.idPhoto]}>
+                    <img src= ${images[datosPlayer.idPhoto]} alt="player's photo">
                 </a>`
         rowLineThree.append(divPlayer2);
     }
@@ -121,7 +122,7 @@ function buildFiel(resultado){
         const divPlayer2 = createanElement("div","player pivot2");
         divPlayer2.innerHTML = `
                 <a href=./detallesJugadora.html?id=${datosPlayer.id}>
-                    <img src= ${images[datosPlayer.idPhoto]}>
+                    <img src= ${images[datosPlayer.idPhoto]} alt="player's photo">
                 </a>`
         rowLineFour.append(divPlayer2);
         

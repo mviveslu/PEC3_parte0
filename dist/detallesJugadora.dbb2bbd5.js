@@ -603,7 +603,7 @@ else {
     headerArticle.innerHTML = `
         <div class="div-player-image">
             <div class="image-player">
-                <img src=${images[positionPhoto]} class="article-player-photo">
+                <img src=${images[positionPhoto]} class="article-player-photo" alt="player's photo">
             </div>
         </div>
         <div class="div-introduction-player-info">
@@ -615,7 +615,7 @@ else {
                     ${positionPlayer}, ${bornPlayer}
                 </p>
                 <div>
-                    <img src = "${getCountryFlag(nameFlag)}" class="article-player-flag-country">
+                    <img src = "${getCountryFlag(nameFlag)}" class="article-player-flag-country" alt="country flag">
                 </div>
             </div>
             
@@ -670,6 +670,7 @@ else {
         const divImage = createanElement("div", "image");
         const medalImage = createanElement("img", "is-rounded");
         medalImage.setAttribute("src", medalColor(element.medal));
+        medalImage.setAttribute("alt", "medal photo");
         divImage.append(medalImage);
         eventMedalImage.append(divImage);
         const eventCompetition = createanElement("td", "data-label");
@@ -747,7 +748,7 @@ else {
         const liRelatedPlayer = createanElement("li", "related-player");
         liRelatedPlayer.innerHTML = `
         <a href="${"./detallesJugadora.html?id=" + jugadora.id}"class="link-to-related-player">
-         <img class="image-related-player" src="${images[jugadora.idPhoto]}">
+         <img class="image-related-player" src="${images[jugadora.idPhoto]} alt="related"">
          <div>
          <span class="player-related-name">
                 ${jugadora.name}
