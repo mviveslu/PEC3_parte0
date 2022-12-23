@@ -28,7 +28,7 @@ import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-
 
 const images = [image4, image5, image6, image7, image8, image9, image10];
 //const imagesSized300 = [imageSize300_1,imageSize300_2,imageSize300_3,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
-const imagesSized300 = [imageSize300_1, imageSize300_2];
+const imagesSized300 = [imageSize300_1];
 
 function createanElement(typeElement, classNameElement) {
   const element = document.createElement(typeElement);
