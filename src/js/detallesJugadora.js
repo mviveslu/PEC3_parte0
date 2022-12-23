@@ -66,16 +66,17 @@ if (!resultado) {
 /*Article header */
 function articleHeader(namePlayerComplete,positionPlayer,bornPlayer,nameFlag,instagramLink,facebookLink,positionPhoto){
   const headerArticle = document.getElementsByClassName("article-player-header")[0];
+  const photoid = imagesSized300[positionPhoto];
   console.log(positionPhoto);
   if(positionPhoto == null){
     positionPhoto = 0;
   }
   headerArticle.innerHTML = `
   <picture>
-    <source media="(max-width: 375px)"  srcset=${imagesSized300[positionPhoto-1]}>
-    <source media="(max-width: 950px)"  srcset=${imagesSized300[positionPhoto-1]}>
-    <source media="(max-width: 1400px)" srcset=${imagesSized300[positionPhoto-1]}>
-    <img src=${imagesSized300[-1]} alt="Player image">
+    <source media="(max-width: 375px)"  srcset=${photoid}>
+    <source media="(max-width: 950px)"  srcset=${photoid}>
+    <source media="(max-width: 1400px)" srcset=${photoid}>
+    <img src=${photoid} alt="Player image">
   </picture>
           <div class="div-introduction-player-info">
             <h1 class="article-player-name">
