@@ -2,8 +2,7 @@ import data from "../json/data-intesting-players.json";
 import goldMedal from "../img/icons/Gold.png";
 import silverMedal from "../img/icons/Silver.png";
 import bronzeMedal from "../img/icons/Bronze.png";
-import instagram from "../img/icons/instagram.png";
-import facebook from "../img/icons/facebook.png";
+
 
 import FR from "../../node_modules/country-flag-icons/1x1/FR.svg";
 import ES from "../../node_modules/country-flag-icons/1x1/ES.svg";
