@@ -19,6 +19,10 @@ import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg
 import image10 from "../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg";
 
 import imageSize300_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_300.jpg";
+import imageSize500_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_500.jpg"
+import imageSize700_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_700.jpg"
+import imageSize900_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_900.jpg"
+
 /*import imageSize300_2 from "../img/InterestingPlayers/Resized/Nora_Mørk_20141115_300.jpg";
 import imageSize300_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg";
 import imageSize300_4 from "../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_300.jpg";
@@ -29,7 +33,9 @@ import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-
 const images = [image4, image5, image6, image7, image8, image9, image10];
 //const imagesSized300 = [imageSize300_1,imageSize300_2,imageSize300_3,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
 const imagesSized300 = [imageSize300_1];
-
+const imagesSized500 = [imageSize500_1];
+const imagesSized700 = [imageSize700_1];
+const imagesSized900 = [imageSize900_1];
 function createanElement(typeElement, classNameElement) {
   const element = document.createElement(typeElement);
   element.setAttribute("class", classNameElement);
@@ -68,14 +74,17 @@ if (!resultado) {
 function articleHeader(namePlayerComplete,positionPlayer,bornPlayer,nameFlag,instagramLink,facebookLink,positionPhoto){
   const headerArticle = document.getElementsByClassName("article-player-header")[0];
   const photoid = imagesSized300[positionPhoto];
+  const photoid2 = imagesSized500[positionPhoto];
+  const photoid3 = imagesSized700[positionPhoto];
+  const photoid4 = imagesSized900[positionPhoto];
   console.log(positionPhoto);
   
   headerArticle.innerHTML = `
   <picture>
     <source media="(max-width: 375px)"  srcset=${photoid}>
-    <source media="(max-width: 950px)"  srcset=${photoid}>
-    <source media="(max-width: 1400px)" srcset=${photoid}>
-    <img src=${photoid} alt="Player image">
+    <source media="(max-width: 950px)"  srcset=${photoid2}>
+    <source media="(max-width: 1400px)" srcset=${photoid3}>
+    <img src=${photoid4} alt="Player image">
   </picture>
           <div class="div-introduction-player-info">
             <h1 class="article-player-name">
