@@ -26,13 +26,13 @@ import imageSize900_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_2016
 /*import imageSize300_2 from "../img/InterestingPlayers/Resized/Nora_Mørk_20141115_300.jpg";*/
 /*import imageSize300_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg";*/
 import imageSize300_4 from "../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_300.jpg";
-import imageSize300_5 from "../img/InterestingPlayers/Resized/Nathalie_Hagman-IPH-TTH-20160403_300.jpg";
+/*import imageSize300_5 from "../img/InterestingPlayers/Resized/Nathalie_Hagman-IPH-TTH-20160403_300.jpg";*/
 import imageSize300_6 from "../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_300.jpg";
-import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_défenseuse_2015-16_300.jpg";
+/*import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_défenseuse_2015-16_300.jpg";*/
 
 const images = [image4, image5, image6, image7, image8, image9, image10];
 //const imagesSized300 = [imageSize300_1,imageSize300_2,imageSize300_3,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
-const imagesSized300 = [imageSize300_1,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
+const imagesSized300 = [imageSize300_1,imageSize300_4,imageSize300_6];
 const imagesSized500 = [imageSize500_1];
 const imagesSized700 = [imageSize700_1];
 const imagesSized900 = [imageSize900_1];
