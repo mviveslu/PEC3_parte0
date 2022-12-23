@@ -76,6 +76,10 @@ function articleHeader(
   const headerArticle = document.getElementsByClassName(
     "article-player-header"
   )[0];
+  console.log(positionPhoto);
+  if(positionPhoto == null){
+    positionPhoto = 0;
+  }
   headerArticle.innerHTML = `
   <picture>
     <source media="(max-width: 375px)"  srcset=${imagesSized300[positionPhoto]}>
