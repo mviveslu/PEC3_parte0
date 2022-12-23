@@ -156,7 +156,7 @@ footer.innerHTML= `
         <li><a href="./enlaces.html">Links</a></li>
     </ul>
 </div>
-<img class="footer-container-logo" src="./img/logoblanco.png" alt="">
+<img class="footer-container-logo" src=${whiteLogo} alt="">
 `;
 document.getElementsByClassName("cover-page")[0].append(footer);
  /*Header*/
