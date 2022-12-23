@@ -1,87 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front page</title>
-    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
-    <link rel="stylesheet" href="../node_modules/bulma-responsive-tables/css/main.min.css">
-    <link rel="stylesheet" href="./styles/styles.scss">
-    <script src="https://kit.fontawesome.com/c89555854d.js" crossorigin="anonymous"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front page</title>
+  <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="../node_modules/bulma-responsive-tables/css/main.min.css">
+  <link rel="stylesheet" href="./styles/styles.scss">
+  <script src="https://kit.fontawesome.com/c89555854d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="main-header" >
-      <a class="header-loogo-link" href="index.html">
-        <img src="./img/logo_web_cut.png" class="header-logo" alt="hanball IHF logo">
-      </a>
-      <nav id="nav" class="main-nav" >
-        <div class="nav-links" >
-          <a class="link-item" href="./categoria.html" >Categories</a>
-          <a class="link-item" href="./detallesJugadora.html" >Player's details</a>
-          <a class="link-item" href="./detallesCompeticion.html" >Competition's details</a>
-          <a class="link-item" href="./presentacion.html">Presentation</a>
-          <a class="link-item" href="./enlaces.html">Links</a>
-          <div class="search-input">
-            <input type="search" placeholder="SEARCH...">
-            <img src="./img/lupa_icon.png" alt="lupa icon">
-          </div>
-        </div>
-      </nav>
-      <div class ="new-icons-functions">
-        <div class="search-menu-mobile">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <button id="button-menu" class="button-menu" >
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        </button>
-    </div>
-    </header>  
-    <div class="welcome-container">
-      <div class="welcome-contents">       
-        <div class="welcome-information">
-          <h1>Welcome</h1>
-          <p>
-            This web page is dedicated to the best female handball's players. 
-            Also to those who have been part in the best players list of each important competition.
-            As an example, the Handball Championship in 2017.
-          </p>
+  <header class="main-header">
+    <a class="header-loogo-link" href="index.html">
+      <img src="./img/logo_web_cut.png" class="header-logo" alt="hanball IHF logo">
+    </a>
+    <nav id="nav" class="main-nav">
+      <div class="nav-links">
+        <a class="link-item" href="./categoria.html">Categories</a>
+        <a class="link-item" href="./detallesJugadora.html">Player's details</a>
+        <a class="link-item" href="./detallesCompeticion.html">Competition's details</a>
+        <a class="link-item" href="./presentacion.html">Presentation</a>
+        <a class="link-item" href="./enlaces.html">Links</a>
+        <div class="search-input">
+          <input type="search" placeholder="SEARCH...">
+          <img src="./img/lupa_icon.png" alt="lupa icon">
         </div>
       </div>
+    </nav>
+    <div class="new-icons-functions">
+      <div class="search-menu-mobile">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <button id="button-menu" class="button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </header>
+  <div class="welcome-container">
+    <div class="welcome-contents">
+      <div class="welcome-information">
+        <h1>Welcome</h1>
+        <p>
+          This web page is dedicated to the best female handball's players.
+          Also to those who have been part in the best players list of each important competition.
+          As an example, the Handball Championship in 2017.
+        </p>
+      </div>
+      <div class="welcome-imgs">
+        <a href="index.html" class="prueba1" onmouseover="hoverImg1(event)" onmouseout="noHoverImg1(event)">
+          <img id="img-prueba" src="./img/competition.jpg" alt="logo competiciones">
+          <p class="text-img-first">Competiciones</p>
+        </a>
+        <a href="index.html" class="prueba1" onmouseover="hoverImg2(event)"  onmouseout="noHoverImg2(event)">
+          <img  id="img2" src="./img/player.jpg" alt="logo jugadoras">
+          <p class="text-img-second">Jugadoras</p>
+        </a>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="footer-container">
         <p>2022 &copy; Marta Vives Luis</p>
         <ul>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Cookie Policy</a></li>
-            <li><a href="">Terms and conditions</a></li>
+            <li><a href="./index.html">Front page</a></li>
+            <li><a href="./detallesJugadora.html">Player's details</a></li>
+            <li><a href="./detallesCompeticion.html">Competition's details</a></li>
+            <li><a href="./presentacion.html">Presentation</a></li>
+            <li><a href="./enlaces.html">Links</a></li>
         </ul>
     </div>
-  </footer>
+    <img class="footer-container-logo" src="./img/logoblanco.png" alt="">
+</footer>
   <script>
     /*Header*/
-const toggleButton = document.getElementById('button-menu')
-const navWrapper = document.getElementById('nav')
+    const toggleButton = document.getElementById('button-menu')
+    const navWrapper = document.getElementById('nav')
+    const elementImg = document.querySelector('.img-link-to-category')
+    const textImg = document.querySelector('.text-img-first')
+    const textImgSecond = document.querySelector('.text-img-second')
+    const imagen = document.querySelector('#img-prueba')
+    const imagen2 = document.querySelector('#img2')
+    console.log(elementImg);
 
-toggleButton.addEventListener('click',() => {
-  toggleButton.classList.toggle('close')
-  navWrapper.classList.toggle('show')
-})
+    const hoverImg1 = () => {
+      imagen.classList.add("path-img")
+      textImg.style.display = "block"
+    }
 
-navWrapper.addEventListener('click',e => {
-  if(e.target.id === 'nav'){
-    navWrapper.classList.remove('show')
-    toggleButton.classList.remove('close')
-  }
-})
+    const noHoverImg1 = () => {
+      imagen.classList.remove("path-img")
+      textImg.style.display = "none"
+    }
+
+    const hoverImg2 = () =>{
+      imagen2.classList.add("path-img-player")
+      textImgSecond.style.display = "block"
+    }
+
+    const noHoverImg2 = () =>{
+      console.log(imagen2.classList.remove("path-img-player"));
+      textImgSecond.style.display = "none"
+    }
+
+
+    toggleButton.addEventListener('click', () => {
+      toggleButton.classList.toggle('close')
+      navWrapper.classList.toggle('show')
+    })
+
+    navWrapper.addEventListener('click', e => {
+      if (e.target.id === 'nav') {
+        navWrapper.classList.remove('show')
+        toggleButton.classList.remove('close')
+      }
+    })
 
 
 
   </script>
 </body>
+
 </html>

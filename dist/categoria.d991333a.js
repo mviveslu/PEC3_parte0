@@ -549,6 +549,8 @@ var _handballBanner2Jpg = require("../img/handball_banner2.jpg");
 var _handballBanner2JpgDefault = parcelHelpers.interopDefault(_handballBanner2Jpg);
 var _handballBanner3Jpg = require("../img/handball_banner3.jpg");
 var _handballBanner3JpgDefault = parcelHelpers.interopDefault(_handballBanner3Jpg);
+var _logoblancoPng = require("../img/logoblanco.png");
+var _logoblancoPngDefault = parcelHelpers.interopDefault(_logoblancoPng);
 var _lauraGlauserWikipediaCommonsJpg = require("../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg");
 var _lauraGlauserWikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_lauraGlauserWikipediaCommonsJpg);
 var _noraMorkWikipediaCommonsJpg = require("../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg");
@@ -679,16 +681,20 @@ const swiper2 = new (0, _swiperBundleEsmJsDefault.default)(".swiper", {
     }
 });
 setInterestingPlayers();
-/*add footer*/ const footer = createanElement("footer", "footer-div");
+/*add footer*/ const footer = document.createElement("footer");
 footer.innerHTML = `
 <div class="footer-container">
-      <p>2022 &copy; Marta Vives Luis</p>
-      <ul>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Cookie Policy</a></li>
-          <li><a href="">Terms and conditions</a></li>
-      </ul>
-  </div>
+    <p>2022 &copy; Marta Vives Luis</p>
+    <ul>
+        <li><a href="./index.html">Front page</a></li>
+        <li><a href="./categoria.html">Categories</a></li>
+        <li><a href="./detallesJugadora.html">Player's details</a></li>
+        <li><a href="./detallesCompeticion.html">Competition's details</a></li>
+        <li><a href="./presentacion.html">Presentation</a></li>
+        <li><a href="./enlaces.html">Links</a></li>
+    </ul>
+</div>
+<img class="footer-container-logo" src="./img/logoblanco.png" alt="">
 `;
 document.getElementsByClassName("cover-page")[0].append(footer);
 /*Header*/ const toggleButton = document.getElementById("button-menu");
@@ -704,7 +710,7 @@ navWrapper.addEventListener("click", (e)=>{
     }
 });
 
-},{"../json/data-competitions.json":"39Ovm","../json/data-intesting-players.json":"jIR5q","swiper/swiper-bundle.esm.js":"110z5","swiper/swiper-bundle.min.css":"girFM","swiper/swiper.min.css":"eFTGe","swiper/swiper-bundle.css":"aErfw","../img/handball_banner1.jpg":"eA2Eo","../img/handball_banner2.jpg":"lX0rG","../img/handball_banner3.jpg":"b0DCf","../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg":"5iuJj","../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg":"aiJ5T","../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg":"5e5HQ","../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg":"je6iA","../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg":"lxfJE","../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg":"ZH5NT","../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg":"3TpUR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39Ovm":[function(require,module,exports) {
+},{"../json/data-competitions.json":"39Ovm","../json/data-intesting-players.json":"jIR5q","swiper/swiper-bundle.esm.js":"110z5","swiper/swiper-bundle.min.css":"girFM","swiper/swiper.min.css":"eFTGe","swiper/swiper-bundle.css":"aErfw","../img/handball_banner1.jpg":"eA2Eo","../img/handball_banner2.jpg":"lX0rG","../img/handball_banner3.jpg":"b0DCf","../img/logoblanco.png":"jnneC","../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg":"5iuJj","../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg":"aiJ5T","../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg":"5e5HQ","../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg":"je6iA","../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg":"lxfJE","../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg":"ZH5NT","../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg":"3TpUR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39Ovm":[function(require,module,exports) {
 module.exports = JSON.parse('[{"competition":"IHF World Female\'s Handball Championship 2021","title":"IHF World Female\'s Handball Championship 2021 Best Female Players","imageUrl":"/img/logo_web_cut.png","startDate":"2021-12-01","endingDate":"2021-12-19","location":"ES","informationtoShow":"","idCompetition":"1","players":["001","002","004","003","005","006","007"]},{"competition":"IHF World Female\'s Handball Championship 2017","title":"IHF World Female\'s Handball Championship 2017 Best Female Players","imageUrl":"../img/pista_handball.png","startDate":"2017-12-01","endingDate":"2017-12-17","location":"DE","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idCompetition":"2","players":["001","002","003","004","005","006","007"]},{"competition":"IHF World Female\'s Handball Championship 2019","title":"IHF World Female\'s Handball Championship 2019 Best Female Players","imageUrl":"../img/pista_handball.png","startDate":"2019-11-30","endingDate":"2019-12-15","location":"JP","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idCompetition":"3","players":["001","002","003","004","005","006","007"]}]');
 
 },{}],"jIR5q":[function(require,module,exports) {
@@ -9353,6 +9359,9 @@ module.exports = require("./helpers/bundle-url").getBundleURL("bpjYi") + "handba
 
 },{"./helpers/bundle-url":"lgJ39"}],"b0DCf":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bpjYi") + "handball_banner3.12dbf9f9.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"jnneC":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bpjYi") + "logoblanco.59388228.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"5iuJj":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bpjYi") + "Laura_Glauser_wikipediaCommons.5c7c1700.jpg" + "?" + Date.now();

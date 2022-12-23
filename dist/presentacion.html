@@ -37,7 +37,10 @@
             </button>
         </div>
     </header>
-    <h1>Presentation</h1>
+    <div class="title-presentacion">
+        <h1>Presentation</h1>
+        <img class="ball" src="/ball.2a8d139f.svg">
+    </div>
     <div class="cards-page">
         <div class="card-page">
             <div class="image-page">
@@ -62,7 +65,7 @@
                     Categories' web page
                 </h2>
                 <p>
-                    Categories' web page. A swiper can be found in this web page which has been limite to three 
+                    Categories' web page. A swiper can be found in this web page which has been limite to three
                     competitions and if we click on each button, each one of them redirects you to the best players
                     in such competition.
                     On the other side, in the inferior part, a slider can be found wich contains cards.
@@ -120,14 +123,26 @@
         <div class="footer-container">
             <p>2022 &copy; Marta Vives Luis</p>
             <ul>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Cookie Policy</a></li>
-                <li><a href="">Terms and conditions</a></li>
+                <li><a href="/index.html">Front page</a></li>
+                <li><a href="/categoria.html">Categories</a></li>
+                <li><a href="/detallesJugadora.html">Player's details</a></li>
+                <li><a href="/detallesCompeticion.html">Competition's details</a></li>
+                <li><a href="/presentacion.html">Presentation</a></li>
+                <li><a href="/enlaces.html">Links</a></li>
             </ul>
         </div>
+        <img class="footer-container-logo" src="/logoblanco.59388228.png" alt="">
     </footer>
     <script>/*Header*/ const toggleButton = document.getElementById("button-menu");
 const navWrapper = document.getElementById("nav");
+const animation = document.querySelector(".title-presentacion>img");
+console.log(animation);
+animation.addEventListener("click", ()=>{
+    animation.className = "ball-right ball-rotate";
+    setTimeout(()=>{
+        animation.className = "ball";
+    }, 2000);
+});
 toggleButton.addEventListener("click", ()=>{
     toggleButton.classList.toggle("close");
     navWrapper.classList.toggle("show");

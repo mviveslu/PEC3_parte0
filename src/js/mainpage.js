@@ -11,7 +11,7 @@ import image1 from "../img/handball_banner1.jpg"
 import image2 from "../img/handball_banner2.jpg"
 import image3 from "../img/handball_banner3.jpg"
 
-
+import whiteLogo from "../img/logoblanco.png";
 import image4 from "../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg"
 import image5 from "../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg"
 import image6 from "../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg"
@@ -143,16 +143,20 @@ const swiper2 = new Swiper('.swiper', {
   });
 setInterestingPlayers();
 /*add footer*/
-const footer = createanElement("footer","footer-div");
+const footer = document.createElement("footer");
 footer.innerHTML= `
 <div class="footer-container">
-      <p>2022 &copy; Marta Vives Luis</p>
-      <ul>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Cookie Policy</a></li>
-          <li><a href="">Terms and conditions</a></li>
-      </ul>
-  </div>
+    <p>2022 &copy; Marta Vives Luis</p>
+    <ul>
+        <li><a href="./index.html">Front page</a></li>
+        <li><a href="./categoria.html">Categories</a></li>
+        <li><a href="./detallesJugadora.html">Player's details</a></li>
+        <li><a href="./detallesCompeticion.html">Competition's details</a></li>
+        <li><a href="./presentacion.html">Presentation</a></li>
+        <li><a href="./enlaces.html">Links</a></li>
+    </ul>
+</div>
+<img class="footer-container-logo" src="./img/logoblanco.png" alt="">
 `;
 document.getElementsByClassName("cover-page")[0].append(footer);
  /*Header*/

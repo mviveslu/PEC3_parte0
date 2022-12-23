@@ -2,6 +2,7 @@
 
 //variables
 
+$contrast-color: black;
 
 //Genereal styles
 * {
@@ -46,7 +47,7 @@ h2 {
         li {
           a {
             text-decoration: none;
-            color: $color-text-principal;
+            color: black;
           }
         }
       }
@@ -302,10 +303,6 @@ h2 {
       }
     }
   }
-  img {
-    width: 350px;
-    height: auto;
-  }
 }
 
 /*detalles.html*/
@@ -324,11 +321,11 @@ h2 {
   }
   p {
     font-size: 1.2rem;
-    max-width:85%;
-    text-align:center;
+    max-width: 85%;
+    text-align: center;
   }
-  a{
-    font-size: 1rem;;
+  a {
+    font-size: 1rem;
   }
   .div-p-flag {
     width: 100%;
@@ -493,7 +490,7 @@ h2 {
 
   .article-player-header {
     width: 80%;
-    height: 500px;
+    height: auto;
     display: flex;
     gap: 20px;
     .div-player-image {
@@ -515,12 +512,10 @@ h2 {
     }
 
     .div-introduction-player-info {
-      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 10px;
       gap: 10px;
 
       .article-player-name {
@@ -621,6 +616,7 @@ h2 {
   #article-player .article-player-header {
     //width: 1344px;
     height: 600px;
+    gap: 60px;
   }
 
   .div-introduction-player-info {
@@ -630,27 +626,26 @@ h2 {
 
 /**/
 @media (max-width: 410px) {
-
-  #article-competition{
+  #article-competition {
     .handball-court .image-player-court-contain .row.line-two .pivot {
       left: 140px;
     }
     .handball-court .image-player-court-contain .row.line-four .pivot2 {
-    left: 140px;
+      left: 140px;
     }
-    .handball-court .image-player-court-contain .row.line-one .player.goalkeeper {
-    left: 140px;
+    .handball-court
+      .image-player-court-contain
+      .row.line-one
+      .player.goalkeeper {
+      left: 140px;
+    }
   }
 }
-}
-
-
-
 
 /*mobile*/
 @media (max-width: 600px) {
   #links {
-    .links-resources ul li{
+    .links-resources ul li {
       a {
         font-size: 0.8rem;
       }
@@ -659,12 +654,6 @@ h2 {
       }
     }
   }
-
-
-
-
-
-
   .welcome-container .welcome-contents h1 {
     font-size: 4rem;
   }
@@ -748,12 +737,6 @@ h2 {
         font-size: 0.9rem;
       }
     }
-
-
-
-
-
-    
   }
 
   .container {
@@ -809,21 +792,21 @@ h2 {
       top: 140px;
       width: 60px;
       height: 60px;
-      right:54px;
+      right: 54px;
     }
 
     .row.line-three .player.left-court {
       top: 140px;
       width: 60px;
       height: 60px;
-      left:8px;
+      left: 8px;
     }
 
     .row.line-four .pivot2 {
       top: 190x;
       width: 60px;
       height: 60px;
-      left:187px;
+      left: 187px;
     }
   }
 
@@ -831,7 +814,7 @@ h2 {
     top: 95px;
     width: 60px;
     height: 60px;
-    left:187px;
+    left: 187px;
   }
 
   .handball-court .image-player-court-contain .row.line-one {
@@ -839,14 +822,14 @@ h2 {
       top: 10px;
       width: 60px;
       height: 60px;
-      left:8px;
+      left: 8px;
     }
 
     .player.goalkeeper {
       top: 10px;
       width: 60px;
       height: 60px;
-      left:187px;
+      left: 187px;
     }
 
     .player.extreme-right {
@@ -861,7 +844,7 @@ h2 {
 /**/
 .main-header {
   display: flex;
-  height:100px;
+  height: 100px;
   padding: 20px;
   flex-direction: row;
   justify-content: space-between;
@@ -975,27 +958,21 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   #body-presentacion {
     .cards-page {
       .card-page {
-      flex-direction: column;
-      align-items: center;
-      p{
-        font-size: 0.7rem;
+        flex-direction: column;
+        align-items: center;
+        p {
+          font-size: 0.7rem;
+        }
       }
-      }
-      
+    }
   }
-
-
 }
 
-
-}
-  
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .button-menu,
   .search-menu-mobile {
     display: none;
@@ -1028,7 +1005,6 @@ h2 {
     margin-top: 0;
     margin-right: 2rem;
   }
-  
 }
 .search-input {
   position: relative;
@@ -1053,6 +1029,7 @@ h2 {
 #links {
   .links-resources {
     text-align: center;
+    justify-content: center;
     line-height: 2.5rem;
     h1,
     h2 {
@@ -1075,7 +1052,7 @@ body {
   height: 100vh;
 }
 
-#details-competition{
+#details-competition {
   footer {
     margin-top: 20px;
   }
@@ -1086,16 +1063,23 @@ footer {
   background-color: #265290;
   margin-top: 20px;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a:hover{
+    font-size: 0.9rem;
+    font-weight: 900;
+    border: none;
+    color:white;
+  }
   a,
   p {
     color: white;
     border: none;
     font-size: 0.7rem;
-    text-decoration:none;
+    text-decoration: none;
   }
-  a:hover {
-    border: none;
-  }
+  
   ul {
     list-style-type: none;
     li {
@@ -1109,6 +1093,17 @@ footer {
     }
     li:last-child::after {
       content: "";
+    }
+  }
+  .footer-container-logo {
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    width: 150px;
+    height: 70px;
+    img {
+      height: 100%;
+      background-color: white;
     }
   }
 }
@@ -1126,15 +1121,14 @@ section {
 /*Presentacion*/
 
 #body-presentacion {
-  width: 100vw;
   height: 100vh;
-  
-  h1{
+
+  h1 {
     text-transform: uppercase;
     padding-top: 20px;
     text-align: center;
   }
-  h2{
+  h2 {
     text-transform: uppercase;
   }
 
@@ -1143,7 +1137,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    p{
+    p {
       font-size: 1.3rem;
       text-align: justify;
     }
@@ -1152,7 +1146,8 @@ section {
       display: flex;
       gap: 20px;
       padding: 20px;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
       border-radius: 15px;
       .image-page {
         width: 65%;
@@ -1176,8 +1171,276 @@ section {
   }
 }
 
-#links{
-  .links-resources{
-    margin-top:20px;
+#links {
+  .links-resources {
+    margin-top: 20px;
+  }
+}
+
+.welcome-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .prueba1 {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .path-img-player {
+      clip-path: polygon(
+        32% 0%,
+        47% 0%,
+        57% 14%,
+        67% 0%,
+        82% 0%,
+        58% 34%,
+        75% 34%,
+        87% 44%,
+        87% 61%,
+        75% 71%,
+        58% 71%,
+        58% 97%,
+        41% 97%,
+        41% 44%,
+        41% 34%,
+        50% 34%,
+        41% 18%,
+        27% 34%,
+        20% 32%,
+        0% 0%,
+        14% 0%,
+        22% 14%
+      );
+      opacity: 0.4;
+      transition: all 0.3s;
+      margin-top: 20px;
+    }
+    .path-img {
+      /*clip-path: polygon(95% 42%,68% 43%,67% 40%,63% 37%,63% 29%,67% 28%,67% 22%,72% 21%,67% 14%,67% 5%,47% 5%,46% 14%,45% 13%,45% 22%,48% 22%,48% 34%,45% 33%,38% 26%,32% 20%,21% 10%,20% 5%,15% 1%,12% 0%,7% 2%,4% 5%,2% 9%,4% 14%,9% 19%,14% 19%,19% 17%,23% 23%,28% 29%,33% 37%,33% 47%,26% 56%,23% 68%,37% 68%,53% 68%,70% 68%,70% 53%,100% 50%);*/
+
+      clip-path: polygon(
+        73% 55%,
+        77% 45%,
+        84% 39%,
+        95% 14%,
+        89% 9%,
+        79% 9%,
+        77% 0%,
+        18% 0%,
+        16% 9%,
+        6% 9%,
+        0% 14%,
+        11% 39%,
+        18% 45%,
+        22% 55%,
+        27% 64%,
+        31% 74%,
+        24% 83%,
+        71% 83%,
+        64% 74%,
+        68% 64%
+      );
+      /*clip-path: polygon(21% 13%,20% 5%,20% 9%,19% 4%,14% 0%,8% 0%,3% 4%,1% 8%,3% 14%,9% 17%,15% 16%,19% 22%,22% 35%,32% 49%,32% 59%,35% 67%,37% 71%,70% 71%,69% 65%,69% 60%,65% 51%,59% 46%,61% 40%,64% 36%,68% 35%,68% 31%,72% 30%,71% 26%,66% 22%,69% 21%,68% 16%,53% 16%,51% 21%,51% 30%,52% 35%,49% 41%,38% 38%,30% 30%,25% 21.5%);*/
+      opacity: 0.4;
+      transition: all 0.3s;
+      margin-top: 20px;
+    }
+
+    .text-img-first,
+    .text-img-second {
+      position: absolute;
+      display: none;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    
+
+    .text-img-first {
+      
+        bottom: 150px;
+        left: 110px;
+    
+    }
+    .text-img-second {
+        bottom: 133px;
+        left: 192px;
+    
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 45px 0;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+
+  .img-link-to-category {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    img {
+      /*clip-path: path(
+        "M161 188.375C170 193.5 177.919 193.854 186 188.375C197.919 180.294 197.919 159.581 186 151.5C177.919 146.021 169.081 146.021 161 151.5C149.081 159.581 152 183.25 161 188.375ZM141.5 59.5C131.26 59.5 117.936 45.0628 100.5 52C81.6499 59.5 86.0351 73.5325 78.5 85.5C70 99 57.9171 96.3659 49.5 115C40.4659 135 58.5 138 58.5 154C58.5 170 41 166.5 46.5 185.5C52 204.5 72.5 196 81.6499 209C94.5 218.5 81.6499 233.418 100.5 241.5C122.657 251 121.5 232 141.5 237C154.5 237 154.5 257 180.5 251C203.99 245.579 193.5 230 211 222.5C226.5 212.5 236.5 226 255 206C272.51 187.07 247.5 177 249 154C253 132.5 273.5 120 258.5 94C245.5 77 235 78.5 211 75.5C190.5 68 200 53 177.5 49.5C153.5 43.5 161 59.5 141.5 59.5ZM138 129C129.877 116.815 108.623 116.815 100.5 129C95.0844 137.123 95.0844 145.877 100.5 154C108.623 166.185 129.877 166.185 138 154C143.416 145.877 143.416 137.123 138 129Z"
+      );*/
+    }
+
+    img:hover {
+      /*transition: all 0.3s;
+      /*clip-path: polygon(73.00% 55.00%,77.00% 45.00%,84.00% 39.00%,95.00% 14.00%,89.00% 9.00%,79.00% 9.00%,77.00% 0.00%,18% 0%,16% 9%,6% 9%,0% 14%,11% 39%,18.00% 45.00%,22% 55%,27% 64%,31% 74%,24% 83%,71.00% 83.00%,64.00% 74.00%,68.00% 64.00%);
+      clip-path: polygon(21% 13%,20% 5%,20% 9%,19% 4%,14% 0%,8% 0%,3% 4%,1% 8%,3% 14%,9% 17%,15% 16%,19% 22%,22% 35%,32% 49%,32% 59%,35% 67%,37% 71%,70% 71%,69% 65%,69% 60%,65% 51%,59% 46%,61% 40%,64% 36%,68% 35%,68% 31%,72% 30%,71% 26%,66% 22%,69% 21%,68% 16%,53% 16%,51% 21%,51% 30%,52% 35%,49% 41%,38% 38%,30% 30%,25% 21.5%);
+      opacity: 0.4;*/
+    }
+
+    a {
+      width: 320px;
+      position: relative;
+    }
+
+    .text-img-first {
+      position: absolute;
+      bottom: 20px;
+      bottom: 84px;
+      font-size: 18px;
+      display: none;
+    }
+    .text-img-second {
+      position: absolute;
+      bottom: 20px;
+      bottom: 84px;
+      font-size: 18px;
+      display: none;
+    }
+  }
+}
+
+.title-presentacion {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ball-right {
+  width: 40px;
+  height: 84px;
+  cursor: pointer;
+  animation: right 2s;
+
+  @keyframes right {
+    0% {
+      transform: translateX(0) rotate(0deg);
+    }
+    50% {
+      transform: translateX(100px) rotate(360deg);
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+    }
+  }
+}
+
+.ball {
+  width: 40px;
+  height: 84px;
+  cursor: pointer;
+
+  &:hover {
+    animation: rotation 2s infinite linear;
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+@media (max-width: 507px){
+  .welcome-imgs .prueba1{
+    width:200px;
+    height:100px;
+    .text-img-second {
+      bottom: 28px;
+      left: 90px;
+      font-size: 0.6rem;
+  }
+  .text-img-first {
+    bottom: 41px;
+      left: 60px;
+    font-size: 0.6rem;
+}
+
+  }
+
+}
+  
+@media (min-width: 508px) and (max-width: 1270px){
+  .welcome-imgs .prueba1{
+    width:300px;
+    height:200px;
+    .text-img-second {
+      bottom: 74px;
+      left: 134px;
+      
+  }
+  .text-img-first {
+    bottom: 97px;
+      left: 65px;
+    
+  }
+  }
+  
+}
+
+  
+
+@media (min-width: 600px) and (max-width: 750px) {
+  #article-player
+    .article-player-header
+    .div-introduction-player-info
+    .article-player-name {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ball-right {
+    width: 21px;
+    height: 62px;
+  }
+
+  .ball {
+    width: 21px;
+    height: 62px;
+  }
+
+  #body-presentacion .cards-page .card-page .image-page {
+    width: 100%;
+  }
+
+  footer .footer-container-logo {
+    width: 100px;
+    height: 50px;
+  }
+}
+picture {
+  box-shadow: 0 5px 15px #00000059;
+  border-radius: 45px 0;
+  
+
+  img {
+    height: 100%;
+    border-radius: 45px 0;
+    overflow: hidden;
   }
 }
