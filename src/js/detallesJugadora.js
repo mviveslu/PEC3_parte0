@@ -28,7 +28,7 @@ import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-
 
 const images = [image4, image5, image6, image7, image8, image9, image10];
 //const imagesSized300 = [imageSize300_1,imageSize300_2,imageSize300_3,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
-
+const imagesSized300 = [imageSize300_1];
 function createanElement(typeElement, classNameElement) {
   const element = document.createElement(typeElement);
   element.setAttribute("class", classNameElement);
@@ -78,10 +78,10 @@ function articleHeader(
   )[0];
   headerArticle.innerHTML = `
   <picture>
-    <source media="(max-width: 375px)"  srcset=${imageSize300_1}>
-    <source media="(max-width: 950px)"  srcset=${imageSize300_1}>
-    <source media="(max-width: 1400px)" srcset=${imageSize300_1}>
-    <img src=${imageSize300_1} alt="Player image">
+    <source media="(max-width: 375px)"  srcset=${imagesSized300[0]}>
+    <source media="(max-width: 950px)"  srcset=${imagesSized300[0]}>
+    <source media="(max-width: 1400px)" srcset=${imagesSized300[0]}>
+    <img src=${imagesSized300[0]} alt="Player image">
   </picture>
           <div class="div-introduction-player-info">
             <h1 class="article-player-name">
