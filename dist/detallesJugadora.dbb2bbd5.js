@@ -711,6 +711,7 @@ else {
                     <img src = "${getCountryFlag(nameFlag)}" class="article-player-flag-country" alt="country flag">
                 </div>
             </div>
+
             <div class="social-media-player">
                 <a href="${instagramLink}">
                     <i class="fa-brands fa-instagram"></i> 
