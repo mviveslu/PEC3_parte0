@@ -541,10 +541,6 @@ var _silverPng = require("../img/icons/Silver.png");
 var _silverPngDefault = parcelHelpers.interopDefault(_silverPng);
 var _bronzePng = require("../img/icons/Bronze.png");
 var _bronzePngDefault = parcelHelpers.interopDefault(_bronzePng);
-var _instagramPng = require("../img/icons/instagram.png");
-var _instagramPngDefault = parcelHelpers.interopDefault(_instagramPng);
-var _facebookPng = require("../img/icons/facebook.png");
-var _facebookPngDefault = parcelHelpers.interopDefault(_facebookPng);
 var _frSvg = require("../../node_modules/country-flag-icons/1x1/FR.svg");
 var _frSvgDefault = parcelHelpers.interopDefault(_frSvg);
 var _esSvg = require("../../node_modules/country-flag-icons/1x1/ES.svg");
@@ -571,19 +567,61 @@ var _coralieLassourceWikipediaCommonsJpg = require("../img/InterestingPlayers/Co
 var _coralieLassourceWikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_coralieLassourceWikipediaCommonsJpg);
 var _lauraGlauser201601310300Jpg = require("../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_300.jpg");
 var _lauraGlauser201601310300JpgDefault = parcelHelpers.interopDefault(_lauraGlauser201601310300Jpg);
-var _noraMørk20141115300Jpg = require("../img/InterestingPlayers/Resized/Nora_M\xf8rk_20141115_300.jpg");
-var _noraMørk20141115300JpgDefault = parcelHelpers.interopDefault(_noraMørk20141115300Jpg);
-var _stineOftedal20170519300Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg");
-var _stineOftedal20170519300JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519300Jpg);
+var _noraMork20141115300Jpg = require("../img/InterestingPlayers/Resized/Nora_Mork_20141115_300.jpg");
+var _noraMork20141115300JpgDefault = parcelHelpers.interopDefault(_noraMork20141115300Jpg);
 var _carmenMartin420171108300Jpg = require("../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_300.jpg");
 var _carmenMartin420171108300JpgDefault = parcelHelpers.interopDefault(_carmenMartin420171108300Jpg);
-var _nathalieHagmanIPHTTH20160403300Jpg = require("../img/InterestingPlayers/Resized/Nathalie_Hagman-IPH-TTH-20160403_300.jpg");
+var _nathalieHagmanIPHTTH20160403300Jpg = require("../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_300.jpg");
 var _nathalieHagmanIPHTTH20160403300JpgDefault = parcelHelpers.interopDefault(_nathalieHagmanIPHTTH20160403300Jpg);
 var _sandraToft220181118300Jpg = require("../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_300.jpg");
 var _sandraToft220181118300JpgDefault = parcelHelpers.interopDefault(_sandraToft220181118300Jpg);
-var _coralieLassourceMeilleureDéfenseuse201516300Jpg = require("../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_d\xe9fenseuse_2015-16_300.jpg");
-var _coralieLassourceMeilleureDéfenseuse201516300JpgDefault = parcelHelpers.interopDefault(_coralieLassourceMeilleureDéfenseuse201516300Jpg);
-const images = [
+var _coralieLassourceMeilleureDefenseuse201516300Jpg = require("../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_300.jpg");
+var _coralieLassourceMeilleureDefenseuse201516300JpgDefault = parcelHelpers.interopDefault(_coralieLassourceMeilleureDefenseuse201516300Jpg);
+var _lauraGlauser201601310500Jpg = require("../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_500.jpg");
+var _lauraGlauser201601310500JpgDefault = parcelHelpers.interopDefault(_lauraGlauser201601310500Jpg);
+var _noraMork20141115500Jpg = require("../img/InterestingPlayers/Resized/Nora_Mork_20141115_500.jpg");
+var _noraMork20141115500JpgDefault = parcelHelpers.interopDefault(_noraMork20141115500Jpg);
+var _carmenMartin420171108500Jpg = require("../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_500.jpg");
+var _carmenMartin420171108500JpgDefault = parcelHelpers.interopDefault(_carmenMartin420171108500Jpg);
+var _nathalieHagmanIPHTTH20160403500Jpg = require("../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_500.jpg");
+var _nathalieHagmanIPHTTH20160403500JpgDefault = parcelHelpers.interopDefault(_nathalieHagmanIPHTTH20160403500Jpg);
+var _sandraToft220181118500Jpg = require("../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_500.jpg");
+var _sandraToft220181118500JpgDefault = parcelHelpers.interopDefault(_sandraToft220181118500Jpg);
+var _coralieLassourceMeilleureDefenseuse201516500Jpg = require("../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_500.jpg");
+var _coralieLassourceMeilleureDefenseuse201516500JpgDefault = parcelHelpers.interopDefault(_coralieLassourceMeilleureDefenseuse201516500Jpg);
+var _lauraGlauser201601310700Jpg = require("../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_700.jpg");
+var _lauraGlauser201601310700JpgDefault = parcelHelpers.interopDefault(_lauraGlauser201601310700Jpg);
+var _noraMork20141115700Jpg = require("../img/InterestingPlayers/Resized/Nora_Mork_20141115_700.jpg");
+var _noraMork20141115700JpgDefault = parcelHelpers.interopDefault(_noraMork20141115700Jpg);
+var _carmenMartin420171108700Jpg = require("../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_700.jpg");
+var _carmenMartin420171108700JpgDefault = parcelHelpers.interopDefault(_carmenMartin420171108700Jpg);
+var _nathalieHagmanIPHTTH20160403700Jpg = require("../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_700.jpg");
+var _nathalieHagmanIPHTTH20160403700JpgDefault = parcelHelpers.interopDefault(_nathalieHagmanIPHTTH20160403700Jpg);
+var _sandraToft220181118700Jpg = require("../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_700.jpg");
+var _sandraToft220181118700JpgDefault = parcelHelpers.interopDefault(_sandraToft220181118700Jpg);
+var _coralieLassourceMeilleureDefenseuse201516700Jpg = require("../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_700.jpg");
+var _coralieLassourceMeilleureDefenseuse201516700JpgDefault = parcelHelpers.interopDefault(_coralieLassourceMeilleureDefenseuse201516700Jpg);
+var _lauraGlauser201601310900Jpg = require("../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_900.jpg");
+var _lauraGlauser201601310900JpgDefault = parcelHelpers.interopDefault(_lauraGlauser201601310900Jpg);
+var _noraMork20141115900Jpg = require("../img/InterestingPlayers/Resized/Nora_Mork_20141115_900.jpg");
+var _noraMork20141115900JpgDefault = parcelHelpers.interopDefault(_noraMork20141115900Jpg);
+var _carmenMartin420171108900Jpg = require("../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_900.jpg");
+var _carmenMartin420171108900JpgDefault = parcelHelpers.interopDefault(_carmenMartin420171108900Jpg);
+var _nathalieHagmanIPHTTH20160403900Jpg = require("../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_900.jpg");
+var _nathalieHagmanIPHTTH20160403900JpgDefault = parcelHelpers.interopDefault(_nathalieHagmanIPHTTH20160403900Jpg);
+var _sandraToft220181118900Jpg = require("../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_900.jpg");
+var _sandraToft220181118900JpgDefault = parcelHelpers.interopDefault(_sandraToft220181118900Jpg);
+var _coralieLassourceMeilleureDefenseuse201516900Jpg = require("../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_900.jpg");
+var _coralieLassourceMeilleureDefenseuse201516900JpgDefault = parcelHelpers.interopDefault(_coralieLassourceMeilleureDefenseuse201516900Jpg);
+/*import imageSize300_2 from "../img/InterestingPlayers/Resized/Nora_Mørk_20141115_300.jpg";*/ /*import imageSize300_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg";*/ var _stineOftedal20170519300Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg");
+var _stineOftedal20170519300JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519300Jpg);
+var _stineOftedal20170519500Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_500.jpg");
+var _stineOftedal20170519500JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519500Jpg);
+var _stineOftedal20170519700Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_700.jpg");
+var _stineOftedal20170519700JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519700Jpg);
+var _stineOftedal20170519900Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_900.jpg");
+var _stineOftedal20170519900JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519900Jpg);
+/*import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_défenseuse_2015-16_300.jpg";*/ const images = [
     (0, _lauraGlauserWikipediaCommonsJpgDefault.default),
     (0, _noraMorkWikipediaCommonsJpgDefault.default),
     (0, _stineOftedalWikipediaCommonsJpgDefault.default),
@@ -592,14 +630,42 @@ const images = [
     (0, _sandraToft2WikipediaCommonsJpgDefault.default),
     (0, _coralieLassourceWikipediaCommonsJpgDefault.default)
 ];
+//const imagesSized300 = [imageSize300_1,imageSize300_2,imageSize300_3,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
 const imagesSized300 = [
     (0, _lauraGlauser201601310300JpgDefault.default),
-    (0, _noraMørk20141115300JpgDefault.default),
+    (0, _noraMork20141115300JpgDefault.default),
     (0, _stineOftedal20170519300JpgDefault.default),
     (0, _carmenMartin420171108300JpgDefault.default),
     (0, _nathalieHagmanIPHTTH20160403300JpgDefault.default),
     (0, _sandraToft220181118300JpgDefault.default),
-    (0, _coralieLassourceMeilleureDéfenseuse201516300JpgDefault.default)
+    (0, _coralieLassourceMeilleureDefenseuse201516300JpgDefault.default)
+];
+const imagesSized500 = [
+    (0, _lauraGlauser201601310500JpgDefault.default),
+    (0, _noraMork20141115500JpgDefault.default),
+    (0, _stineOftedal20170519500JpgDefault.default),
+    (0, _carmenMartin420171108500JpgDefault.default),
+    (0, _nathalieHagmanIPHTTH20160403500JpgDefault.default),
+    (0, _sandraToft220181118500JpgDefault.default),
+    (0, _coralieLassourceMeilleureDefenseuse201516500JpgDefault.default)
+];
+const imagesSized700 = [
+    (0, _lauraGlauser201601310700JpgDefault.default),
+    (0, _noraMork20141115700JpgDefault.default),
+    (0, _stineOftedal20170519700JpgDefault.default),
+    (0, _carmenMartin420171108700JpgDefault.default),
+    (0, _nathalieHagmanIPHTTH20160403700JpgDefault.default),
+    (0, _sandraToft220181118700JpgDefault.default),
+    (0, _coralieLassourceMeilleureDefenseuse201516700JpgDefault.default)
+];
+const imagesSized900 = [
+    (0, _lauraGlauser201601310900JpgDefault.default),
+    (0, _noraMork20141115900JpgDefault.default),
+    (0, _stineOftedal20170519900JpgDefault.default),
+    (0, _carmenMartin420171108900JpgDefault.default),
+    (0, _nathalieHagmanIPHTTH20160403900JpgDefault.default),
+    (0, _sandraToft220181118900JpgDefault.default),
+    (0, _coralieLassourceMeilleureDefenseuse201516900JpgDefault.default)
 ];
 function createanElement(typeElement, classNameElement) {
     const element = document.createElement(typeElement);
@@ -623,12 +689,17 @@ else {
 }
 /*Article header */ function articleHeader(namePlayerComplete, positionPlayer, bornPlayer, nameFlag, instagramLink, facebookLink, positionPhoto) {
     const headerArticle = document.getElementsByClassName("article-player-header")[0];
+    const photoid = imagesSized300[positionPhoto];
+    const photoid2 = imagesSized500[positionPhoto];
+    const photoid3 = imagesSized700[positionPhoto];
+    const photoid4 = imagesSized900[positionPhoto];
+    console.log(positionPhoto);
     headerArticle.innerHTML = `
   <picture>
-    <source media="(max-width: 375px)"  srcset=${imagesSized300[positionPhoto]}>
-    <source media="(max-width: 950px)"  srcset=${imagesSized300[positionPhoto]}>
-    <source media="(max-width: 1400px)" srcset=${imagesSized300[positionPhoto]}>
-    <img src=${imagesSized300[positionPhoto]} alt="Player image">
+    <source media="(max-width: 375px)"  srcset=${photoid}>
+    <source media="(max-width: 950px)"  srcset=${photoid2}>
+    <source media="(max-width: 1400px)" srcset=${photoid3}>
+    <img src=${photoid4} alt="Player image">
   </picture>
           <div class="div-introduction-player-info">
             <h1 class="article-player-name">
@@ -801,7 +872,7 @@ navWrapper.addEventListener("click", (e)=>{
     }
 });
 
-},{"../json/data-intesting-players.json":"jIR5q","../img/icons/Gold.png":"9Zbdf","../img/icons/Silver.png":"3Ug3B","../img/icons/Bronze.png":"b4nNI","../img/icons/instagram.png":"dJjV6","../img/icons/facebook.png":"jxrhs","../../node_modules/country-flag-icons/1x1/FR.svg":"16HRQ","../../node_modules/country-flag-icons/1x1/ES.svg":"74hAo","../../node_modules/country-flag-icons/1x1/CH.svg":"7YmDq","../../node_modules/country-flag-icons/1x1/DK.svg":"6jKdk","../../node_modules/country-flag-icons/1x1/BV.svg":"fUZKh","../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg":"kCW8g","../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg":"fpSZm","../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg":"2bHSr","../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg":"609bV","../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg":"fZ0zd","../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg":"1kAbS","../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg":"5TXfs","../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_300.jpg":"9JHgR","../img/InterestingPlayers/Resized/Nora_Mørk_20141115_300.jpg":"9yglx","../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg":"iuoff","../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_300.jpg":"dEPSh","../img/InterestingPlayers/Resized/Nathalie_Hagman-IPH-TTH-20160403_300.jpg":"jLpYH","../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_300.jpg":"4KAAD","../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_défenseuse_2015-16_300.jpg":"5GdQj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jIR5q":[function(require,module,exports) {
+},{"../json/data-intesting-players.json":"jIR5q","../img/icons/Gold.png":"9Zbdf","../img/icons/Silver.png":"3Ug3B","../img/icons/Bronze.png":"b4nNI","../../node_modules/country-flag-icons/1x1/FR.svg":"16HRQ","../../node_modules/country-flag-icons/1x1/ES.svg":"74hAo","../../node_modules/country-flag-icons/1x1/CH.svg":"7YmDq","../../node_modules/country-flag-icons/1x1/DK.svg":"6jKdk","../../node_modules/country-flag-icons/1x1/BV.svg":"fUZKh","../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg":"kCW8g","../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg":"fpSZm","../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg":"2bHSr","../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg":"609bV","../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg":"fZ0zd","../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg":"1kAbS","../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg":"5TXfs","../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_300.jpg":"9JHgR","../img/InterestingPlayers/Resized/Nora_Mork_20141115_300.jpg":"1e7lo","../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_300.jpg":"dEPSh","../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_300.jpg":"84tqs","../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_300.jpg":"4KAAD","../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_300.jpg":"gkzgD","../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_500.jpg":"3wCQC","../img/InterestingPlayers/Resized/Nora_Mork_20141115_500.jpg":"goNr7","../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_500.jpg":"c9VFd","../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_500.jpg":"h2C2C","../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_500.jpg":"9MTDj","../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_500.jpg":"gvgO1","../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_700.jpg":"7VSBd","../img/InterestingPlayers/Resized/Nora_Mork_20141115_700.jpg":"1RUGm","../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_700.jpg":"gJKt3","../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_700.jpg":"6lnGl","../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_700.jpg":"aTNOL","../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_700.jpg":"9lLnl","../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_900.jpg":"6KsvM","../img/InterestingPlayers/Resized/Nora_Mork_20141115_900.jpg":"3jkRA","../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_900.jpg":"jJu15","../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_900.jpg":"lM69N","../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_900.jpg":"g1xjn","../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_900.jpg":"1oDin","../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg":"iuoff","../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_500.jpg":"dwvpD","../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_700.jpg":"ehEym","../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_900.jpg":"bn57D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jIR5q":[function(require,module,exports) {
 module.exports = JSON.parse('[{"id":"001","instagramLink":"https://www.instagram.com/lauraglauser/","facebookLink":"https://www.facebook.com/people/Laura-Glauser/100057727374453/","idPhoto":0,"name":"Laura Glausser","country":"FR","biography":["Laura Glauser (born 20 August 1993) is a French handballer for CSM București and the French national team.","Laura Glauser played in Győr since 2020,and she requested to leave the club before her contract expires in 2023. The reason is that she wants to have more playing time. She can leave on a transfer fee from her next club which is rumored to be CSM Bucuresti.","She has won different individual awards such as All-Star Goalkeeper from  EHF Champions League in 2022(more details in individual awards)","She has won different team awards with her national team such as silver medal in Olympic Games in 2006 in Brazil(more details in medals)."],"relatedPlayers":["005","004"],"position":"Goalkeeper","current team":"Bucuresti","medals":[{"medal":"Silver","year":2016,"event":"Olympic Games","location":"Brazil"},{"medal":"Silver","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Gold","year":2018,"event":"European Championship","location":"France"},{"medal":"Silver","year":2020,"event":"European Championship","location":"Denmark"},{"medal":"Bronze","year":2016,"event":"European Championship","location":"Sweden"}],"born":"20/09/1993, France","individualAwards":[{"year":"2015","competition":"Best goalkeeper of the IHF Junior World Championship"},{"year":"2015","competition":"Best Young Goalkeeper at the 2015 World Championships"},{"year":"2016","competition":"French Championship Best Goalkeeper"},{"year":"2022","competition":"All-Star Goalkeeper of the EHF Champions League"}]},{"id":"002","instagramLink":"https://www.instagram.com/noramrk_9/","facebookLink":"https://www.facebook.com/people/Nora-M%C3%B8rk/100044528492484/","idPhoto":1,"name":"Nora Mork","country":"BV","relatedPlayers":["003","004"],"biography":["Nora M\xf8rk (born 5 April 1991) is a Norwegian handball player for Team Esbjerg and the Norwegian national team.","She made her debut on the Norwegian national team on 21 September 2010.","Before joining Team Esbjerg, she played for B\xe6kkelaget, Aalborg DH, Nj\xe5rd, Larvik, Győr, CSM București and Vipers Kristiansand.","She has won different individual awards such as Most Valuable Player of the Junior European Championship in 2009(more details in individual awards)","She has won different team awards with her national team such as Bronze medal in Olympic Games in 2006 in Brazil(more details in medals)."],"position":"Right back","current team":"Team Esbjerg","medals":[{"medal":"Bronze","year":2016,"event":"Olympic Games","location":"Brazil"},{"medal":"Bronze","year":2020,"event":"Olympic Games","location":"Tokyo"},{"medal":"Gold","year":2015,"event":"World Championship","location":"Denmark"},{"medal":"Gold","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Gold","year":2020,"event":"European Championship","location":"Denmark"},{"medal":"Gold","year":2016,"event":"European Championship","location":"Sweden"},{"medal":"Gold","year":2014,"event":"European Championship","location":"Croatia/Hungary"},{"medal":"Gold","year":2010,"event":"European Championship","location":"Denamrk/Norway"},{"medal":"Gold","year":2010,"event":"Junior World Championship","location":"South Korea"},{"medal":"Gold","year":2010,"event":"Junior European Championship","location":"Hungary"}],"born":"20/09/1993, Norway","individualAwards":[{"year":"2009","competition":"Most Valuable Player of the Junior European Championship"},{"year":"2013/2014","competition":"Most Valuable Player of Postenligaen"},{"year":"2014/2015, 2015/2016","competition":"Most Valuable Player of Grundigligaen"},{"year":"2016 (62 goals), 2020 (52 goals)","competition":"Topscorer of the Summer Olympics"},{"year":"2016 (53 goals), 2020 (52 goals)","competition":"Topscorer of the European Championship"},{"year":"2017 (66 goals)","competition":"Topscorer of the World Championship"},{"year":"2007","competition":"All-Star Right Back of the European Youth Championship"},{"year":"2008/2009","competition":"All-Star Right Back of the European Open Championship"},{"year":"2009","competition":"All-Star Right Back of the Junior European Championship"},{"year":"2009/2010","competition":"All-Star Right Wing of Eliteserien"},{"year":"2010/2011","competition":"All-Star Right Wing of Postenligaen"},{"year":"2013/2014","competition":"All-Star Right Back of Postenligaen"},{"year":"2014, 2016, 2020","competition":"All-Star Right Back of the European Championship"},{"year":"2014/2015, 2015/2016","competition":"All-Star Right Back of Grundigligaen"},{"year":"2015, 2017, 2021","competition":"All-Star Right Back of the World Championship"},{"year":"2015, 2016, 2017, 2021, 2022","competition":"All-Star Right Back of the EHF Champions League"},{"year":"2015, 2017","competition":"All-Star Right Back of M\xf8belringen Cup"},{"year":"2008","competition":"NISO Best Young Player of the Year"},{"year":"2008/2009","competition":"Best Rookie of Eliteserien"},{"year":"2017","competition":"Foreign Handballer of the Year in Hungary"},{"year":"2015, 2016, 2020, 2021","competition":"Handball-Planet.com All-Star Right Back"},{"year":"2017, 2021","competition":"Handball-Planet.com Player of the Year:"}]},{"id":"003","idPhoto":2,"instagramLink":"https://www.instagram.com/stine.bredaloftedal/","facebookLink":"https://es-es.facebook.com/people/Stine-Bredal-Oftedal/100044176132556/","name":"Stine Oftedal","country":"BV","biography":["Stine Bredal Oftedal (born 25 September 1991) is a Norwegian handball player for Győri Audi ETO KC and the Norwegian national team, where she is the team captain.","She was voted World Handball Player of the Year 2019 by the International Handball Federation","She hails from Nittedal and started her career in Nit/Hak HK.[2] She then continued to Fjellhammer IL before continuing to Helset IF.Helset is a feeder team for Stab\xe6k H\xe5ndball, and so she has played for Stab\xe6k since the 2008–09 season while still being registered in Helset.","She studied at BI Norwegian Business School.Previously she competed for Nittedal IL in the javelin throw, throwing 32.08 m at the age 13","She has won different individual awards such as IHF World Player of the Year in 2019(more details in individual awards)","She has won different team awards with her national team such as Bronze medal in Olympic Games in 2006 in Brazil(more details in medals)."],"position":"Centre back","current team":"Győri Audi ETO KC","relatedPlayers":["001","002"],"medals":[{"medal":"Bronze","year":2016,"event":"Olympic Games","location":"Brazil"},{"medal":"Bronze","year":2020,"event":"Olympic Games","location":"Tokyo"},{"medal":"Gold","year":2011,"event":"World Championship","location":"Brazil"},{"medal":"Gold","year":2015,"event":"World Championship","location":"Denmark"},{"medal":"Gold","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Silver","year":2017,"event":"World Championship","location":"Germany"},{"medal":"Gold","year":2020,"event":"European Championship","location":"Denmark"},{"medal":"Gold","year":2016,"event":"European Championship","location":"Sweden"},{"medal":"Gold","year":2014,"event":"European Championship","location":"Croatia/Hungary"},{"medal":"Gold","year":2010,"event":"European Championship","location":"Denamrk/Norway"},{"medal":"Silver","year":2012,"event":"European Championship","location":"Serbia"},{"medal":"Gold","year":2010,"event":"Junior World Championship","location":"South Korea"},{"medal":"Gold","year":2010,"event":"Junior European Championship","location":"Hungary"}],"born":"25/09/1991, Norway","individualAwards":[{"year":"2019","competition":"IHF World Player of the Year"},{"year":"2008","competition":"All-Star Left Wing of the U18 European Open"},{"year":"2010","competition":"All-Star Centre Back of the Junior World Championship"},{"year":"2010/2011","competition":"All-Star Centre Back of Postenligaen"},{"year":"2014","competition":"French Championship MVP"},{"year":"2015","competition":"All-Star Centre Back of the World Championship"},{"year":"2014, 2016","competition":"French Championship Best Playmaker"},{"year":"2017","competition":"Most Valuable Player of the World Championship"},{"year":"2018,2020","competition":"All-Star Centre Back of the European Championship"},{"year":"2019, 2020, 2021, 2022","competition":"All-Star Centre Back of the EHF Champions League"},{"year":"2019","competition":"Handball-Planet.com All-Star Centre Back of the Year"},{"year":"2019","competition":"Foreign Handballer of the Year in Hungary"}]},{"id":"004","instagramLink":"https://www.instagram.com/carmen_martin4/","facebookLink":"https://www.facebook.com/caramela88/","idPhoto":3,"name":"Carmen Mart\xedn","country":"ES","biography":["Carmen Dolores Mart\xedn Berenguer (born 29 May 1988) is a Spanish handballer who plays as a right wing for IK S\xe4vehof and the Spanish national team.","Mart\xedn has three All-European Championship first team selections, one All-World Championship first team selection and also one All-EHF Champions League first team selection. In 2016, she won the Champions League with CSM București.","In 2016, she was made \'honorary citizen\' of Bucharest.","She has won different individual awards such as All-Star Right Wing of the World Championship in 2011(more details in individual awards)","She has won different team awards with her national team such as Bronze medal in Olympic Games in 2012 in London(more details in medals)."],"position":"Right wing","current team":" IK S\xe4vehof","relatedPlayers":["002","003"],"medals":[{"medal":"Bronze","year":2012,"event":"Olympic Games","location":"London"},{"medal":"Bronze","year":2011,"event":"World Championship","location":"Brazil"},{"medal":"Silver","year":2008,"event":"European Championship","location":"Macedonia"},{"medal":"Silver","year":2014,"event":"European Championship","location":"Croatia/Hungary"}],"born":"29/05/1988, Spain","individualAwards":[{"year":"2011","competition":"All-Star Right Wing of the World Championship"},{"year":"2014, 2016, 2018","competition":"All-Star Right Wing of the European Championship"},{"year":"2016","competition":"Handball-Planet.com Best Right Wing"},{"year":"2017","competition":"All-Star Right Wing of the EHF Champions League"},{"year":"2017","competition":"Prosport All-Star Right Wing of the Romanian Liga Națională"}]},{"id":"005","instagramLink":"https://www.instagram.com/hagman/","facebookLink":"https://www.facebook.com/hagman24/","idPhoto":4,"name":"Nathalie Hagman","country":"CH","biography":["Nathalie Mari Hagman (born 19 July 1991) is a Swedish handball player for Neptunes de Nantes and the Swedish national handball team.","She played her first match for Sweden in 2009 at the age of 17. To date, Hagman is still the youngest ever debutant in the national team.","She has won different individual awards such as Junior World Championship Top Scorer in 2010(more details in individual awards)","She has won different team awards with her national team such as Silver medal in European Championship in 2010 in Denmark/Norway(more details in medals)."],"position":"Right wing","current team":"Neptunes de Nantes","relatedPlayers":["001","004"],"medals":[{"medal":"Silver","year":2010,"event":"European Championship","location":"Denmark/Norway"},{"medal":"Bronze","year":2014,"event":"European Championship","location":"Croatia/Hungary"}],"born":"29/05/1988, Swedeen","individualAwards":[{"year":"2010","competition":"Junior World Championship Top Scorer"},{"year":"2009","competition":"Swedish Elitserien Young Player of the Season"},{"year":"2011, 2012, 2014","competition":"Swedish Elitserien Top Scorer"},{"year":"2015","competition":"EHF Cup Top Scorer"},{"year":"2016","competition":"EHF Cup Winners\' Cup Top Scorer"},{"year":"2021","competition":"IHF World Women\'s Handball Championship Top scorer"},{"year":"2016","competition":"Danish League Player of the Season"},{"year":"2016","competition":"Danish League Best Right Wing"},{"year":"2017","competition":"Danish League Best Right Back"},{"year":"2016","competition":"Swedish Female Handballer of the Year"},{"year":"2016","competition":"All Star Right Wing of the Summer Olympics"},{"year":"2017","competition":"All Star Right Wing of the World Championship"}]},{"id":"006","instagramLink":"https://www.instagram.com/sandratoft89/","facebookLink":"https://www.facebook.com/people/Sandra-Toft/100041689639238/","idPhoto":5,"name":"Sandra Toft","country":"DK","biography":["Sandra Toft Galsgaard (born 18 October 1989) is a Danish handball goalkeeper for Győri Audi ETO KC and the Danish national team.","She made her debut on the Danish national team on 27 March 2008, against Czech Republic.","She participated for the first time at the 2011 World Women\'s Handball Championship in Brazil.","She has won different individual awards such as IHF World Player of the Year - Women in 2021(more details in individual awards)","She has won different team awards with her national team such as Bronze medal in World Championship in 2021 in Spain(more details in medals)."],"position":"Goalkeeper","current team":"Győri Audi ETO KC","relatedPlayers":["005","004"],"medals":[{"medal":"Bronze","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Silver","year":2008,"event":"Junior World Championship","location":"Macedonia"},{"medal":"Golden","year":2006,"event":"Youth World Championship","location":"Canada"},{"medal":"Bronze","year":2007,"event":"European Junior Championship","location":"Turkey"}],"born":"18/09/1989, Denmark","individualAwards":[{"year":"2021","competition":"IHF World Player of the Year - Women"},{"year":"2021","competition":"All-Star Goalkeeper of the World Championship"},{"year":"2016, 2020","competition":"All-Star Goalkeeper of the European Championship"},{"year":"2015","competition":"All-Star Team Best Goalkeeper of the EHF Champions League"},{"year":"2019","competition":"Handball-Planet.com All-Star Goalkeeper of the Year"}]},{"id":"007","instagramLink":"https://www.instagram.com/lassourcecoralie/?hl=es","facebookLink":"https://es-es.facebook.com/people/Coralie-Lassource-Officiel/100063608319405/?comment_id=Y29tbWVudDozMzg0OTEzNTUxNzMyOTI1XzMzODUwNDAwNjUwNTM2MDc%3D","idPhoto":6,"name":"Coralie Lassource","country":"FR","biography":["SCoralie Gladys Lassource (born 1 September 1992) is a French handball player for Brest Bretagne HB and the French national team.","She competed at the 2015 World Women\'s Handball Championship in Denmark.","She has won different team awards with her national team such as Gold medal in Olympic Games in 2020 in Tokyo(more details in medals)."],"position":"Left Wing","current team":"Brest Bretagne HB","relatedPlayers":["001","003"],"medals":[{"medal":"Silver","year":2021,"event":"World Championship","location":"Spain"},{"medal":"Gold","year":2020,"event":"Olympic Games","location":"Tokyo"},{"medal":"Silver","year":2020,"event":"European Championship","location":"Denmark"}],"born":"01/09/1992, France","individualAwards":[]}]');
 
 },{}],"9Zbdf":[function(require,module,exports) {
@@ -847,12 +918,6 @@ module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Silver
 },{"./helpers/bundle-url":"lgJ39"}],"b4nNI":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Bronze.eca40c54.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"dJjV6":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "instagram.00060431.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"jxrhs":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "facebook.b0a9cc98.png" + "?" + Date.now();
-
 },{"./helpers/bundle-url":"lgJ39"}],"16HRQ":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "FR.31f80071.svg" + "?" + Date.now();
 
@@ -892,23 +957,86 @@ module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Corali
 },{"./helpers/bundle-url":"lgJ39"}],"9JHgR":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Laura_Glauser_20160131_0_300.db2adddf.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"9yglx":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nora_M\xf8rk_20141115_300.cd925fd5.jpg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"iuoff":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Stine_Oftedal_20170519_300.646007cf.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"1e7lo":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nora_Mork_20141115_300.989853b3.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"dEPSh":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Carmen_Martin_4_20171108_300.7ee09084.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"jLpYH":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nathalie_Hagman-IPH-TTH-20160403_300.c19ff5a1.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"84tqs":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nathalie_Hagman_IPH_TTH_20160403_300.34f44298.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"4KAAD":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Sandra_Toft_2_20181118_300.f2a47165.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"5GdQj":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Coralie_Lassource-Meilleure_d\xe9fenseuse_2015-16_300.a50a2694.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"gkzgD":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Coralie_Lassource-Meilleure_defenseuse_2015-16_300.bbf75dd4.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"3wCQC":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Laura_Glauser_20160131_0_500.d1e2be62.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"goNr7":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nora_Mork_20141115_500.8161ee63.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"c9VFd":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Carmen_Martin_4_20171108_500.d0035594.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"h2C2C":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nathalie_Hagman_IPH_TTH_20160403_500.d4371a99.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"9MTDj":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Sandra_Toft_2_20181118_500.1db537c8.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gvgO1":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Coralie_Lassource-Meilleure_defenseuse_2015-16_500.fd1ed519.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"7VSBd":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Laura_Glauser_20160131_0_700.3ab13ef6.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"1RUGm":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nora_Mork_20141115_700.b369c295.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gJKt3":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Carmen_Martin_4_20171108_700.ba244cfc.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"6lnGl":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nathalie_Hagman_IPH_TTH_20160403_700.4f87cca8.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"aTNOL":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Sandra_Toft_2_20181118_700.d131e8f7.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"9lLnl":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Coralie_Lassource-Meilleure_defenseuse_2015-16_700.153ad34e.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"6KsvM":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Laura_Glauser_20160131_0_900.d0652ac9.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"3jkRA":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nora_Mork_20141115_900.11b0c937.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"jJu15":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Carmen_Martin_4_20171108_900.f681a0fd.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lM69N":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Nathalie_Hagman_IPH_TTH_20160403_900.82829762.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"g1xjn":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Sandra_Toft_2_20181118_900.7c23b6cb.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"1oDin":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Coralie_Lassource-Meilleure_defenseuse_2015-16_900.3062eab7.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"iuoff":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Stine_Oftedal_20170519_300.646007cf.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dwvpD":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Stine_Oftedal_20170519_500.53d9e11d.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"ehEym":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Stine_Oftedal_20170519_700.c5c898a8.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"bn57D":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("4FtFA") + "Stine_Oftedal_20170519_900.c1b2e56b.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {

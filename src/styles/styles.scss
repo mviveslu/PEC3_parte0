@@ -254,10 +254,11 @@ h2 {
 /*Portada*/
 
 .welcome-container {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top:10px;
+  height: 100%;
   //background: rgb(78, 195, 255);
 
   .welcome-contents {
@@ -268,6 +269,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
     .welcome-information {
       display: flex;
       justify-content: center;
@@ -1414,6 +1416,7 @@ section {
 }
 
 @media (max-width: 600px) {
+
   .ball-right {
     width: 21px;
     height: 62px;
@@ -1442,5 +1445,13 @@ picture {
     height: 100%;
     border-radius: 45px 0;
     overflow: hidden;
+  }
+
+  
+}
+
+@media (max-width: 943px) {
+  .welcome-container{
+    height: auto;
   }
 }

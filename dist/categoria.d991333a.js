@@ -694,7 +694,7 @@ footer.innerHTML = `
         <li><a href="./enlaces.html">Links</a></li>
     </ul>
 </div>
-<img class="footer-container-logo" src="./img/logoblanco.png" alt="">
+<img class="footer-container-logo" src=${0, _logoblancoPngDefault.default} alt="">
 `;
 document.getElementsByClassName("cover-page")[0].append(footer);
 /*Header*/ const toggleButton = document.getElementById("button-menu");
