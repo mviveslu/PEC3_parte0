@@ -1,0 +1,176 @@
+.image-player-court {
+  width: 60px;
+  height: auto;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+#article-competition .article-competition-header .div-introduction-competition-info {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+#article-competition .article-competition-header .div-introduction-competition-info h1 {
+  text-align: center;
+  justify-content: center;
+}
+
+#article-competition .article-competition-header .div-introduction-competition-info p {
+  max-width: 85%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#article-competition .article-competition-header .div-introduction-competition-info a {
+  font-size: 1rem;
+}
+
+#article-competition .article-competition-header .div-introduction-competition-info .div-p-flag {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 14px;
+  display: flex;
+}
+
+.handball-court {
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  margin: 20px 0;
+  display: flex;
+  position: relative;
+}
+
+.handball-court .image-player-court-contain {
+  width: 570px;
+  position: relative;
+}
+
+.handball-court .image-player-court-contain .row {
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.handball-court .image-player-court-contain .row.line-one {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+}
+
+.handball-court .image-player-court-contain .row.line-one .player {
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.handball-court .image-player-court-contain .row.line-one .player.extreme-left {
+  top: 10px;
+  left: 20px;
+}
+
+.handball-court .image-player-court-contain .row.line-one .player.goalkeeper {
+  top: 10px;
+}
+
+.handball-court .image-player-court-contain .row.line-one .player.extreme-right {
+  top: 10px;
+  right: 20px;
+}
+
+.handball-court .image-player-court-contain .row.line-two {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+}
+
+.handball-court .image-player-court-contain .row.line-two .player {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.handball-court .image-player-court-contain .row.line-two .pivot {
+  z-index: 10;
+  top: 150px;
+}
+
+.handball-court .image-player-court-contain .row.line-three {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+}
+
+.handball-court .image-player-court-contain .row.line-three .player {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.handball-court .image-player-court-contain .row.line-three .player.left-court {
+  z-index: 10;
+  left: 20px;
+}
+
+.handball-court .image-player-court-contain .row.line-three .player.right-backcourt {
+  z-index: 10;
+  right: 20px;
+}
+
+.handball-court .image-player-court-contain .row.line-four {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+}
+
+.handball-court .image-player-court-contain .row.line-four .pivot2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 135px;
+}
+
+.handball-court .image-player-court-contain img {
+  width: 100%;
+}
+
+.player {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.player img {
+  width: 6vw;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.player.goalkeeper, .player.extreme-left, .player.extreme-right {
+  flex: 33%;
+}
+
+.player.pivot {
+  flex: 100%;
+}
+
+.player.left-court, .player.right-backcourt {
+  flex: 50%;
+}
+
+#details-competition footer {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=detallesCompeticion.addb16d1.css.map */
