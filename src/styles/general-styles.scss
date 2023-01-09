@@ -1,0 +1,653 @@
+//Genereal styles
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+//@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+}
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.5rem;
+}
+body {
+    height: 100vh;
+}
+picture {
+    box-shadow: 0 5px 15px #00000059;
+    border-radius: 45px 0;
+    img {
+      height: 100%;
+      border-radius: 45px 0;
+      overflow: hidden;
+    }
+}
+footer {
+    width: 100%;
+    height: 5.5rem;
+    background-color: #265290;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a:hover{
+      font-size: 0.9rem;
+      font-weight: 900;
+      border: none;
+      color:white;
+    }
+    a,
+    p {
+      color: white;
+      border: none;
+      font-size: 0.7rem;
+      text-decoration: none;
+    }
+    
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        padding-right: 5px;
+        color: white;
+      }
+      li::after {
+        content: "·";
+        padding-left: 10px;
+      }
+      li:last-child::after {
+        content: "";
+      }
+    }
+    .footer-container-logo {
+      width: fit-content;
+      height: auto;
+      padding: 10px;
+      width: 150px;
+      height: 70px;
+      img {
+        height: 100%;
+        background-color: white;
+      }
+    }
+  }
+  .fa-instagram,
+  .fa-facebook {
+    color: #265290;
+  }
+  section {
+    margin: 20px 0;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+/*Header*/
+.header-logo {
+  width: 150px;
+  height: auto;
+  line-height: 0px;
+}
+/*Body*/
+.container {
+  padding: 20px;
+}
+.main-header {
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .main-logo {
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+  }
+  
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+  }
+  
+  .main-nav.show {
+    margin-left: 0;
+  }
+  
+  .nav-links {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .link-item {
+    margin-top: 2rem;
+    color: #444444;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .link-item::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+  }
+  
+  .link-item:hover::after {
+    width: 100%;
+  }
+  
+  .button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #444444;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+  }
+  
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+  }
+  
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+  
+  .new-icons-functions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .search-menu-mobile i {
+    font-size: 1.6rem;
+  }
+  .search-input {
+    display: none;
+    position: relative;
+    input {
+      padding: 8px 8px 8px 25px;
+      border-radius: 5px;
+      border-width: 1px;
+      border-color: lightgray;
+    }
+    input:hover {
+      box-shadow: 0 7px 14px $contrast-color, 0 3px 6px transparent;
+      cursor: pointer;
+    }
+    img {
+      width: 20px;
+      position: absolute;
+      top: 8px;
+      left: 4px;
+    }
+  }
+
+/*Enlaces*/
+.links-information {
+    flex-direction: column;
+}
+/*Bibliography*/
+#links {
+    .links-resources {
+      text-align: center;
+      justify-content: center;
+      line-height: 2.5rem;
+      margin-top: 20px;
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h2 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      a {
+        font-size: 1.4rem;
+      }
+      span {
+        padding-left: 20px;
+        font-size: 1.2rem;
+      }
+    }
+}
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    height: 100%;
+    //background: rgb(78, 195, 255);
+  
+    .welcome-contents {
+      background-color: white;
+      width: 70%;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      .welcome-information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 52px;
+        flex-direction: column;
+      }
+      p {
+        text-align: center;
+      }
+      h1 {
+        text-shadow: 2px 1px #000;
+        color: #265290;
+        font-size: 6rem;
+      }
+  
+      .link-index-page {
+        display: flex;
+        justify-content: center;
+      }
+  
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+  
+        li {
+          a {
+            font-size: 24px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 1411px) {
+    #article-player .article-player-header {
+      //width: 1344px;
+      height: 600px;
+      gap: 60px;
+    }
+  
+    .div-introduction-player-info {
+      align-items: center;
+    }
+  }
+  @media (max-width: 410px) {
+    #article-competition {
+      .handball-court .image-player-court-contain .row.line-two .pivot {
+        left: 140px;
+      }
+      .handball-court .image-player-court-contain .row.line-four .pivot2 {
+        left: 140px;
+      }
+      .handball-court
+        .image-player-court-contain
+        .row.line-one
+        .player.goalkeeper {
+        left: 140px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    #links {
+      .links-resources ul li {
+        a {
+          font-size: 0.8rem;
+        }
+        span {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .welcome-container .welcome-contents h1 {
+      font-size: 4rem;
+    }
+    h1 {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 0.9rem;
+    }
+    #article-competition
+      .article-competition-header
+      .div-introduction-competition-info {
+      .div-p-flag {
+        padding: 0 10px;
+        gap: 2px;
+        align-items: flex-start;
+      }
+  
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  
+    #article-player .article-player-header {
+      flex-wrap: wrap;
+      height: auto;
+    }
+  
+    #article-player .article-player-header .div-player-image .image-player {
+      width: 100%;
+      height: 400px;
+    }
+  
+    #article-player
+      .article-player-header
+      .div-introduction-player-info
+      .article-player-name {
+      font-size: 2.5rem;
+    }
+  
+    #article-player
+      .article-player-header
+      .div-introduction-player-info
+      .p-with-flag
+      .article-player-biography-introduction {
+      font-size: 0.9rem;
+    }
+  
+    #article-player
+      .article-player-header
+      .div-introduction-player-info
+      .social-media-player
+      i {
+      font-size: 2rem;
+    }
+  
+    .search-input {
+      display: none;
+    }
+  
+    .swiper {
+      height: 400px;
+  
+      .swiper-slide {
+        height: 100%;
+      }
+  
+      .swiper-slide .div-content-image {
+        margin-top: 0px;
+        gap: 5px;
+        position: absolute;
+        bottom: 10;
+        left: 20;
+  
+        button {
+          width: 150px;
+          font-size: 0.7rem;
+        }
+  
+        h2 {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  
+    .container {
+      margin-top: 20px;
+      padding: 0 10px;
+      .cover {
+        padding: 0px;
+  
+        .left,
+        .right {
+          display: none;
+        }
+  
+        .cards {
+          overflow: scroll;
+        }
+  
+        .cards::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  
+    .player-card {
+      width: 250px;
+      height: 300px;
+      justify-content: center;
+  
+      .player-card-information {
+        gap: 10px;
+        h2 {
+          font-size: 1rem;
+        }
+      }
+  
+      img {
+        border-radius: 10px;
+        object-fit: fill;
+        width: 200px;
+        height: 150px;
+      }
+  
+      p {
+        height: 40px;
+      }
+    }
+  
+    .handball-court .image-player-court-contain {
+      width: 474px;
+      padding: 20px;
+  
+      .row.line-three .player.right-backcourt {
+        top: 140px;
+        width: 60px;
+        height: 60px;
+        right: 54px;
+      }
+  
+      .row.line-three .player.left-court {
+        top: 140px;
+        width: 60px;
+        height: 60px;
+        left: 8px;
+      }
+  
+      .row.line-four .pivot2 {
+        top: 190x;
+        width: 60px;
+        height: 60px;
+        left: 187px;
+      }
+    }
+  
+    .handball-court .image-player-court-contain .row.line-two .pivot {
+      top: 95px;
+      width: 60px;
+      height: 60px;
+      left: 187px;
+    }
+  
+    .handball-court .image-player-court-contain .row.line-one {
+      .player.extreme-left {
+        top: 10px;
+        width: 60px;
+        height: 60px;
+        left: 8px;
+      }
+  
+      .player.goalkeeper {
+        top: 10px;
+        width: 60px;
+        height: 60px;
+        left: 187px;
+      }
+  
+      .player.extreme-right {
+        top: 10px;
+        width: 60px;
+        height: 60px;
+        right: 54px;
+      }
+    }
+    .ball-right {
+      width: 21px;
+      height: 62px;
+    }
+  
+    .ball {
+      width: 21px;
+      height: 62px;
+    }
+  
+    #body-presentacion .cards-page .card-page .image-page {
+      width: 100%;
+    }
+  
+    footer .footer-container-logo {
+      width: 100px;
+      height: 50px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    #body-presentacion {
+      .cards-page {
+        .card-page {
+          flex-direction: column;
+          align-items: center;
+          p {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1080px) {
+    .button-menu,
+    .search-menu-mobile {
+      display: none;
+    }
+    .search-input {
+      display: inline;
+    }
+  
+    .main-logo {
+      flex-basis: 30%;
+    }
+  
+    .main-nav {
+      position: static;
+      margin-left: 0;
+      height: 100%;
+    }
+  
+    .nav-links {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      background: white;
+    }
+  
+    .link-item {
+      display: inline-block;
+      margin-top: 0;
+      margin-right: 2rem;
+    }
+  }
+  @media (max-width: 507px){
+    .welcome-imgs .prueba1{
+      width:200px;
+      height:100px;
+      .text-img-second {
+        bottom: 28px;
+        left: 90px;
+        font-size: 0.6rem;
+    }
+    .text-img-first {
+      bottom: 41px;
+        left: 60px;
+      font-size: 0.6rem;
+  }
+  
+    }
+  
+  }
+  @media (min-width: 508px) and (max-width: 1270px){
+    .welcome-imgs .prueba1{
+      width:300px;
+      height:200px;
+      .text-img-second {
+        bottom: 74px;
+        left: 134px;
+        
+    }
+    .text-img-first {
+      bottom: 97px;
+        left: 65px;
+      
+    }
+    }
+    
+  }
+  @media (min-width: 600px) and (max-width: 750px) {
+    #article-player
+      .article-player-header
+      .div-introduction-player-info
+      .article-player-name {
+      font-size: 2.5rem;
+    }
+  }
+  @media (max-width: 943px) {
+    .welcome-container{
+      height: auto;
+    }
+  }
+  
