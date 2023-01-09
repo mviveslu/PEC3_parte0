@@ -2,14 +2,11 @@ import data from "../json/data-intesting-players.json";
 import goldMedal from "../img/icons/Gold.png";
 import silverMedal from "../img/icons/Silver.png";
 import bronzeMedal from "../img/icons/Bronze.png";
-
-
 import FR from "../../node_modules/country-flag-icons/1x1/FR.svg";
 import ES from "../../node_modules/country-flag-icons/1x1/ES.svg";
 import CH from "../../node_modules/country-flag-icons/1x1/CH.svg";
 import DK from "../../node_modules/country-flag-icons/1x1/DK.svg";
 import BV from "../../node_modules/country-flag-icons/1x1/BV.svg";
-
 import image4 from "../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg";
 import image5 from "../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg";
 import image6 from "../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg";
@@ -17,91 +14,46 @@ import image7 from "../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg
 import image8 from "../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg";
 import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg";
 import image10 from "../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg";
-
-
-
 import imageSize300_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_300.jpg"
 import imageSize300_2 from "../img/InterestingPlayers/Resized/Nora_Mork_20141115_300.jpg"
-
 import imageSize300_4 from "../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_300.jpg"
 import imageSize300_5 from "../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_300.jpg"
 import imageSize300_6 from "../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_300.jpg"
 import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_300.jpg"
-
 import imageSize500_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_500.jpg"
 import imageSize500_2 from "../img/InterestingPlayers/Resized/Nora_Mork_20141115_500.jpg"
-
 import imageSize500_4 from "../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_500.jpg"
 import imageSize500_5 from "../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_500.jpg"
 import imageSize500_6 from "../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_500.jpg"
 import imageSize500_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_500.jpg"
-
 import imageSize700_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_700.jpg"
 import imageSize700_2 from "../img/InterestingPlayers/Resized/Nora_Mork_20141115_700.jpg"
-
 import imageSize700_4 from "../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_700.jpg"
 import imageSize700_5 from "../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_700.jpg"
 import imageSize700_6 from "../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_700.jpg"
 import imageSize700_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_700.jpg"
-
 import imageSize900_1 from "../img/InterestingPlayers/Resized/Laura_Glauser_20160131_0_900.jpg"
 import imageSize900_2 from "../img/InterestingPlayers/Resized/Nora_Mork_20141115_900.jpg"
-
 import imageSize900_4 from "../img/InterestingPlayers/Resized/Carmen_Martin_4_20171108_900.jpg"
 import imageSize900_5 from "../img/InterestingPlayers/Resized/Nathalie_Hagman_IPH_TTH_20160403_900.jpg"
 import imageSize900_6 from "../img/InterestingPlayers/Resized/Sandra_Toft_2_20181118_900.jpg"
 import imageSize900_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_900.jpg"
-/*import imageSize300_2 from "../img/InterestingPlayers/Resized/Nora_Mørk_20141115_300.jpg";*/
-/*import imageSize300_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg";*/
 import imageSize300_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg"
-
 import imageSize500_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_500.jpg"
-
 import imageSize700_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_700.jpg"
 import imageSize900_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_900.jpg"
-/*import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_défenseuse_2015-16_300.jpg";*/
 
 const images = [image4, image5, image6, image7, image8, image9, image10];
-//const imagesSized300 = [imageSize300_1,imageSize300_2,imageSize300_3,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
 const imagesSized300 = [imageSize300_1,imageSize300_2,imageSize300_3,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
 const imagesSized500 = [imageSize500_1,imageSize500_2,imageSize500_3,imageSize500_4,imageSize500_5,imageSize500_6,imageSize500_7];
 const imagesSized700 = [imageSize700_1,imageSize700_2,imageSize700_3,imageSize700_4,imageSize700_5,imageSize700_6,imageSize700_7];
 const imagesSized900 = [imageSize900_1,imageSize900_2,imageSize900_3,imageSize900_4,imageSize900_5,imageSize900_6,imageSize900_7];
+
 function createanElement(typeElement, classNameElement) {
   const element = document.createElement(typeElement);
   element.setAttribute("class", classNameElement);
   return element;
 }
-
-const valores = window.location.search;
-const params = new URLSearchParams(valores);
-const idJugadora = params.get("id");
-const prinArticle = document.querySelector("#article-player");
-/*Parámetro mal escrito o nulo */
-if (!idJugadora) {
-  window.location.href = "./detallesJugadora.html?id=001";
-}
-const resultado = data.find((element) => element.id === idJugadora);
-/*No lo encuentra */
-if (!resultado) {
-  window.location.href = "./detallesJugadora.html?id=001";
-} else {
-  console.log(resultado.medals);
-  articleHeader(
-    resultado.name,
-    resultado.position,
-    resultado.born,
-    resultado.country,
-    resultado.instagramLink,
-    resultado.facebookLink,
-    resultado.idPhoto
-  );
-  biography(resultado.biography);
-  relatedPlayers(resultado.relatedPlayers);
-  individualAwards(resultado.individualAwards);
-  medals(resultado.medals);
-}
-/*Article header */
 function articleHeader(namePlayerComplete,positionPlayer,bornPlayer,nameFlag,instagramLink,facebookLink,positionPhoto){
   const headerArticle = document.getElementsByClassName("article-player-header")[0];
   const photoid = imagesSized300[positionPhoto];
@@ -115,7 +67,7 @@ function articleHeader(namePlayerComplete,positionPlayer,bornPlayer,nameFlag,ins
     <source media="(max-width: 375px)"  srcset=${photoid}>
     <source media="(max-width: 950px)"  srcset=${photoid2}>
     <source media="(max-width: 1400px)" srcset=${photoid3}>
-    <img src=${photoid4} alt="Player image">
+    <img src=${photoid4} alt="Player image" loading="lazy">
   </picture>
           <div class="div-introduction-player-info">
             <h1 class="article-player-name">
@@ -128,15 +80,15 @@ function articleHeader(namePlayerComplete,positionPlayer,bornPlayer,nameFlag,ins
                 <div>
                     <img src = "${getCountryFlag(
                       nameFlag
-                    )}" class="article-player-flag-country" alt="country flag">
+                    )}" class="article-player-flag-country" alt="country flag" loading="lazy">
                 </div>
             </div>
 
             <div class="social-media-player">
-                <a href="${instagramLink}">
+                <a href="${instagramLink}" aria-label="Access directly to the player's instagram">
                     <i class="fa-brands fa-instagram"></i> 
                 </a>
-                <a href="${facebookLink}">  
+                <a href="${facebookLink}" aria-label="Access directly to the player's facebook">  
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
@@ -191,6 +143,7 @@ function medals(array) {
     const medalImage = createanElement("img", "is-rounded");
     medalImage.setAttribute("src", medalColor(element.medal));
     medalImage.setAttribute("alt", "medal photo");
+    medalImage.setAttribute("loading","lazy");
     divImage.append(medalImage);
     eventMedalImage.append(divImage);
     const eventCompetition = createanElement("td", "data-label");
@@ -282,7 +235,7 @@ function relatedPlayers(array) {
         <a href="${
           "./detallesJugadora.html?id=" + jugadora.id
         }"class="link-to-related-player">
-         <img class="image-related-player" src="${
+         <img class="image-related-player" loading="lazy" src="${
            images[jugadora.idPhoto]
          }" alt="related">
          <div>
@@ -300,16 +253,39 @@ function relatedPlayers(array) {
   section.append(listRelatedPlayers);
   prinArticle.append(section);
 }
-
-/*Header*/
+const valores = window.location.search;
+const params = new URLSearchParams(valores);
+const idJugadora = params.get("id");
+const prinArticle = document.querySelector("#article-player");
+/*Parámetro mal escrito o nulo */
+if (!idJugadora) {
+  window.location.href = "./detallesJugadora.html?id=001";
+}
+const resultado = data.find((element) => element.id === idJugadora);
+/*No lo encuentra */
+if (!resultado) {
+  window.location.href = "./detallesJugadora.html?id=001";
+} else {
+  articleHeader(
+    resultado.name,
+    resultado.position,
+    resultado.born,
+    resultado.country,
+    resultado.instagramLink,
+    resultado.facebookLink,
+    resultado.idPhoto
+  );
+  biography(resultado.biography);
+  relatedPlayers(resultado.relatedPlayers);
+  individualAwards(resultado.individualAwards);
+  medals(resultado.medals);
+}
 const toggleButton = document.getElementById("button-menu");
 const navWrapper = document.getElementById("nav");
-
 toggleButton.addEventListener("click", () => {
   toggleButton.classList.toggle("close");
   navWrapper.classList.toggle("show");
 });
-
 navWrapper.addEventListener("click", (e) => {
   if (e.target.id === "nav") {
     navWrapper.classList.remove("show");

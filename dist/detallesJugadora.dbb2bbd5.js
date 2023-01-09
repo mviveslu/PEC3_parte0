@@ -613,7 +613,7 @@ var _sandraToft220181118900Jpg = require("../img/InterestingPlayers/Resized/Sand
 var _sandraToft220181118900JpgDefault = parcelHelpers.interopDefault(_sandraToft220181118900Jpg);
 var _coralieLassourceMeilleureDefenseuse201516900Jpg = require("../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_defenseuse_2015-16_900.jpg");
 var _coralieLassourceMeilleureDefenseuse201516900JpgDefault = parcelHelpers.interopDefault(_coralieLassourceMeilleureDefenseuse201516900Jpg);
-/*import imageSize300_2 from "../img/InterestingPlayers/Resized/Nora_Mørk_20141115_300.jpg";*/ /*import imageSize300_3 from "../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg";*/ var _stineOftedal20170519300Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg");
+var _stineOftedal20170519300Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_300.jpg");
 var _stineOftedal20170519300JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519300Jpg);
 var _stineOftedal20170519500Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_500.jpg");
 var _stineOftedal20170519500JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519500Jpg);
@@ -621,7 +621,7 @@ var _stineOftedal20170519700Jpg = require("../img/InterestingPlayers/Resized/Sti
 var _stineOftedal20170519700JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519700Jpg);
 var _stineOftedal20170519900Jpg = require("../img/InterestingPlayers/Resized/Stine_Oftedal_20170519_900.jpg");
 var _stineOftedal20170519900JpgDefault = parcelHelpers.interopDefault(_stineOftedal20170519900Jpg);
-/*import imageSize300_7 from "../img/InterestingPlayers/Resized/Coralie_Lassource-Meilleure_défenseuse_2015-16_300.jpg";*/ const images = [
+const images = [
     (0, _lauraGlauserWikipediaCommonsJpgDefault.default),
     (0, _noraMorkWikipediaCommonsJpgDefault.default),
     (0, _stineOftedalWikipediaCommonsJpgDefault.default),
@@ -630,7 +630,6 @@ var _stineOftedal20170519900JpgDefault = parcelHelpers.interopDefault(_stineOfte
     (0, _sandraToft2WikipediaCommonsJpgDefault.default),
     (0, _coralieLassourceWikipediaCommonsJpgDefault.default)
 ];
-//const imagesSized300 = [imageSize300_1,imageSize300_2,imageSize300_3,imageSize300_4,imageSize300_5,imageSize300_6,imageSize300_7];
 const imagesSized300 = [
     (0, _lauraGlauser201601310300JpgDefault.default),
     (0, _noraMork20141115300JpgDefault.default),
@@ -672,22 +671,7 @@ function createanElement(typeElement, classNameElement) {
     element.setAttribute("class", classNameElement);
     return element;
 }
-const valores = window.location.search;
-const params = new URLSearchParams(valores);
-const idJugadora = params.get("id");
-const prinArticle = document.querySelector("#article-player");
-/*Parámetro mal escrito o nulo */ if (!idJugadora) window.location.href = "./detallesJugadora.html?id=001";
-const resultado = (0, _dataIntestingPlayersJsonDefault.default).find((element)=>element.id === idJugadora);
-/*No lo encuentra */ if (!resultado) window.location.href = "./detallesJugadora.html?id=001";
-else {
-    console.log(resultado.medals);
-    articleHeader(resultado.name, resultado.position, resultado.born, resultado.country, resultado.instagramLink, resultado.facebookLink, resultado.idPhoto);
-    biography(resultado.biography);
-    relatedPlayers(resultado.relatedPlayers);
-    individualAwards(resultado.individualAwards);
-    medals(resultado.medals);
-}
-/*Article header */ function articleHeader(namePlayerComplete, positionPlayer, bornPlayer, nameFlag, instagramLink, facebookLink, positionPhoto) {
+function articleHeader(namePlayerComplete, positionPlayer, bornPlayer, nameFlag, instagramLink, facebookLink, positionPhoto) {
     const headerArticle = document.getElementsByClassName("article-player-header")[0];
     const photoid = imagesSized300[positionPhoto];
     const photoid2 = imagesSized500[positionPhoto];
@@ -699,7 +683,7 @@ else {
     <source media="(max-width: 375px)"  srcset=${photoid}>
     <source media="(max-width: 950px)"  srcset=${photoid2}>
     <source media="(max-width: 1400px)" srcset=${photoid3}>
-    <img src=${photoid4} alt="Player image">
+    <img src=${photoid4} alt="Player image" loading="lazy">
   </picture>
           <div class="div-introduction-player-info">
             <h1 class="article-player-name">
@@ -710,15 +694,15 @@ else {
                     ${positionPlayer}, ${bornPlayer}
                 </p>
                 <div>
-                    <img src = "${getCountryFlag(nameFlag)}" class="article-player-flag-country" alt="country flag">
+                    <img src = "${getCountryFlag(nameFlag)}" class="article-player-flag-country" alt="country flag" loading="lazy">
                 </div>
             </div>
 
             <div class="social-media-player">
-                <a href="${instagramLink}">
+                <a href="${instagramLink}" aria-label="Access directly to the player's instagram">
                     <i class="fa-brands fa-instagram"></i> 
                 </a>
-                <a href="${facebookLink}">  
+                <a href="${facebookLink}" aria-label="Access directly to the player's facebook">  
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
@@ -766,6 +750,7 @@ else {
         const medalImage = createanElement("img", "is-rounded");
         medalImage.setAttribute("src", medalColor(element.medal));
         medalImage.setAttribute("alt", "medal photo");
+        medalImage.setAttribute("loading", "lazy");
         divImage.append(medalImage);
         eventMedalImage.append(divImage);
         const eventCompetition = createanElement("td", "data-label");
@@ -843,7 +828,7 @@ else {
         const liRelatedPlayer = createanElement("li", "related-player");
         liRelatedPlayer.innerHTML = `
         <a href="${"./detallesJugadora.html?id=" + jugadora.id}"class="link-to-related-player">
-         <img class="image-related-player" src="${images[jugadora.idPhoto]}" alt="related">
+         <img class="image-related-player" loading="lazy" src="${images[jugadora.idPhoto]}" alt="related">
          <div>
          <span class="player-related-name">
                 ${jugadora.name}
@@ -859,7 +844,21 @@ else {
     section.append(listRelatedPlayers);
     prinArticle.append(section);
 }
-/*Header*/ const toggleButton = document.getElementById("button-menu");
+const valores = window.location.search;
+const params = new URLSearchParams(valores);
+const idJugadora = params.get("id");
+const prinArticle = document.querySelector("#article-player");
+/*Parámetro mal escrito o nulo */ if (!idJugadora) window.location.href = "./detallesJugadora.html?id=001";
+const resultado = (0, _dataIntestingPlayersJsonDefault.default).find((element)=>element.id === idJugadora);
+/*No lo encuentra */ if (!resultado) window.location.href = "./detallesJugadora.html?id=001";
+else {
+    articleHeader(resultado.name, resultado.position, resultado.born, resultado.country, resultado.instagramLink, resultado.facebookLink, resultado.idPhoto);
+    biography(resultado.biography);
+    relatedPlayers(resultado.relatedPlayers);
+    individualAwards(resultado.individualAwards);
+    medals(resultado.medals);
+}
+const toggleButton = document.getElementById("button-menu");
 const navWrapper = document.getElementById("nav");
 toggleButton.addEventListener("click", ()=>{
     toggleButton.classList.toggle("close");
