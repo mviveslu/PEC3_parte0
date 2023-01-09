@@ -67,7 +67,7 @@ function articleHeader(namePlayerComplete,positionPlayer,bornPlayer,nameFlag,ins
     <source media="(max-width: 375px)"  srcset=${photoid}>
     <source media="(max-width: 950px)"  srcset=${photoid2}>
     <source media="(max-width: 1400px)" srcset=${photoid3}>
-    <img src=${photoid4} alt="Player image" loading="lazy">
+    <img src=${photoid4} alt="Player image">
   </picture>
           <div class="div-introduction-player-info">
             <h1 class="article-player-name">
