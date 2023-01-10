@@ -75,6 +75,16 @@ footer ul li:last-child:after {
   content: "";
 }
 
+footer .img-logo-footer {
+  width: 114.5px;
+  height: 46.5px;
+}
+
+footer .img-logo-footer img {
+  height: 100%;
+  width: 100%;
+}
+
 footer .footer-container-logo {
   width: -moz-fit-content;
   width: fit-content;

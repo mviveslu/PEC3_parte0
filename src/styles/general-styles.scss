@@ -67,12 +67,26 @@ footer {
         content: "";
       }
     }
+
+    
+    .img-logo-footer{
+      width: 114.5px;
+      height: 46.5px;
+
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+
     .footer-container-logo {
       width: fit-content;
       height: auto;
       padding: 10px;
       width: 150px;
       height: 70px;
+
+
       img {
         height: 100%;
         background-color: white;
