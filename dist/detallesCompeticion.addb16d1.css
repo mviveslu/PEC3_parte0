@@ -5,6 +5,11 @@
   border-radius: 50%;
 }
 
+.article-competition-flag-country {
+  width: 20px;
+  height: auto;
+}
+
 #article-competition .article-competition-header .div-introduction-competition-info {
   width: 100%;
   flex-direction: column;

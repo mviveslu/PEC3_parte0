@@ -714,11 +714,7 @@ function articleHeader(namePlayerComplete, positionPlayer, bornPlayer, nameFlag,
         </div>
     `;
     prinArticle.append(headerArticle);
-/*  
-  <i class="fa-brands fa-instagram"></i>
-  <i class="fa-brands fa-facebook"></i>
-  
-  */ }
+}
 /*Returns the medal image */ function medalColor(medal) {
     if (medal === "Gold") return 0, _goldPngDefault.default;
     else if (medal == "Silver") return 0, _silverPngDefault.default;

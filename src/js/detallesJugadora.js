@@ -142,11 +142,6 @@ function articleHeader(
         </div>
     `;
   prinArticle.append(headerArticle);
-  /*  
-  <i class="fa-brands fa-instagram"></i>
-  <i class="fa-brands fa-facebook"></i>
-  
-  */
 }
 /*Returns the medal image */
 function medalColor(medal) {
