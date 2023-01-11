@@ -601,25 +601,6 @@ section h2 {
   }
 }
 
-@media (max-width: 507px) {
-  .welcome-imgs .prueba1 {
-    width: 200px;
-    height: 100px;
-  }
-
-  .welcome-imgs .prueba1 .text-img-second {
-    font-size: .6rem;
-    bottom: 28px;
-    left: 90px;
-  }
-
-  .welcome-imgs .prueba1 .text-img-first {
-    font-size: .6rem;
-    bottom: 41px;
-    left: 60px;
-  }
-}
-
 @media (min-width: 508px) and (max-width: 1270px) {
   .welcome-imgs .prueba1 {
     width: 300px;

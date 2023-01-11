@@ -618,24 +618,7 @@ footer {
       margin-right: 2rem;
     }
   }
-  @media (max-width: 507px){
-    .welcome-imgs .prueba1{
-      width:200px;
-      height:100px;
-      .text-img-second {
-        bottom: 28px;
-        left: 90px;
-        font-size: 0.6rem;
-    }
-    .text-img-first {
-      bottom: 41px;
-        left: 60px;
-      font-size: 0.6rem;
-  }
   
-    }
-  
-  }
   @media (min-width: 508px) and (max-width: 1270px){
     .welcome-imgs .prueba1{
       width:300px;
