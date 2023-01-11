@@ -501,54 +501,55 @@ footer {
       padding: 20px;
   
       .row.line-three .player.right-backcourt {
-        top: 140px;
-        width: 60px;
-        height: 60px;
-        right: 54px;
+        top: 190px;
+        width: 15%;
+        height: 15%;
+        right: 54px !important;
       }
   
       .row.line-three .player.left-court {
-        top: 140px;
-        width: 60px;
-        height: 60px;
-        left: 8px;
+        top: 190px;
+        width: 15%;
+        height: 15%;
+        left: 8px !important;
       }
   
       .row.line-four .pivot2 {
-        top: 190x;
-        width: 60px;
-        height: 60px;
-        left: 187px;
+        top: 190x !important;
+        width: 15% !important;
+        height: 15% !important;
+        left: 38% !important;
+        bottom: 35% !important;
       }
     }
   
     .handball-court .image-player-court-contain .row.line-two .pivot {
-      top: 95px;
-      width: 60px;
-      height: 60px;
-      left: 187px;
+      top: 24% !important;
+      width: 15% !important;
+      height: 15% !important;
+      left: 38% !important;
     }
   
     .handball-court .image-player-court-contain .row.line-one {
       .player.extreme-left {
         top: 10px;
-        width: 60px;
-        height: 60px;
+        width: 15%;
+        height: 15%;
         left: 8px;
       }
   
       .player.goalkeeper {
-        top: 10px;
-        width: 60px;
-        height: 60px;
-        left: 187px;
+        top: 10px !important;
+        width: 15%;
+        height: 15%;
+        left: 38%;
       }
   
       .player.extreme-right {
-        top: 10px;
-        width: 60px;
-        height: 60px;
-        right: 54px;
+        top: 10px !important;
+        width: 15%;
+        height: 15%;
+        right: 54px !important;
       }
     }
     .ball-right {
