@@ -358,6 +358,10 @@ footer {
     }
   }
   @media (max-width: 600px) {
+    footer {
+      width: 100%;
+      height:unset;
+    }
     #links {
       .links-resources ul li {
         a {
