@@ -110,8 +110,9 @@ const divSlider = createanElement("div", "slider-container")
 const swiper = createanElement("div", "swiper");
 const swipperWrapper = createanElement("div","swiper-wrapper")
 orderedData.map((element,index) => {
-    var swiperSlide = createanElement("div","swiper-slide")
-    swiperSlide.style.backgroundImage = `url(${imagesBanner[index]})`;   
+    var swiperSlide = createanElement("div","swiper-slide swiper-lazy")
+    //swiperSlide.style.backgroundImage = `url(${imagesBanner[index]})`;
+    swiperSlide.setAttribute("data-background",imagesBanner[index]);   
     var h2 = document.createElement("h2");
     h2.innerHTML = element.competition;
     var texto = document.createElement("p");
@@ -142,8 +143,9 @@ const swiper2 = new Swiper('.swiper', {
         delay: 5000,
       },
       lazy: {
+        enabled:true,
         loadPrevNext: true, // pre-loads the next image to avoid showing a loading placeholder if possible
-        loadPrevNextAmount: 1 //or, if you wish, preload the next 2 images
+        loadPrevNextAmount: 1 //or, if you wish, preload the next 1 images
       }
   });
 setInterestingPlayers();
