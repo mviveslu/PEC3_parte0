@@ -172,7 +172,7 @@ footer.innerHTML= `
         <li><a href="./enlaces.html">Links</a></li>
     </ul>
 </div>
-<img class="footer-container-logo" src=${whiteLogo} alt="" loading="lazy" >
+<img class="footer-container-logo" src=${whiteLogo} alt="" loading="lazy" width=170 height=80>
 `;
 document.getElementsByClassName("cover-page")[0].append(footer);
  /*Header*/
