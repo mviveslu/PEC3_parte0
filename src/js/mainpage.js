@@ -66,6 +66,7 @@ function setInterestingPlayers(){
         const playerCardtitle = document.createElement("h2");
         playerCardtitle.innerHTML = element.name;
         const imagenPlayer = document.createElement("img","player-card-image");
+        imagenPlayer.setAttribute("loading","lazy");
         imagenPlayer.src = images[element.idPhoto];
         imagenPlayer.setAttribute("alt","player photo");
         const playerCardbio = document.createElement("p");
@@ -139,7 +140,15 @@ const swiper2 = new Swiper('.swiper', {
       },
       autoplay: {
         delay: 5000,
-      }
+      },
+      on: {
+        // LazyLoad swiper images after swiper initialization
+        afterInit: (swiper) => {
+          new LazyLoad({
+            container: swiper.el,
+            cancel_on_exit: false
+          });
+        }
   });
 setInterestingPlayers();
 /*add footer*/
@@ -156,7 +165,7 @@ footer.innerHTML= `
         <li><a href="./enlaces.html">Links</a></li>
     </ul>
 </div>
-<img class="footer-container-logo" src=${whiteLogo} alt="">
+<img class="footer-container-logo" src=${whiteLogo} alt="" loading="lazy">
 `;
 document.getElementsByClassName("cover-page")[0].append(footer);
  /*Header*/
