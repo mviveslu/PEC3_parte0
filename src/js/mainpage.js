@@ -141,14 +141,9 @@ const swiper2 = new Swiper('.swiper', {
       autoplay: {
         delay: 5000,
       },
-      on: {
-        // LazyLoad swiper images after swiper initialization
-        afterInit: (swiper) => {
-          new LazyLoad({
-            container: swiper.el,
-            cancel_on_exit: false
-          });
-        }
+      lazy: {
+        loadPrevNext: true, // pre-loads the next image to avoid showing a loading placeholder if possible
+        loadPrevNextAmount: 1 //or, if you wish, preload the next 2 images
       }
   });
 setInterestingPlayers();
