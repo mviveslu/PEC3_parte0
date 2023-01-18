@@ -57,7 +57,7 @@ function setInterestingPlayers(){
     titulo.innerHTML = "Recommended players";
     const divCover = createanElement("div", "cover");
     const leftbutton = createanElement("button", "left");
-    
+    leftbutton.setAttribute("aria-label","carrousel-left-button");
     const cards = createanElement("ul", "cards");
     interestingPlayers.map((element,index) => {
         const card = createanElement("li", "card");
@@ -83,6 +83,7 @@ function setInterestingPlayers(){
       
     });
     const rightbutton = createanElement("button", "right");
+    rightbutton.setAttribute("aria-label","carrousel-right-button");
     
    
     divCover.append(leftbutton,cards,rightbutton);
