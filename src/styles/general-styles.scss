@@ -358,7 +358,11 @@ section {
   footer {
     width: 100%;
     height: unset;
-    font-size: 0.9rem;
+    a,
+    p {
+      font-size: 0.9rem;
+    }
+    
   }
   #links {
     .links-resources ul li {
