@@ -71,6 +71,8 @@ function setInterestingPlayers(){
         const playerCardtitle = document.createElement("h2");
         playerCardtitle.innerHTML = element.name;
         const imagenPlayer = document.createElement("img","player-card-image");
+        imagenPlayer.setAttribute("width","260");
+        imagenPlayer.setAttribute("height","233");
         imagenPlayer.setAttribute("loading","lazy");
         imagenPlayer.src = images[element.idPhoto];
         imagenPlayer.setAttribute("alt","player photo");
