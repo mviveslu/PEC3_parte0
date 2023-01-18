@@ -149,6 +149,7 @@ const swiper2 = new Swiper('.swiper', {
             cancel_on_exit: false
           });
         }
+      }
   });
 setInterestingPlayers();
 /*add footer*/
