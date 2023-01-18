@@ -7,9 +7,14 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import 'swiper/swiper-bundle.css'
 /*Importacion de imágenes*/
-import image1 from "../img/handball_banner1.jpg"
-import image2 from "../img/handball_banner2.jpg"
-import image3 from "../img/handball_banner3.jpg"
+import image1Sm from "../img/banner/handball_banner1_sm.jpg"
+import image2Sm from "../img/banner/handball_banner2_sm.jpg"
+import image3Sm from "../img/banner/handball_banner3_sm.jpg"
+const imagesBannerSm = [image1Sm,image2Sm,image3Sm];
+import image1Lr from "../img/banner/handball_banner1_lr.jpg"
+import image2Lr from "../img/banner/handball_banner2_lr.jpg"
+import image3Lr from "../img/banner/handball_banner3_lr.jpg"
+const imagesBannerLr = [image1Lr,image2Lr,image3Lr];
 
 import whiteLogo from "../img/logoblanco.png";
 import image4 from "../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg"
@@ -23,7 +28,7 @@ import image10 from "../img/InterestingPlayers/Coralie_Lassource_wikipediaCommon
 const images = [image4,image5,image6,image7,image8,image9,image10];
 
 
-const imagesBanner = [image1,image2,image3];
+
 
 /*Ordenar las competiciones */
 function orderBydateData(){
@@ -110,6 +115,7 @@ const banner = document.querySelector("#banner-container");
 const divSlider = createanElement("div", "slider-container")
 const swiper = createanElement("div", "swiper");
 const swipperWrapper = createanElement("div","swiper-wrapper")
+const imagesBanner = screen.width<960?imagesBannerSm:imagesBannerLr;
 orderedData.map((element,index) => {
     var swiperSlide = createanElement("div","swiper-slide swiper-lazy")
     //swiperSlide.style.backgroundImage = `url(${imagesBanner[index]})`;
