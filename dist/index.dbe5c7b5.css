@@ -52,8 +52,10 @@ footer a:hover {
 footer a, footer p {
   color: #fff;
   border: none;
+  padding: 5px;
   font-size: .7rem;
   text-decoration: none;
+  display: inline-block;
 }
 
 footer ul {
@@ -359,6 +361,16 @@ section h2 {
 }
 
 @media (max-width: 600px) {
+  footer {
+    width: 100%;
+    height: unset;
+  }
+
+  footer a, footer p {
+    padding: 16px 0;
+    font-size: .9rem;
+  }
+
   #links .links-resources ul li a {
     font-size: .8rem;
   }
@@ -563,7 +575,7 @@ section h2 {
   }
 
   #body-presentacion .cards-page .card-page p {
-    font-size: .7rem;
+    font-size: .8rem;
   }
 }
 

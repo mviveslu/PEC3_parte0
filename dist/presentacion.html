@@ -8,14 +8,13 @@
     <meta name="description" content="Página con la biografía/descripción de cada jugadora">
     <link rel="stylesheet" href="/index.dbe5c7b5.css">
     <link rel="stylesheet" href="/index.0d033409.css">
-    <script src="https://kit.fontawesome.com/c89555854d.js" crossorigin="anonymous"></script>
     <title>Presentation</title>
 </head>
 
 <body id="body-presentacion">
     <header class="main-header">
         <a class="header-loogo-link" href="/index.html">
-          <img src="/logo_web_cut.25161792.png" class="header-logo" alt="hanball IHF logo">
+          <img src="/logo_web_cut.25161792.png" class="header-logo" alt="hanball IHF logo" loading="lazy" width="150" height="45">
         </a>
         <nav id="nav" class="main-nav">
           <div class="nav-links">
@@ -33,7 +32,10 @@
         </nav>
         <div class="new-icons-functions">
           <div class="search-menu-mobile">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <svg width="28px" height="28px" viewbox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>search</title>
+                <path d="M30.885 29.115l-10.103-10.103c1.538-1.911 2.468-4.368 2.468-7.042 0-6.229-5.050-11.279-11.279-11.279s-11.279 5.050-11.279 11.279c0 6.229 5.050 11.279 11.279 11.279 2.674 0 5.13-0.93 7.063-2.485l-0.022 0.017 10.103 10.103c0.226 0.226 0.539 0.366 0.884 0.366 0.691 0 1.251-0.56 1.251-1.251 0-0.345-0.14-0.658-0.366-0.884l0 0zM3.25 12c0-4.832 3.918-8.75 8.75-8.75s8.75 3.918 8.75 8.75c0 4.832-3.918 8.75-8.75 8.75v0c-4.83-0.005-8.745-3.92-8.75-8.749v-0.001z"></path>
+              </svg>
           </div>
           <button id="button-menu" class="button-menu" aria-label="main-menu">
             <span></span>
@@ -44,12 +46,15 @@
       </header>
     <div class="title-presentacion">
         <h1>Presentation</h1>
-        <img class="ball" src="/ball.2a8d139f.svg">
+        <img class="ball" src="/ball.2a8d139f.svg" loading="lazy" alt="movement-ball">
     </div>
     <div class="cards-page">
         <div class="card-page">
             <div class="image-page">
-                <img src="/portada.204b3a55.png" alt=" presentacion appearance">
+                <picture>
+                    <source media="(max-width: 900px)" srcset="/portada_sm.4fc9fc14.webp">
+                    <img src="/categoria_lr.5f8c9503.webp" alt="categoria details" style="width: 100%">
+                </picture>
             </div>
             <div class="info-card-page">
                 <h2>
@@ -63,7 +68,10 @@
         </div>
         <div class="card-page">
             <div class="image-page">
-                <img src="/categoria.7ce39ffd.png" alt="categories appearance">
+                <picture>
+                    <source media="(max-width: 900px)" srcset="/categoria_sm.4a31c336.webp">
+                    <img src="/categoria_lr.5f8c9503.webp" alt="categoria details" style="width: 100%">
+                </picture>
             </div>
             <div class="info-card-page">
                 <h2>
@@ -80,8 +88,11 @@
         </div>
         <div class="card-page">
             <div class="image-page">
-                <img src="/jugadora.72122283.png" alt="player's details appearance">
-            </div>
+            <picture>
+                <source media="(max-width: 900px)" srcset="/jugadora_sm.03127e74.webp">
+                <img src="/jugadora_lr.99cc289d.webp" alt="enlaces details" style="width: 100%">
+            </picture>
+        </div>
             <div class="info-card-page">
                 <h2>
                     Player's details web page
@@ -96,7 +107,10 @@
         </div>
         <div class="card-page">
             <div class="image-page">
-                <img src="/competicion.f142f34c.png" alt="competition's details appearance">
+            <picture>
+                <source media="(max-width: 900px)" srcset="/competicion_sm.65f05b43.webp">
+                <img src="/competicion_lr.fbb74be8.webp" alt="enlaces details" style="width: 100%">
+            </picture>
             </div>
             <div class="info-card-page">
                 <h2>
@@ -111,7 +125,10 @@
         </div>
         <div class="card-page">
             <div class="image-page">
-                <img src="/enlaces.68ed5055.png" alt="links appearance">
+                <picture>
+                    <source media="(max-width: 900px)" srcset="/enlaces_sm.09c1f1bb.webp">
+                    <img src="/enlaces_lr.4983b6ab.webp" alt="enlaces details" style="width: 100%">
+                </picture>
             </div>
             <div class="info-card-page">
                 <h2>
@@ -136,9 +153,9 @@
                 <li><a href="/enlaces.html">Links</a></li>
             </ul>
         </div>
-        <img class="footer-container-logo" src="/logoblanco.59388228.png" alt="">
+        <img class="footer-container-logo" src="/logoblanco.59388228.png" alt="" loading="lazy" width="170" height="80">
     </footer>
-    <script>/*Header*/ const toggleButton = document.getElementById("button-menu");
+    <script async="" defer="">/*Header*/ const toggleButton = document.getElementById("button-menu");
 const navWrapper = document.getElementById("nav");
 const animation = document.querySelector(".title-presentacion>img");
 console.log(animation);

@@ -543,41 +543,52 @@ var _swiperBundleEsmJsDefault = parcelHelpers.interopDefault(_swiperBundleEsmJs)
 var _swiperBundleMinCss = require("swiper/swiper-bundle.min.css");
 var _swiperMinCss = require("swiper/swiper.min.css");
 var _swiperBundleCss = require("swiper/swiper-bundle.css");
-/*Importacion de imágenes*/ var _handballBanner1Jpg = require("../img/handball_banner1.jpg");
-var _handballBanner1JpgDefault = parcelHelpers.interopDefault(_handballBanner1Jpg);
-var _handballBanner2Jpg = require("../img/handball_banner2.jpg");
-var _handballBanner2JpgDefault = parcelHelpers.interopDefault(_handballBanner2Jpg);
-var _handballBanner3Jpg = require("../img/handball_banner3.jpg");
-var _handballBanner3JpgDefault = parcelHelpers.interopDefault(_handballBanner3Jpg);
+/*Importacion de imágenes*/ var _handballBanner1SmWebp = require("../img/banner/handball_banner1_sm.webp");
+var _handballBanner1SmWebpDefault = parcelHelpers.interopDefault(_handballBanner1SmWebp);
+var _handballBanner2SmWebp = require("../img/banner/handball_banner2_sm.webp");
+var _handballBanner2SmWebpDefault = parcelHelpers.interopDefault(_handballBanner2SmWebp);
+var _handballBanner3SmWebp = require("../img/banner/handball_banner3_sm.webp");
+var _handballBanner3SmWebpDefault = parcelHelpers.interopDefault(_handballBanner3SmWebp);
+var _handballBanner1LrWebp = require("../img/banner/handball_banner1_lr.webp");
+var _handballBanner1LrWebpDefault = parcelHelpers.interopDefault(_handballBanner1LrWebp);
+var _handballBanner2LrWebp = require("../img/banner/handball_banner2_lr.webp");
+var _handballBanner2LrWebpDefault = parcelHelpers.interopDefault(_handballBanner2LrWebp);
+var _handballBanner3LrWebp = require("../img/banner/handball_banner3_lr.webp");
+var _handballBanner3LrWebpDefault = parcelHelpers.interopDefault(_handballBanner3LrWebp);
 var _logoblancoPng = require("../img/logoblanco.png");
 var _logoblancoPngDefault = parcelHelpers.interopDefault(_logoblancoPng);
-var _lauraGlauserWikipediaCommonsJpg = require("../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg");
-var _lauraGlauserWikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_lauraGlauserWikipediaCommonsJpg);
-var _noraMorkWikipediaCommonsJpg = require("../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg");
-var _noraMorkWikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_noraMorkWikipediaCommonsJpg);
-var _stineOftedalWikipediaCommonsJpg = require("../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg");
-var _stineOftedalWikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_stineOftedalWikipediaCommonsJpg);
-var _carmenMartinWikipediaCommonsJpg = require("../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg");
-var _carmenMartinWikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_carmenMartinWikipediaCommonsJpg);
-var _nathalieHagmanWikipediaCommonsJpg = require("../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg");
-var _nathalieHagmanWikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_nathalieHagmanWikipediaCommonsJpg);
-var _sandraToft2WikipediaCommonsJpg = require("../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg");
-var _sandraToft2WikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_sandraToft2WikipediaCommonsJpg);
-var _coralieLassourceWikipediaCommonsJpg = require("../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg");
-var _coralieLassourceWikipediaCommonsJpgDefault = parcelHelpers.interopDefault(_coralieLassourceWikipediaCommonsJpg);
-const images = [
-    (0, _lauraGlauserWikipediaCommonsJpgDefault.default),
-    (0, _noraMorkWikipediaCommonsJpgDefault.default),
-    (0, _stineOftedalWikipediaCommonsJpgDefault.default),
-    (0, _carmenMartinWikipediaCommonsJpgDefault.default),
-    (0, _nathalieHagmanWikipediaCommonsJpgDefault.default),
-    (0, _sandraToft2WikipediaCommonsJpgDefault.default),
-    (0, _coralieLassourceWikipediaCommonsJpgDefault.default)
+var _lauraGlauserWikipediaCommonsWebp = require("../img/InterestingPlayers/playercard/Laura_Glauser_wikipediaCommons.webp");
+var _lauraGlauserWikipediaCommonsWebpDefault = parcelHelpers.interopDefault(_lauraGlauserWikipediaCommonsWebp);
+var _noraMorkWikipediaCommonsWebp = require("../img/InterestingPlayers/playercard/Nora_Mork_wikipediaCommons.webp");
+var _noraMorkWikipediaCommonsWebpDefault = parcelHelpers.interopDefault(_noraMorkWikipediaCommonsWebp);
+var _stineOftedalWikipediaCommonsWebp = require("../img/InterestingPlayers/playercard/Stine_Oftedal_wikipediaCommons.webp");
+var _stineOftedalWikipediaCommonsWebpDefault = parcelHelpers.interopDefault(_stineOftedalWikipediaCommonsWebp);
+var _carmenMartinWikipediaCommonsWebp = require("../img/InterestingPlayers/playercard/Carmen_Martin_wikipediaCommons.webp");
+var _carmenMartinWikipediaCommonsWebpDefault = parcelHelpers.interopDefault(_carmenMartinWikipediaCommonsWebp);
+var _nathalieHagmanWikipediaCommonsWebp = require("../img/InterestingPlayers/playercard/Nathalie_Hagman_wikipediaCommons.webp");
+var _nathalieHagmanWikipediaCommonsWebpDefault = parcelHelpers.interopDefault(_nathalieHagmanWikipediaCommonsWebp);
+var _sandraToft2WikipediaCommonsWebp = require("../img/InterestingPlayers/playercard/Sandra_Toft_2_wikipediaCommons.webp");
+var _sandraToft2WikipediaCommonsWebpDefault = parcelHelpers.interopDefault(_sandraToft2WikipediaCommonsWebp);
+var _coralieLassourceWikipediaCommonsWebp = require("../img/InterestingPlayers/playercard/Coralie_Lassource_wikipediaCommons.webp");
+var _coralieLassourceWikipediaCommonsWebpDefault = parcelHelpers.interopDefault(_coralieLassourceWikipediaCommonsWebp);
+const imagesBannerSm = [
+    (0, _handballBanner1SmWebpDefault.default),
+    (0, _handballBanner2SmWebpDefault.default),
+    (0, _handballBanner3SmWebpDefault.default)
 ];
-const imagesBanner = [
-    (0, _handballBanner1JpgDefault.default),
-    (0, _handballBanner2JpgDefault.default),
-    (0, _handballBanner3JpgDefault.default)
+const imagesBannerLr = [
+    (0, _handballBanner1LrWebpDefault.default),
+    (0, _handballBanner2LrWebpDefault.default),
+    (0, _handballBanner3LrWebpDefault.default)
+];
+const images = [
+    (0, _lauraGlauserWikipediaCommonsWebpDefault.default),
+    (0, _noraMorkWikipediaCommonsWebpDefault.default),
+    (0, _stineOftedalWikipediaCommonsWebpDefault.default),
+    (0, _carmenMartinWikipediaCommonsWebpDefault.default),
+    (0, _nathalieHagmanWikipediaCommonsWebpDefault.default),
+    (0, _sandraToft2WikipediaCommonsWebpDefault.default),
+    (0, _coralieLassourceWikipediaCommonsWebpDefault.default)
 ];
 /*Ordenar las competiciones */ function orderBydateData() {
     return (0, _dataCompetitionsJsonDefault.default).sort((a, b)=>{
@@ -605,6 +616,7 @@ function setInterestingPlayers() {
     titulo.innerHTML = "Recommended players";
     const divCover = createanElement("div", "cover");
     const leftbutton = createanElement("button", "left");
+    leftbutton.setAttribute("aria-label", "carrousel-left-button");
     const cards = createanElement("ul", "cards");
     (0, _dataIntestingPlayersJsonDefault.default).map((element, index)=>{
         const card = createanElement("li", "card");
@@ -613,6 +625,8 @@ function setInterestingPlayers() {
         const playerCardtitle = document.createElement("h2");
         playerCardtitle.innerHTML = element.name;
         const imagenPlayer = document.createElement("img", "player-card-image");
+        imagenPlayer.setAttribute("width", "260");
+        imagenPlayer.setAttribute("height", "233");
         imagenPlayer.setAttribute("loading", "lazy");
         imagenPlayer.src = images[element.idPhoto];
         imagenPlayer.setAttribute("alt", "player photo");
@@ -628,6 +642,7 @@ function setInterestingPlayers() {
         cards.append(card);
     });
     const rightbutton = createanElement("button", "right");
+    rightbutton.setAttribute("aria-label", "carrousel-right-button");
     divCover.append(leftbutton, cards, rightbutton);
     const divContainer = createanElement("div", "container");
     divContainer.append(titulo, divCover);
@@ -648,6 +663,7 @@ const banner = document.querySelector("#banner-container");
 const divSlider = createanElement("div", "slider-container");
 const swiper = createanElement("div", "swiper");
 const swipperWrapper = createanElement("div", "swiper-wrapper");
+const imagesBanner = screen.width < 960 ? imagesBannerSm : imagesBannerLr;
 orderedData.map((element, index)=>{
     var swiperSlide = createanElement("div", "swiper-slide swiper-lazy");
     //swiperSlide.style.backgroundImage = `url(${imagesBanner[index]})`;
@@ -701,7 +717,7 @@ footer.innerHTML = `
         <li><a href="./enlaces.html">Links</a></li>
     </ul>
 </div>
-<img class="footer-container-logo" src=${0, _logoblancoPngDefault.default} alt="" loading="lazy">
+<img class="footer-container-logo" src=${0, _logoblancoPngDefault.default} alt="" loading="lazy" width=170 height=80>
 `;
 document.getElementsByClassName("cover-page")[0].append(footer);
 /*Header*/ const toggleButton = document.getElementById("button-menu");
@@ -717,7 +733,7 @@ navWrapper.addEventListener("click", (e)=>{
     }
 });
 
-},{"../json/data-competitions.json":"39Ovm","../json/data-intesting-players.json":"jIR5q","swiper/swiper-bundle.esm.js":"110z5","swiper/swiper-bundle.min.css":"girFM","swiper/swiper.min.css":"eFTGe","swiper/swiper-bundle.css":"aErfw","../img/handball_banner1.jpg":"PCgs1","../img/handball_banner2.jpg":"jiiBf","../img/handball_banner3.jpg":"63DK7","../img/logoblanco.png":"ivcFG","../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg":"he5S2","../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg":"kgkFB","../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg":"e4mor","../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg":"8VPxr","../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg":"cCfna","../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg":"lyuuF","../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg":"kRRPn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39Ovm":[function(require,module,exports) {
+},{"../json/data-competitions.json":"39Ovm","../json/data-intesting-players.json":"jIR5q","swiper/swiper-bundle.esm.js":"110z5","swiper/swiper-bundle.min.css":"girFM","swiper/swiper.min.css":"eFTGe","swiper/swiper-bundle.css":"aErfw","../img/banner/handball_banner1_sm.webp":"6FXBr","../img/banner/handball_banner2_sm.webp":"g8VXo","../img/banner/handball_banner3_sm.webp":"6bQDx","../img/banner/handball_banner1_lr.webp":"jZHPn","../img/banner/handball_banner2_lr.webp":"Bnj1n","../img/banner/handball_banner3_lr.webp":"gvspQ","../img/logoblanco.png":"ivcFG","../img/InterestingPlayers/playercard/Laura_Glauser_wikipediaCommons.webp":"dUMHu","../img/InterestingPlayers/playercard/Nora_Mork_wikipediaCommons.webp":"iYPWO","../img/InterestingPlayers/playercard/Stine_Oftedal_wikipediaCommons.webp":"gBok9","../img/InterestingPlayers/playercard/Carmen_Martin_wikipediaCommons.webp":"c6Opi","../img/InterestingPlayers/playercard/Nathalie_Hagman_wikipediaCommons.webp":"ju7d8","../img/InterestingPlayers/playercard/Sandra_Toft_2_wikipediaCommons.webp":"jDhhF","../img/InterestingPlayers/playercard/Coralie_Lassource_wikipediaCommons.webp":"79zj5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39Ovm":[function(require,module,exports) {
 module.exports = JSON.parse('[{"competition":"IHF World Female\'s Handball Championship 2021","title":"IHF World Female\'s Handball Championship 2021 Best Female Players","imageUrl":"/img/logo_web_cut.png","startDate":"2021-12-01","endingDate":"2021-12-19","location":"ES","informationtoShow":"","idCompetition":"1","players":["001","002","004","003","005","006","007"]},{"competition":"IHF World Female\'s Handball Championship 2017","title":"IHF World Female\'s Handball Championship 2017 Best Female Players","imageUrl":"../img/pista_handball.png","startDate":"2017-12-01","endingDate":"2017-12-17","location":"DE","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idCompetition":"2","players":["001","002","003","004","005","006","007"]},{"competition":"IHF World Female\'s Handball Championship 2019","title":"IHF World Female\'s Handball Championship 2019 Best Female Players","imageUrl":"../img/pista_handball.png","startDate":"2019-11-30","endingDate":"2019-12-15","location":"JP","informationtoShow":"No lamentaba si alrededor id perjuicio. Que eso rivas carta antes. Una asi pedirselos prematuras non ortografia. Paz mal exacta siendo arriba. El entender cualidad al si baterias espiritu despedir. Oir fue consagraba suspiraban asi ordinarios conciencia eso. Eterno ley luz sangre aun feo limpia. Baritono violento entregar dia ton dormirse mas cultivar mezquina las. Creencia doloroso ausentes ch te si rebeldia gritando. Entrego intento demasia yo se un serenos pellejo. Recibidos he sr da resultado derribado nuncasuna il. Hablandose doy oyo relaciones intensidad recordando. Renta el ya nuevo nuovo en otros. Convertia prestadas il no mostrarse le pecadoras fe. Pedantesca alpujarras aberracion entenderlo oro desencanto las gobernador.","idCompetition":"3","players":["001","002","003","004","005","006","007"]}]');
 
 },{}],"jIR5q":[function(require,module,exports) {
@@ -9324,8 +9340,8 @@ function EffectCards({ swiper , extendParams , on  }) {
 }
 exports.default = EffectCards;
 
-},{"../../shared/create-shadow.js":"9JYAP","../../shared/effect-init.js":"5DnvG","../../shared/effect-target.js":"eKqS8","../../shared/effect-virtual-transition-end.js":"VhYFx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"girFM":[function() {},{}],"eFTGe":[function() {},{}],"aErfw":[function() {},{}],"PCgs1":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner1.f4a7b324.jpg" + "?" + Date.now();
+},{"../../shared/create-shadow.js":"9JYAP","../../shared/effect-init.js":"5DnvG","../../shared/effect-target.js":"eKqS8","../../shared/effect-virtual-transition-end.js":"VhYFx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"girFM":[function() {},{}],"eFTGe":[function() {},{}],"aErfw":[function() {},{}],"6FXBr":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner1_sm.e323be9e.webp" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
@@ -9361,35 +9377,44 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"jiiBf":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner2.2e008f51.jpg" + "?" + Date.now();
+},{}],"g8VXo":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner2_sm.313368a1.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"63DK7":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner3.12dbf9f9.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"6bQDx":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner3_sm.89c2033f.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"jZHPn":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner1_lr.df5d2dbb.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"Bnj1n":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner2_lr.d9e0da70.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gvspQ":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "handball_banner3_lr.f574f1b4.webp" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"ivcFG":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "logoblanco.59388228.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"he5S2":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Laura_Glauser_wikipediaCommons.5c7c1700.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"dUMHu":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Laura_Glauser_wikipediaCommons.f89773f4.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"kgkFB":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Nora_Mork_wikipediaCommons.22c42955.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"iYPWO":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Nora_Mork_wikipediaCommons.c0ce1398.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"e4mor":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Stine_Oftedal_wikipediaCommons.15ad6b8b.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"gBok9":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Stine_Oftedal_wikipediaCommons.9cb323b7.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"8VPxr":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Carmen_Martin_wikipediaCommons.42a348f0.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"c6Opi":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Carmen_Martin_wikipediaCommons.b7b638d9.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"cCfna":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Nathalie_Hagman_wikipediaCommons.724cd345.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"ju7d8":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Nathalie_Hagman_wikipediaCommons.a55e2d60.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lyuuF":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Sandra_Toft_2_wikipediaCommons.832bcf66.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"jDhhF":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Sandra_Toft_2_wikipediaCommons.b4df79d7.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"kRRPn":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Coralie_Lassource_wikipediaCommons.034aaa90.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"79zj5":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("9T0k9") + "Coralie_Lassource_wikipediaCommons.532462b3.webp" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}]},["jqCSz","cuI1x"], "cuI1x", "parcelRequire14aa")
 
