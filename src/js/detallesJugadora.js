@@ -122,7 +122,7 @@ function articleHeader(
                 <div>
                     <img src = "${getCountryFlag(
                       nameFlag
-                    )}" class="article-player-flag-country" alt="country flag" loading="lazy">
+                    )}" class="article-player-flag-country" alt="country flag" loading="lazy" width="40" height="40">
                 </div>
             </div>
             <div class="social-media-player">
@@ -187,8 +187,11 @@ function medals(array) {
     const fila = document.createElement("tr");
     const eventMedalImage = createanElement("td", "is-image-cell");
     const divImage = createanElement("div", "image");
+    const sizeMedal = screen.width<769?"96":"24";
     const medalImage = createanElement("img", "is-rounded");
     medalImage.setAttribute("src", medalColor(element.medal));
+    medalImage.setAttribute("width",sizeMedal);
+    medalImage.setAttribute("height",sizeMedal);
     medalImage.setAttribute("alt", "medal photo");
     medalImage.setAttribute("loading", "lazy");
     divImage.append(medalImage);
