@@ -1,12 +1,6 @@
 import data from '../json/data-competitions.json'
 import dataPlayers from '../json/data-intesting-players.json'
-import image4 from "../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg"
-import image5 from "../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg"
-import image6 from "../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg"
-import image7 from "../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg"
-import image8 from "../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg"
-import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg"
-import image10 from "../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg"
+
 import JP from '../../node_modules/country-flag-icons/1x1/JP.svg'
 import ES from '../../node_modules/country-flag-icons/1x1/ES.svg'
 import DE from '../../node_modules/country-flag-icons/1x1/DE.svg'
@@ -67,6 +61,8 @@ function buildFiel(resultado){
     const countryFlag = createanElement("img","article-competition-flag-country");
     countryFlag.setAttribute("src", getCountryFlag(resultado.location));
     countryFlag.setAttribute("alt", "country flag");
+    countryFlag.setAttribute("width", "20");
+    countryFlag.setAttribute("height", "20");
     divHeaderFlagP.append(introductoryP,countryFlag);
     const duration = document.createElement("span");
     duration.innerHTML = `Started: ${resultado.startDate} - Finished: ${resultado.endingDate}`;
