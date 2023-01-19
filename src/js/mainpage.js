@@ -17,13 +17,13 @@ import image3Lr from "../img/banner/handball_banner3_lr.jpg"
 const imagesBannerLr = [image1Lr,image2Lr,image3Lr];
 
 import whiteLogo from "../img/logoblanco.png";
-import image4 from "../img/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg"
-import image5 from "../img/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg"
-import image6 from "../img/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg"
-import image7 from "../img/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg"
-import image8 from "../img/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg"
-import image9 from "../img/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg" 
-import image10 from "../img/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg" 
+import image4 from "../img/playercard/InterestingPlayers/Laura_Glauser_wikipediaCommons.jpg"
+import image5 from "../img/playercard/InterestingPlayers/Nora_Mork_wikipediaCommons.jpg"
+import image6 from "../img/playercard/InterestingPlayers/Stine_Oftedal_wikipediaCommons.jpg"
+import image7 from "../img/playercard/InterestingPlayers/Carmen_Martin_wikipediaCommons.jpg"
+import image8 from "../img/playercard/InterestingPlayers/Nathalie_Hagman_wikipediaCommons.jpg"
+import image9 from "../img/playercard/InterestingPlayers/Sandra_Toft_2_wikipediaCommons.jpg" 
+import image10 from "../img/playercard/InterestingPlayers/Coralie_Lassource_wikipediaCommons.jpg" 
 
 const images = [image4,image5,image6,image7,image8,image9,image10];
 
