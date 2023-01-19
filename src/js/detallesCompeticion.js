@@ -11,7 +11,26 @@ import JP from '../../node_modules/country-flag-icons/1x1/JP.svg'
 import ES from '../../node_modules/country-flag-icons/1x1/ES.svg'
 import DE from '../../node_modules/country-flag-icons/1x1/DE.svg'
 import handballCourt from '../img/handball_court.png'
+//const images = [image4,image5,image6,image7,image8,image9,image10];
 
+import image1Sm from "../img/InterestingPlayers/competitions/Carmen_Martin_wikipediaCommons_lr.jpg"
+import image2Sm from "../img/InterestingPlayers/competitions/Coralie_Lassource_wikipediaCommons_lr.jpg"
+import image3Sm from "../img/InterestingPlayers/competitions/Laura_Glauser_wikipediaCommons_lr.jpg"
+import image4Sm from "../img/InterestingPlayers/competitions/Nathalie_Hagman_wikipediaCommons_lr.jpg"
+import image5Sm from "../img/InterestingPlayers/competitions/Nora_Mork_wikipediaCommons_lr.jpg"
+import image6Sm from "../img/InterestingPlayers/competitions/Sandra_Toft_2_wikipediaCommons_lr.jpg"
+import image7Sm from "../img/InterestingPlayers/competitions/Stine_Oftedal_wikipediaCommons_lr.jpg"
+const imagesBannerSm = [image3Sm,image5Sm,image7Sm,image1Sm,image4Sm,image6Sm,image2Sm];
+import image1Lr from "../img/InterestingPlayers/competitions/Carmen_Martin_wikipediaCommons_sm.jpg"
+import image2Lr from "../img/InterestingPlayers/competitions/Coralie_Lassource_wikipediaCommons_sm.jpg"
+import image3Lr from "../img/InterestingPlayers/competitions/Laura_Glauser_wikipediaCommons_sm.jpg"
+import image4Lr from "../img/InterestingPlayers/competitions/Nathalie_Hagman_wikipediaCommons_sm.jpg"
+import image5Lr from "../img/InterestingPlayers/competitions/Nora_Mork_wikipediaCommons_sm.jpg"
+import image6Lr from "../img/InterestingPlayers/competitions/Sandra_Toft_2_wikipediaCommons_sm.jpg"
+import image7Lr from "../img/InterestingPlayers/competitions/Stine_Oftedal_wikipediaCommons_sm.jpg"
+const imagesBannerLr = [image3Lr,image5Lr,image7Lr,image1Lr,image4Lr,image6Lr,image2Lr];
+
+const images = screen.width<600?imagesBannerSm:imagesBannerLr;
 
 function createanElement(typeElement, classNameElement){
     const element = document.createElement(typeElement);
@@ -19,7 +38,7 @@ function createanElement(typeElement, classNameElement){
     return element;
 }
 
-const images = [image4,image5,image6,image7,image8,image9,image10];
+
 const valores = window.location.search;
 const params = new URLSearchParams(valores);
 const idCompeticion = params.get("id");
