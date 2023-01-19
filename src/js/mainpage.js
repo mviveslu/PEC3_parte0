@@ -7,23 +7,23 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import 'swiper/swiper-bundle.css'
 /*Importacion de imágenes*/
-import image1Sm from "../img/banner/handball_banner1_sm.jpg"
-import image2Sm from "../img/banner/handball_banner2_sm.jpg"
-import image3Sm from "../img/banner/handball_banner3_sm.jpg"
+import image1Sm from "../img/banner/handball_banner1_sm.webp"
+import image2Sm from "../img/banner/handball_banner2_sm.webp"
+import image3Sm from "../img/banner/handball_banner3_sm.webp"
 const imagesBannerSm = [image1Sm,image2Sm,image3Sm];
-import image1Lr from "../img/banner/handball_banner1_lr.jpg"
-import image2Lr from "../img/banner/handball_banner2_lr.jpg"
-import image3Lr from "../img/banner/handball_banner3_lr.jpg"
+import image1Lr from "../img/banner/handball_banner1_lr.webp"
+import image2Lr from "../img/banner/handball_banner2_lr.webp"
+import image3Lr from "../img/banner/handball_banner3_lr.webp"
 const imagesBannerLr = [image1Lr,image2Lr,image3Lr];
 
 import whiteLogo from "../img/logoblanco.png";
-import image4 from "../img/InterestingPlayers/playercard/Laura_Glauser_wikipediaCommons.jpg"
-import image5 from "../img/InterestingPlayers/playercard/Nora_Mork_wikipediaCommons.jpg"
-import image6 from "../img/InterestingPlayers/playercard/Stine_Oftedal_wikipediaCommons.jpg"
-import image7 from "../img/InterestingPlayers/playercard/Carmen_Martin_wikipediaCommons.jpg"
-import image8 from "../img/InterestingPlayers/playercard/Nathalie_Hagman_wikipediaCommons.jpg"
-import image9 from "../img/InterestingPlayers/playercard/Sandra_Toft_2_wikipediaCommons.jpg" 
-import image10 from "../img/InterestingPlayers/playercard/Coralie_Lassource_wikipediaCommons.jpg" 
+import image4 from "../img/InterestingPlayers/playercard/Laura_Glauser_wikipediaCommons.webp"
+import image5 from "../img/InterestingPlayers/playercard/Nora_Mork_wikipediaCommons.webp"
+import image6 from "../img/InterestingPlayers/playercard/Stine_Oftedal_wikipediaCommons.webp"
+import image7 from "../img/InterestingPlayers/playercard/Carmen_Martin_wikipediaCommons.webp"
+import image8 from "../img/InterestingPlayers/playercard/Nathalie_Hagman_wikipediaCommons.webp"
+import image9 from "../img/InterestingPlayers/playercard/Sandra_Toft_2_wikipediaCommons.webp" 
+import image10 from "../img/InterestingPlayers/playercard/Coralie_Lassource_wikipediaCommons.webp" 
 
 const images = [image4,image5,image6,image7,image8,image9,image10];
 
